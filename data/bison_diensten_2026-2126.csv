@@ -1,0 +1,2526 @@
+jaar,datum,dag,periode,ploeg,dienst
+2026,2026-12-24,24 dec,Kerst,1,Reserve
+2026,2026-12-24,24 dec,Kerst,2,Vrij
+2026,2026-12-24,24 dec,Kerst,3,Nacht
+2026,2026-12-24,24 dec,Kerst,4,Vrij
+2026,2026-12-24,24 dec,Kerst,5,Dag
+2026,2026-12-25,25 dec,Kerst,1,Reserve
+2026,2026-12-25,25 dec,Kerst,2,Nacht
+2026,2026-12-25,25 dec,Kerst,3,Vrij
+2026,2026-12-25,25 dec,Kerst,4,Dag
+2026,2026-12-25,25 dec,Kerst,5,Vrij
+2026,2026-12-26,26 dec,Kerst,1,Reserve
+2026,2026-12-26,26 dec,Kerst,2,Nacht
+2026,2026-12-26,26 dec,Kerst,3,Vrij
+2026,2026-12-26,26 dec,Kerst,4,Dag
+2026,2026-12-26,26 dec,Kerst,5,Vrij
+2026,2026-12-31,31 dec,Oud en nieuw,1,Vrij
+2026,2026-12-31,31 dec,Oud en nieuw,2,Dag
+2026,2026-12-31,31 dec,Oud en nieuw,3,Vrij
+2026,2026-12-31,31 dec,Oud en nieuw,4,Reserve
+2026,2026-12-31,31 dec,Oud en nieuw,5,Nacht
+2026,2027-01-01,1 jan,Oud en nieuw,1,Nacht
+2026,2027-01-01,1 jan,Oud en nieuw,2,Vrij
+2026,2027-01-01,1 jan,Oud en nieuw,3,Dag
+2026,2027-01-01,1 jan,Oud en nieuw,4,Reserve
+2026,2027-01-01,1 jan,Oud en nieuw,5,Vrij
+2027,2027-12-24,24 dec,Kerst,1,Vrij
+2027,2027-12-24,24 dec,Kerst,2,Vrij
+2027,2027-12-24,24 dec,Kerst,3,Reserve
+2027,2027-12-24,24 dec,Kerst,4,Nacht
+2027,2027-12-24,24 dec,Kerst,5,Dag
+2027,2027-12-25,25 dec,Kerst,1,Vrij
+2027,2027-12-25,25 dec,Kerst,2,Vrij
+2027,2027-12-25,25 dec,Kerst,3,Reserve
+2027,2027-12-25,25 dec,Kerst,4,Nacht
+2027,2027-12-25,25 dec,Kerst,5,Dag
+2027,2027-12-26,26 dec,Kerst,1,Vrij
+2027,2027-12-26,26 dec,Kerst,2,Vrij
+2027,2027-12-26,26 dec,Kerst,3,Reserve
+2027,2027-12-26,26 dec,Kerst,4,Nacht
+2027,2027-12-26,26 dec,Kerst,5,Dag
+2027,2027-12-31,31 dec,Oud en nieuw,1,Vrij
+2027,2027-12-31,31 dec,Oud en nieuw,2,Dag
+2027,2027-12-31,31 dec,Oud en nieuw,3,Nacht
+2027,2027-12-31,31 dec,Oud en nieuw,4,Vrij
+2027,2027-12-31,31 dec,Oud en nieuw,5,Reserve
+2027,2028-01-01,1 jan,Oud en nieuw,1,Vrij
+2027,2028-01-01,1 jan,Oud en nieuw,2,Dag
+2027,2028-01-01,1 jan,Oud en nieuw,3,Nacht
+2027,2028-01-01,1 jan,Oud en nieuw,4,Vrij
+2027,2028-01-01,1 jan,Oud en nieuw,5,Reserve
+2028,2028-12-24,24 dec,Kerst,1,Dag
+2028,2028-12-24,24 dec,Kerst,2,Reserve
+2028,2028-12-24,24 dec,Kerst,3,Vrij
+2028,2028-12-24,24 dec,Kerst,4,Vrij
+2028,2028-12-24,24 dec,Kerst,5,Nacht
+2028,2028-12-25,25 dec,Kerst,1,Vrij
+2028,2028-12-25,25 dec,Kerst,2,Reserve
+2028,2028-12-25,25 dec,Kerst,3,Dag
+2028,2028-12-25,25 dec,Kerst,4,Nacht
+2028,2028-12-25,25 dec,Kerst,5,Vrij
+2028,2028-12-26,26 dec,Kerst,1,Vrij
+2028,2028-12-26,26 dec,Kerst,2,Reserve
+2028,2028-12-26,26 dec,Kerst,3,Dag
+2028,2028-12-26,26 dec,Kerst,4,Nacht
+2028,2028-12-26,26 dec,Kerst,5,Vrij
+2028,2028-12-31,31 dec,Oud en nieuw,1,Reserve
+2028,2028-12-31,31 dec,Oud en nieuw,2,Nacht
+2028,2028-12-31,31 dec,Oud en nieuw,3,Vrij
+2028,2028-12-31,31 dec,Oud en nieuw,4,Dag
+2028,2028-12-31,31 dec,Oud en nieuw,5,Vrij
+2028,2029-01-01,1 jan,Oud en nieuw,1,Reserve
+2028,2029-01-01,1 jan,Oud en nieuw,2,Vrij
+2028,2029-01-01,1 jan,Oud en nieuw,3,Nacht
+2028,2029-01-01,1 jan,Oud en nieuw,4,Vrij
+2028,2029-01-01,1 jan,Oud en nieuw,5,Dag
+2029,2029-12-24,24 dec,Kerst,1,Vrij
+2029,2029-12-24,24 dec,Kerst,2,Dag
+2029,2029-12-24,24 dec,Kerst,3,Vrij
+2029,2029-12-24,24 dec,Kerst,4,Reserve
+2029,2029-12-24,24 dec,Kerst,5,Nacht
+2029,2029-12-25,25 dec,Kerst,1,Vrij
+2029,2029-12-25,25 dec,Kerst,2,Dag
+2029,2029-12-25,25 dec,Kerst,3,Vrij
+2029,2029-12-25,25 dec,Kerst,4,Reserve
+2029,2029-12-25,25 dec,Kerst,5,Nacht
+2029,2029-12-26,26 dec,Kerst,1,Dag
+2029,2029-12-26,26 dec,Kerst,2,Nacht
+2029,2029-12-26,26 dec,Kerst,3,Reserve
+2029,2029-12-26,26 dec,Kerst,4,Vrij
+2029,2029-12-26,26 dec,Kerst,5,Vrij
+2029,2029-12-31,31 dec,Oud en nieuw,1,Dag
+2029,2029-12-31,31 dec,Oud en nieuw,2,Nacht
+2029,2029-12-31,31 dec,Oud en nieuw,3,Reserve
+2029,2029-12-31,31 dec,Oud en nieuw,4,Vrij
+2029,2029-12-31,31 dec,Oud en nieuw,5,Vrij
+2029,2030-01-01,1 jan,Oud en nieuw,1,Dag
+2029,2030-01-01,1 jan,Oud en nieuw,2,Nacht
+2029,2030-01-01,1 jan,Oud en nieuw,3,Reserve
+2029,2030-01-01,1 jan,Oud en nieuw,4,Vrij
+2029,2030-01-01,1 jan,Oud en nieuw,5,Vrij
+2030,2030-12-24,24 dec,Kerst,1,Nacht
+2030,2030-12-24,24 dec,Kerst,2,Vrij
+2030,2030-12-24,24 dec,Kerst,3,Vrij
+2030,2030-12-24,24 dec,Kerst,4,Dag
+2030,2030-12-24,24 dec,Kerst,5,Reserve
+2030,2030-12-25,25 dec,Kerst,1,Vrij
+2030,2030-12-25,25 dec,Kerst,2,Reserve
+2030,2030-12-25,25 dec,Kerst,3,Dag
+2030,2030-12-25,25 dec,Kerst,4,Nacht
+2030,2030-12-25,25 dec,Kerst,5,Vrij
+2030,2030-12-26,26 dec,Kerst,1,Vrij
+2030,2030-12-26,26 dec,Kerst,2,Reserve
+2030,2030-12-26,26 dec,Kerst,3,Dag
+2030,2030-12-26,26 dec,Kerst,4,Nacht
+2030,2030-12-26,26 dec,Kerst,5,Vrij
+2030,2030-12-31,31 dec,Oud en nieuw,1,Vrij
+2030,2030-12-31,31 dec,Oud en nieuw,2,Reserve
+2030,2030-12-31,31 dec,Oud en nieuw,3,Dag
+2030,2030-12-31,31 dec,Oud en nieuw,4,Nacht
+2030,2030-12-31,31 dec,Oud en nieuw,5,Vrij
+2030,2031-01-01,1 jan,Oud en nieuw,1,Reserve
+2030,2031-01-01,1 jan,Oud en nieuw,2,Vrij
+2030,2031-01-01,1 jan,Oud en nieuw,3,Nacht
+2030,2031-01-01,1 jan,Oud en nieuw,4,Vrij
+2030,2031-01-01,1 jan,Oud en nieuw,5,Dag
+2031,2031-12-24,24 dec,Kerst,1,Vrij
+2031,2031-12-24,24 dec,Kerst,2,Dag
+2031,2031-12-24,24 dec,Kerst,3,Vrij
+2031,2031-12-24,24 dec,Kerst,4,Reserve
+2031,2031-12-24,24 dec,Kerst,5,Nacht
+2031,2031-12-25,25 dec,Kerst,1,Vrij
+2031,2031-12-25,25 dec,Kerst,2,Dag
+2031,2031-12-25,25 dec,Kerst,3,Vrij
+2031,2031-12-25,25 dec,Kerst,4,Reserve
+2031,2031-12-25,25 dec,Kerst,5,Nacht
+2031,2031-12-26,26 dec,Kerst,1,Nacht
+2031,2031-12-26,26 dec,Kerst,2,Vrij
+2031,2031-12-26,26 dec,Kerst,3,Dag
+2031,2031-12-26,26 dec,Kerst,4,Reserve
+2031,2031-12-26,26 dec,Kerst,5,Vrij
+2031,2031-12-31,31 dec,Oud en nieuw,1,Dag
+2031,2031-12-31,31 dec,Oud en nieuw,2,Nacht
+2031,2031-12-31,31 dec,Oud en nieuw,3,Reserve
+2031,2031-12-31,31 dec,Oud en nieuw,4,Vrij
+2031,2031-12-31,31 dec,Oud en nieuw,5,Vrij
+2031,2032-01-01,1 jan,Oud en nieuw,1,Dag
+2031,2032-01-01,1 jan,Oud en nieuw,2,Nacht
+2031,2032-01-01,1 jan,Oud en nieuw,3,Reserve
+2031,2032-01-01,1 jan,Oud en nieuw,4,Vrij
+2031,2032-01-01,1 jan,Oud en nieuw,5,Vrij
+2032,2032-12-24,24 dec,Kerst,1,Vrij
+2032,2032-12-24,24 dec,Kerst,2,Dag
+2032,2032-12-24,24 dec,Kerst,3,Nacht
+2032,2032-12-24,24 dec,Kerst,4,Vrij
+2032,2032-12-24,24 dec,Kerst,5,Reserve
+2032,2032-12-25,25 dec,Kerst,1,Vrij
+2032,2032-12-25,25 dec,Kerst,2,Dag
+2032,2032-12-25,25 dec,Kerst,3,Nacht
+2032,2032-12-25,25 dec,Kerst,4,Vrij
+2032,2032-12-25,25 dec,Kerst,5,Reserve
+2032,2032-12-26,26 dec,Kerst,1,Vrij
+2032,2032-12-26,26 dec,Kerst,2,Dag
+2032,2032-12-26,26 dec,Kerst,3,Nacht
+2032,2032-12-26,26 dec,Kerst,4,Vrij
+2032,2032-12-26,26 dec,Kerst,5,Reserve
+2032,2032-12-31,31 dec,Oud en nieuw,1,Dag
+2032,2032-12-31,31 dec,Oud en nieuw,2,Reserve
+2032,2032-12-31,31 dec,Oud en nieuw,3,Vrij
+2032,2032-12-31,31 dec,Oud en nieuw,4,Vrij
+2032,2032-12-31,31 dec,Oud en nieuw,5,Nacht
+2032,2033-01-01,1 jan,Oud en nieuw,1,Dag
+2032,2033-01-01,1 jan,Oud en nieuw,2,Reserve
+2032,2033-01-01,1 jan,Oud en nieuw,3,Vrij
+2032,2033-01-01,1 jan,Oud en nieuw,4,Vrij
+2032,2033-01-01,1 jan,Oud en nieuw,5,Nacht
+2033,2033-12-24,24 dec,Kerst,1,Reserve
+2033,2033-12-24,24 dec,Kerst,2,Nacht
+2033,2033-12-24,24 dec,Kerst,3,Vrij
+2033,2033-12-24,24 dec,Kerst,4,Dag
+2033,2033-12-24,24 dec,Kerst,5,Vrij
+2033,2033-12-25,25 dec,Kerst,1,Reserve
+2033,2033-12-25,25 dec,Kerst,2,Nacht
+2033,2033-12-25,25 dec,Kerst,3,Vrij
+2033,2033-12-25,25 dec,Kerst,4,Dag
+2033,2033-12-25,25 dec,Kerst,5,Vrij
+2033,2033-12-26,26 dec,Kerst,1,Reserve
+2033,2033-12-26,26 dec,Kerst,2,Vrij
+2033,2033-12-26,26 dec,Kerst,3,Nacht
+2033,2033-12-26,26 dec,Kerst,4,Vrij
+2033,2033-12-26,26 dec,Kerst,5,Dag
+2033,2033-12-31,31 dec,Oud en nieuw,1,Nacht
+2033,2033-12-31,31 dec,Oud en nieuw,2,Vrij
+2033,2033-12-31,31 dec,Oud en nieuw,3,Dag
+2033,2033-12-31,31 dec,Oud en nieuw,4,Reserve
+2033,2033-12-31,31 dec,Oud en nieuw,5,Vrij
+2033,2034-01-01,1 jan,Oud en nieuw,1,Nacht
+2033,2034-01-01,1 jan,Oud en nieuw,2,Vrij
+2033,2034-01-01,1 jan,Oud en nieuw,3,Dag
+2033,2034-01-01,1 jan,Oud en nieuw,4,Reserve
+2033,2034-01-01,1 jan,Oud en nieuw,5,Vrij
+2034,2034-12-24,24 dec,Kerst,1,Vrij
+2034,2034-12-24,24 dec,Kerst,2,Vrij
+2034,2034-12-24,24 dec,Kerst,3,Reserve
+2034,2034-12-24,24 dec,Kerst,4,Nacht
+2034,2034-12-24,24 dec,Kerst,5,Dag
+2034,2034-12-25,25 dec,Kerst,1,Dag
+2034,2034-12-25,25 dec,Kerst,2,Nacht
+2034,2034-12-25,25 dec,Kerst,3,Reserve
+2034,2034-12-25,25 dec,Kerst,4,Vrij
+2034,2034-12-25,25 dec,Kerst,5,Vrij
+2034,2034-12-26,26 dec,Kerst,1,Dag
+2034,2034-12-26,26 dec,Kerst,2,Nacht
+2034,2034-12-26,26 dec,Kerst,3,Reserve
+2034,2034-12-26,26 dec,Kerst,4,Vrij
+2034,2034-12-26,26 dec,Kerst,5,Vrij
+2034,2034-12-31,31 dec,Oud en nieuw,1,Vrij
+2034,2034-12-31,31 dec,Oud en nieuw,2,Dag
+2034,2034-12-31,31 dec,Oud en nieuw,3,Nacht
+2034,2034-12-31,31 dec,Oud en nieuw,4,Vrij
+2034,2034-12-31,31 dec,Oud en nieuw,5,Reserve
+2034,2035-01-01,1 jan,Oud en nieuw,1,Nacht
+2034,2035-01-01,1 jan,Oud en nieuw,2,Vrij
+2034,2035-01-01,1 jan,Oud en nieuw,3,Vrij
+2034,2035-01-01,1 jan,Oud en nieuw,4,Dag
+2034,2035-01-01,1 jan,Oud en nieuw,5,Reserve
+2035,2035-12-24,24 dec,Kerst,1,Vrij
+2035,2035-12-24,24 dec,Kerst,2,Reserve
+2035,2035-12-24,24 dec,Kerst,3,Dag
+2035,2035-12-24,24 dec,Kerst,4,Nacht
+2035,2035-12-24,24 dec,Kerst,5,Vrij
+2035,2035-12-25,25 dec,Kerst,1,Vrij
+2035,2035-12-25,25 dec,Kerst,2,Reserve
+2035,2035-12-25,25 dec,Kerst,3,Dag
+2035,2035-12-25,25 dec,Kerst,4,Nacht
+2035,2035-12-25,25 dec,Kerst,5,Vrij
+2035,2035-12-26,26 dec,Kerst,1,Reserve
+2035,2035-12-26,26 dec,Kerst,2,Vrij
+2035,2035-12-26,26 dec,Kerst,3,Nacht
+2035,2035-12-26,26 dec,Kerst,4,Vrij
+2035,2035-12-26,26 dec,Kerst,5,Dag
+2035,2035-12-31,31 dec,Oud en nieuw,1,Reserve
+2035,2035-12-31,31 dec,Oud en nieuw,2,Vrij
+2035,2035-12-31,31 dec,Oud en nieuw,3,Nacht
+2035,2035-12-31,31 dec,Oud en nieuw,4,Vrij
+2035,2035-12-31,31 dec,Oud en nieuw,5,Dag
+2035,2036-01-01,1 jan,Oud en nieuw,1,Reserve
+2035,2036-01-01,1 jan,Oud en nieuw,2,Vrij
+2035,2036-01-01,1 jan,Oud en nieuw,3,Nacht
+2035,2036-01-01,1 jan,Oud en nieuw,4,Vrij
+2035,2036-01-01,1 jan,Oud en nieuw,5,Dag
+2036,2036-12-24,24 dec,Kerst,1,Dag
+2036,2036-12-24,24 dec,Kerst,2,Nacht
+2036,2036-12-24,24 dec,Kerst,3,Reserve
+2036,2036-12-24,24 dec,Kerst,4,Vrij
+2036,2036-12-24,24 dec,Kerst,5,Vrij
+2036,2036-12-25,25 dec,Kerst,1,Dag
+2036,2036-12-25,25 dec,Kerst,2,Nacht
+2036,2036-12-25,25 dec,Kerst,3,Reserve
+2036,2036-12-25,25 dec,Kerst,4,Vrij
+2036,2036-12-25,25 dec,Kerst,5,Vrij
+2036,2036-12-26,26 dec,Kerst,1,Vrij
+2036,2036-12-26,26 dec,Kerst,2,Vrij
+2036,2036-12-26,26 dec,Kerst,3,Reserve
+2036,2036-12-26,26 dec,Kerst,4,Nacht
+2036,2036-12-26,26 dec,Kerst,5,Dag
+2036,2036-12-31,31 dec,Oud en nieuw,1,Nacht
+2036,2036-12-31,31 dec,Oud en nieuw,2,Vrij
+2036,2036-12-31,31 dec,Oud en nieuw,3,Vrij
+2036,2036-12-31,31 dec,Oud en nieuw,4,Dag
+2036,2036-12-31,31 dec,Oud en nieuw,5,Reserve
+2036,2037-01-01,1 jan,Oud en nieuw,1,Nacht
+2036,2037-01-01,1 jan,Oud en nieuw,2,Vrij
+2036,2037-01-01,1 jan,Oud en nieuw,3,Vrij
+2036,2037-01-01,1 jan,Oud en nieuw,4,Dag
+2036,2037-01-01,1 jan,Oud en nieuw,5,Reserve
+2037,2037-12-24,24 dec,Kerst,1,Vrij
+2037,2037-12-24,24 dec,Kerst,2,Reserve
+2037,2037-12-24,24 dec,Kerst,3,Dag
+2037,2037-12-24,24 dec,Kerst,4,Nacht
+2037,2037-12-24,24 dec,Kerst,5,Vrij
+2037,2037-12-25,25 dec,Kerst,1,Dag
+2037,2037-12-25,25 dec,Kerst,2,Reserve
+2037,2037-12-25,25 dec,Kerst,3,Vrij
+2037,2037-12-25,25 dec,Kerst,4,Vrij
+2037,2037-12-25,25 dec,Kerst,5,Nacht
+2037,2037-12-26,26 dec,Kerst,1,Dag
+2037,2037-12-26,26 dec,Kerst,2,Reserve
+2037,2037-12-26,26 dec,Kerst,3,Vrij
+2037,2037-12-26,26 dec,Kerst,4,Vrij
+2037,2037-12-26,26 dec,Kerst,5,Nacht
+2037,2037-12-31,31 dec,Oud en nieuw,1,Reserve
+2037,2037-12-31,31 dec,Oud en nieuw,2,Vrij
+2037,2037-12-31,31 dec,Oud en nieuw,3,Nacht
+2037,2037-12-31,31 dec,Oud en nieuw,4,Vrij
+2037,2037-12-31,31 dec,Oud en nieuw,5,Dag
+2037,2038-01-01,1 jan,Oud en nieuw,1,Reserve
+2037,2038-01-01,1 jan,Oud en nieuw,2,Nacht
+2037,2038-01-01,1 jan,Oud en nieuw,3,Vrij
+2037,2038-01-01,1 jan,Oud en nieuw,4,Dag
+2037,2038-01-01,1 jan,Oud en nieuw,5,Vrij
+2038,2038-12-24,24 dec,Kerst,1,Nacht
+2038,2038-12-24,24 dec,Kerst,2,Vrij
+2038,2038-12-24,24 dec,Kerst,3,Dag
+2038,2038-12-24,24 dec,Kerst,4,Reserve
+2038,2038-12-24,24 dec,Kerst,5,Vrij
+2038,2038-12-25,25 dec,Kerst,1,Nacht
+2038,2038-12-25,25 dec,Kerst,2,Vrij
+2038,2038-12-25,25 dec,Kerst,3,Dag
+2038,2038-12-25,25 dec,Kerst,4,Reserve
+2038,2038-12-25,25 dec,Kerst,5,Vrij
+2038,2038-12-26,26 dec,Kerst,1,Nacht
+2038,2038-12-26,26 dec,Kerst,2,Vrij
+2038,2038-12-26,26 dec,Kerst,3,Dag
+2038,2038-12-26,26 dec,Kerst,4,Reserve
+2038,2038-12-26,26 dec,Kerst,5,Vrij
+2038,2038-12-31,31 dec,Oud en nieuw,1,Vrij
+2038,2038-12-31,31 dec,Oud en nieuw,2,Vrij
+2038,2038-12-31,31 dec,Oud en nieuw,3,Reserve
+2038,2038-12-31,31 dec,Oud en nieuw,4,Nacht
+2038,2038-12-31,31 dec,Oud en nieuw,5,Dag
+2038,2039-01-01,1 jan,Oud en nieuw,1,Vrij
+2038,2039-01-01,1 jan,Oud en nieuw,2,Vrij
+2038,2039-01-01,1 jan,Oud en nieuw,3,Reserve
+2038,2039-01-01,1 jan,Oud en nieuw,4,Nacht
+2038,2039-01-01,1 jan,Oud en nieuw,5,Dag
+2039,2039-12-24,24 dec,Kerst,1,Vrij
+2039,2039-12-24,24 dec,Kerst,2,Dag
+2039,2039-12-24,24 dec,Kerst,3,Nacht
+2039,2039-12-24,24 dec,Kerst,4,Vrij
+2039,2039-12-24,24 dec,Kerst,5,Reserve
+2039,2039-12-25,25 dec,Kerst,1,Vrij
+2039,2039-12-25,25 dec,Kerst,2,Dag
+2039,2039-12-25,25 dec,Kerst,3,Nacht
+2039,2039-12-25,25 dec,Kerst,4,Vrij
+2039,2039-12-25,25 dec,Kerst,5,Reserve
+2039,2039-12-26,26 dec,Kerst,1,Nacht
+2039,2039-12-26,26 dec,Kerst,2,Vrij
+2039,2039-12-26,26 dec,Kerst,3,Vrij
+2039,2039-12-26,26 dec,Kerst,4,Dag
+2039,2039-12-26,26 dec,Kerst,5,Reserve
+2039,2039-12-31,31 dec,Oud en nieuw,1,Dag
+2039,2039-12-31,31 dec,Oud en nieuw,2,Reserve
+2039,2039-12-31,31 dec,Oud en nieuw,3,Vrij
+2039,2039-12-31,31 dec,Oud en nieuw,4,Vrij
+2039,2039-12-31,31 dec,Oud en nieuw,5,Nacht
+2039,2040-01-01,1 jan,Oud en nieuw,1,Dag
+2039,2040-01-01,1 jan,Oud en nieuw,2,Reserve
+2039,2040-01-01,1 jan,Oud en nieuw,3,Vrij
+2039,2040-01-01,1 jan,Oud en nieuw,4,Vrij
+2039,2040-01-01,1 jan,Oud en nieuw,5,Nacht
+2040,2040-12-24,24 dec,Kerst,1,Reserve
+2040,2040-12-24,24 dec,Kerst,2,Vrij
+2040,2040-12-24,24 dec,Kerst,3,Nacht
+2040,2040-12-24,24 dec,Kerst,4,Vrij
+2040,2040-12-24,24 dec,Kerst,5,Dag
+2040,2040-12-25,25 dec,Kerst,1,Reserve
+2040,2040-12-25,25 dec,Kerst,2,Vrij
+2040,2040-12-25,25 dec,Kerst,3,Nacht
+2040,2040-12-25,25 dec,Kerst,4,Vrij
+2040,2040-12-25,25 dec,Kerst,5,Dag
+2040,2040-12-26,26 dec,Kerst,1,Vrij
+2040,2040-12-26,26 dec,Kerst,2,Dag
+2040,2040-12-26,26 dec,Kerst,3,Vrij
+2040,2040-12-26,26 dec,Kerst,4,Reserve
+2040,2040-12-26,26 dec,Kerst,5,Nacht
+2040,2040-12-31,31 dec,Oud en nieuw,1,Vrij
+2040,2040-12-31,31 dec,Oud en nieuw,2,Dag
+2040,2040-12-31,31 dec,Oud en nieuw,3,Vrij
+2040,2040-12-31,31 dec,Oud en nieuw,4,Reserve
+2040,2040-12-31,31 dec,Oud en nieuw,5,Nacht
+2040,2041-01-01,1 jan,Oud en nieuw,1,Vrij
+2040,2041-01-01,1 jan,Oud en nieuw,2,Dag
+2040,2041-01-01,1 jan,Oud en nieuw,3,Vrij
+2040,2041-01-01,1 jan,Oud en nieuw,4,Reserve
+2040,2041-01-01,1 jan,Oud en nieuw,5,Nacht
+2041,2041-12-24,24 dec,Kerst,1,Dag
+2041,2041-12-24,24 dec,Kerst,2,Nacht
+2041,2041-12-24,24 dec,Kerst,3,Reserve
+2041,2041-12-24,24 dec,Kerst,4,Vrij
+2041,2041-12-24,24 dec,Kerst,5,Vrij
+2041,2041-12-25,25 dec,Kerst,1,Nacht
+2041,2041-12-25,25 dec,Kerst,2,Vrij
+2041,2041-12-25,25 dec,Kerst,3,Vrij
+2041,2041-12-25,25 dec,Kerst,4,Dag
+2041,2041-12-25,25 dec,Kerst,5,Reserve
+2041,2041-12-26,26 dec,Kerst,1,Nacht
+2041,2041-12-26,26 dec,Kerst,2,Vrij
+2041,2041-12-26,26 dec,Kerst,3,Vrij
+2041,2041-12-26,26 dec,Kerst,4,Dag
+2041,2041-12-26,26 dec,Kerst,5,Reserve
+2041,2041-12-31,31 dec,Oud en nieuw,1,Nacht
+2041,2041-12-31,31 dec,Oud en nieuw,2,Vrij
+2041,2041-12-31,31 dec,Oud en nieuw,3,Vrij
+2041,2041-12-31,31 dec,Oud en nieuw,4,Dag
+2041,2041-12-31,31 dec,Oud en nieuw,5,Reserve
+2041,2042-01-01,1 jan,Oud en nieuw,1,Vrij
+2041,2042-01-01,1 jan,Oud en nieuw,2,Reserve
+2041,2042-01-01,1 jan,Oud en nieuw,3,Dag
+2041,2042-01-01,1 jan,Oud en nieuw,4,Nacht
+2041,2042-01-01,1 jan,Oud en nieuw,5,Vrij
+2042,2042-12-24,24 dec,Kerst,1,Reserve
+2042,2042-12-24,24 dec,Kerst,2,Vrij
+2042,2042-12-24,24 dec,Kerst,3,Nacht
+2042,2042-12-24,24 dec,Kerst,4,Vrij
+2042,2042-12-24,24 dec,Kerst,5,Dag
+2042,2042-12-25,25 dec,Kerst,1,Reserve
+2042,2042-12-25,25 dec,Kerst,2,Vrij
+2042,2042-12-25,25 dec,Kerst,3,Nacht
+2042,2042-12-25,25 dec,Kerst,4,Vrij
+2042,2042-12-25,25 dec,Kerst,5,Dag
+2042,2042-12-26,26 dec,Kerst,1,Reserve
+2042,2042-12-26,26 dec,Kerst,2,Nacht
+2042,2042-12-26,26 dec,Kerst,3,Vrij
+2042,2042-12-26,26 dec,Kerst,4,Dag
+2042,2042-12-26,26 dec,Kerst,5,Vrij
+2042,2042-12-31,31 dec,Oud en nieuw,1,Vrij
+2042,2042-12-31,31 dec,Oud en nieuw,2,Dag
+2042,2042-12-31,31 dec,Oud en nieuw,3,Vrij
+2042,2042-12-31,31 dec,Oud en nieuw,4,Reserve
+2042,2042-12-31,31 dec,Oud en nieuw,5,Nacht
+2042,2043-01-01,1 jan,Oud en nieuw,1,Vrij
+2042,2043-01-01,1 jan,Oud en nieuw,2,Dag
+2042,2043-01-01,1 jan,Oud en nieuw,3,Vrij
+2042,2043-01-01,1 jan,Oud en nieuw,4,Reserve
+2042,2043-01-01,1 jan,Oud en nieuw,5,Nacht
+2043,2043-12-24,24 dec,Kerst,1,Dag
+2043,2043-12-24,24 dec,Kerst,2,Nacht
+2043,2043-12-24,24 dec,Kerst,3,Reserve
+2043,2043-12-24,24 dec,Kerst,4,Vrij
+2043,2043-12-24,24 dec,Kerst,5,Vrij
+2043,2043-12-25,25 dec,Kerst,1,Vrij
+2043,2043-12-25,25 dec,Kerst,2,Vrij
+2043,2043-12-25,25 dec,Kerst,3,Reserve
+2043,2043-12-25,25 dec,Kerst,4,Nacht
+2043,2043-12-25,25 dec,Kerst,5,Dag
+2043,2043-12-26,26 dec,Kerst,1,Vrij
+2043,2043-12-26,26 dec,Kerst,2,Vrij
+2043,2043-12-26,26 dec,Kerst,3,Reserve
+2043,2043-12-26,26 dec,Kerst,4,Nacht
+2043,2043-12-26,26 dec,Kerst,5,Dag
+2043,2043-12-31,31 dec,Oud en nieuw,1,Nacht
+2043,2043-12-31,31 dec,Oud en nieuw,2,Vrij
+2043,2043-12-31,31 dec,Oud en nieuw,3,Vrij
+2043,2043-12-31,31 dec,Oud en nieuw,4,Dag
+2043,2043-12-31,31 dec,Oud en nieuw,5,Reserve
+2043,2044-01-01,1 jan,Oud en nieuw,1,Vrij
+2043,2044-01-01,1 jan,Oud en nieuw,2,Dag
+2043,2044-01-01,1 jan,Oud en nieuw,3,Nacht
+2043,2044-01-01,1 jan,Oud en nieuw,4,Vrij
+2043,2044-01-01,1 jan,Oud en nieuw,5,Reserve
+2044,2044-12-24,24 dec,Kerst,1,Dag
+2044,2044-12-24,24 dec,Kerst,2,Reserve
+2044,2044-12-24,24 dec,Kerst,3,Vrij
+2044,2044-12-24,24 dec,Kerst,4,Vrij
+2044,2044-12-24,24 dec,Kerst,5,Nacht
+2044,2044-12-25,25 dec,Kerst,1,Dag
+2044,2044-12-25,25 dec,Kerst,2,Reserve
+2044,2044-12-25,25 dec,Kerst,3,Vrij
+2044,2044-12-25,25 dec,Kerst,4,Vrij
+2044,2044-12-25,25 dec,Kerst,5,Nacht
+2044,2044-12-26,26 dec,Kerst,1,Vrij
+2044,2044-12-26,26 dec,Kerst,2,Reserve
+2044,2044-12-26,26 dec,Kerst,3,Dag
+2044,2044-12-26,26 dec,Kerst,4,Nacht
+2044,2044-12-26,26 dec,Kerst,5,Vrij
+2044,2044-12-31,31 dec,Oud en nieuw,1,Reserve
+2044,2044-12-31,31 dec,Oud en nieuw,2,Nacht
+2044,2044-12-31,31 dec,Oud en nieuw,3,Vrij
+2044,2044-12-31,31 dec,Oud en nieuw,4,Dag
+2044,2044-12-31,31 dec,Oud en nieuw,5,Vrij
+2044,2045-01-01,1 jan,Oud en nieuw,1,Reserve
+2044,2045-01-01,1 jan,Oud en nieuw,2,Nacht
+2044,2045-01-01,1 jan,Oud en nieuw,3,Vrij
+2044,2045-01-01,1 jan,Oud en nieuw,4,Dag
+2044,2045-01-01,1 jan,Oud en nieuw,5,Vrij
+2045,2045-12-24,24 dec,Kerst,1,Nacht
+2045,2045-12-24,24 dec,Kerst,2,Vrij
+2045,2045-12-24,24 dec,Kerst,3,Dag
+2045,2045-12-24,24 dec,Kerst,4,Reserve
+2045,2045-12-24,24 dec,Kerst,5,Vrij
+2045,2045-12-25,25 dec,Kerst,1,Vrij
+2045,2045-12-25,25 dec,Kerst,2,Dag
+2045,2045-12-25,25 dec,Kerst,3,Vrij
+2045,2045-12-25,25 dec,Kerst,4,Reserve
+2045,2045-12-25,25 dec,Kerst,5,Nacht
+2045,2045-12-26,26 dec,Kerst,1,Vrij
+2045,2045-12-26,26 dec,Kerst,2,Dag
+2045,2045-12-26,26 dec,Kerst,3,Vrij
+2045,2045-12-26,26 dec,Kerst,4,Reserve
+2045,2045-12-26,26 dec,Kerst,5,Nacht
+2045,2045-12-31,31 dec,Oud en nieuw,1,Vrij
+2045,2045-12-31,31 dec,Oud en nieuw,2,Vrij
+2045,2045-12-31,31 dec,Oud en nieuw,3,Reserve
+2045,2045-12-31,31 dec,Oud en nieuw,4,Nacht
+2045,2045-12-31,31 dec,Oud en nieuw,5,Dag
+2045,2046-01-01,1 jan,Oud en nieuw,1,Dag
+2045,2046-01-01,1 jan,Oud en nieuw,2,Nacht
+2045,2046-01-01,1 jan,Oud en nieuw,3,Reserve
+2045,2046-01-01,1 jan,Oud en nieuw,4,Vrij
+2045,2046-01-01,1 jan,Oud en nieuw,5,Vrij
+2046,2046-12-24,24 dec,Kerst,1,Nacht
+2046,2046-12-24,24 dec,Kerst,2,Vrij
+2046,2046-12-24,24 dec,Kerst,3,Vrij
+2046,2046-12-24,24 dec,Kerst,4,Dag
+2046,2046-12-24,24 dec,Kerst,5,Reserve
+2046,2046-12-25,25 dec,Kerst,1,Nacht
+2046,2046-12-25,25 dec,Kerst,2,Vrij
+2046,2046-12-25,25 dec,Kerst,3,Vrij
+2046,2046-12-25,25 dec,Kerst,4,Dag
+2046,2046-12-25,25 dec,Kerst,5,Reserve
+2046,2046-12-26,26 dec,Kerst,1,Vrij
+2046,2046-12-26,26 dec,Kerst,2,Reserve
+2046,2046-12-26,26 dec,Kerst,3,Dag
+2046,2046-12-26,26 dec,Kerst,4,Nacht
+2046,2046-12-26,26 dec,Kerst,5,Vrij
+2046,2046-12-31,31 dec,Oud en nieuw,1,Vrij
+2046,2046-12-31,31 dec,Oud en nieuw,2,Reserve
+2046,2046-12-31,31 dec,Oud en nieuw,3,Dag
+2046,2046-12-31,31 dec,Oud en nieuw,4,Nacht
+2046,2046-12-31,31 dec,Oud en nieuw,5,Vrij
+2046,2047-01-01,1 jan,Oud en nieuw,1,Vrij
+2046,2047-01-01,1 jan,Oud en nieuw,2,Reserve
+2046,2047-01-01,1 jan,Oud en nieuw,3,Dag
+2046,2047-01-01,1 jan,Oud en nieuw,4,Nacht
+2046,2047-01-01,1 jan,Oud en nieuw,5,Vrij
+2047,2047-12-24,24 dec,Kerst,1,Reserve
+2047,2047-12-24,24 dec,Kerst,2,Vrij
+2047,2047-12-24,24 dec,Kerst,3,Nacht
+2047,2047-12-24,24 dec,Kerst,4,Vrij
+2047,2047-12-24,24 dec,Kerst,5,Dag
+2047,2047-12-25,25 dec,Kerst,1,Vrij
+2047,2047-12-25,25 dec,Kerst,2,Dag
+2047,2047-12-25,25 dec,Kerst,3,Vrij
+2047,2047-12-25,25 dec,Kerst,4,Reserve
+2047,2047-12-25,25 dec,Kerst,5,Nacht
+2047,2047-12-26,26 dec,Kerst,1,Vrij
+2047,2047-12-26,26 dec,Kerst,2,Dag
+2047,2047-12-26,26 dec,Kerst,3,Vrij
+2047,2047-12-26,26 dec,Kerst,4,Reserve
+2047,2047-12-26,26 dec,Kerst,5,Nacht
+2047,2047-12-31,31 dec,Oud en nieuw,1,Vrij
+2047,2047-12-31,31 dec,Oud en nieuw,2,Dag
+2047,2047-12-31,31 dec,Oud en nieuw,3,Vrij
+2047,2047-12-31,31 dec,Oud en nieuw,4,Reserve
+2047,2047-12-31,31 dec,Oud en nieuw,5,Nacht
+2047,2048-01-01,1 jan,Oud en nieuw,1,Dag
+2047,2048-01-01,1 jan,Oud en nieuw,2,Nacht
+2047,2048-01-01,1 jan,Oud en nieuw,3,Reserve
+2047,2048-01-01,1 jan,Oud en nieuw,4,Vrij
+2047,2048-01-01,1 jan,Oud en nieuw,5,Vrij
+2048,2048-12-24,24 dec,Kerst,1,Nacht
+2048,2048-12-24,24 dec,Kerst,2,Vrij
+2048,2048-12-24,24 dec,Kerst,3,Vrij
+2048,2048-12-24,24 dec,Kerst,4,Dag
+2048,2048-12-24,24 dec,Kerst,5,Reserve
+2048,2048-12-25,25 dec,Kerst,1,Vrij
+2048,2048-12-25,25 dec,Kerst,2,Dag
+2048,2048-12-25,25 dec,Kerst,3,Nacht
+2048,2048-12-25,25 dec,Kerst,4,Vrij
+2048,2048-12-25,25 dec,Kerst,5,Reserve
+2048,2048-12-26,26 dec,Kerst,1,Vrij
+2048,2048-12-26,26 dec,Kerst,2,Dag
+2048,2048-12-26,26 dec,Kerst,3,Nacht
+2048,2048-12-26,26 dec,Kerst,4,Vrij
+2048,2048-12-26,26 dec,Kerst,5,Reserve
+2048,2048-12-31,31 dec,Oud en nieuw,1,Vrij
+2048,2048-12-31,31 dec,Oud en nieuw,2,Reserve
+2048,2048-12-31,31 dec,Oud en nieuw,3,Dag
+2048,2048-12-31,31 dec,Oud en nieuw,4,Nacht
+2048,2048-12-31,31 dec,Oud en nieuw,5,Vrij
+2048,2049-01-01,1 jan,Oud en nieuw,1,Dag
+2048,2049-01-01,1 jan,Oud en nieuw,2,Reserve
+2048,2049-01-01,1 jan,Oud en nieuw,3,Vrij
+2048,2049-01-01,1 jan,Oud en nieuw,4,Vrij
+2048,2049-01-01,1 jan,Oud en nieuw,5,Nacht
+2049,2049-12-24,24 dec,Kerst,1,Reserve
+2049,2049-12-24,24 dec,Kerst,2,Nacht
+2049,2049-12-24,24 dec,Kerst,3,Vrij
+2049,2049-12-24,24 dec,Kerst,4,Dag
+2049,2049-12-24,24 dec,Kerst,5,Vrij
+2049,2049-12-25,25 dec,Kerst,1,Reserve
+2049,2049-12-25,25 dec,Kerst,2,Nacht
+2049,2049-12-25,25 dec,Kerst,3,Vrij
+2049,2049-12-25,25 dec,Kerst,4,Dag
+2049,2049-12-25,25 dec,Kerst,5,Vrij
+2049,2049-12-26,26 dec,Kerst,1,Reserve
+2049,2049-12-26,26 dec,Kerst,2,Nacht
+2049,2049-12-26,26 dec,Kerst,3,Vrij
+2049,2049-12-26,26 dec,Kerst,4,Dag
+2049,2049-12-26,26 dec,Kerst,5,Vrij
+2049,2049-12-31,31 dec,Oud en nieuw,1,Nacht
+2049,2049-12-31,31 dec,Oud en nieuw,2,Vrij
+2049,2049-12-31,31 dec,Oud en nieuw,3,Dag
+2049,2049-12-31,31 dec,Oud en nieuw,4,Reserve
+2049,2049-12-31,31 dec,Oud en nieuw,5,Vrij
+2049,2050-01-01,1 jan,Oud en nieuw,1,Nacht
+2049,2050-01-01,1 jan,Oud en nieuw,2,Vrij
+2049,2050-01-01,1 jan,Oud en nieuw,3,Dag
+2049,2050-01-01,1 jan,Oud en nieuw,4,Reserve
+2049,2050-01-01,1 jan,Oud en nieuw,5,Vrij
+2050,2050-12-24,24 dec,Kerst,1,Vrij
+2050,2050-12-24,24 dec,Kerst,2,Vrij
+2050,2050-12-24,24 dec,Kerst,3,Reserve
+2050,2050-12-24,24 dec,Kerst,4,Nacht
+2050,2050-12-24,24 dec,Kerst,5,Dag
+2050,2050-12-25,25 dec,Kerst,1,Vrij
+2050,2050-12-25,25 dec,Kerst,2,Vrij
+2050,2050-12-25,25 dec,Kerst,3,Reserve
+2050,2050-12-25,25 dec,Kerst,4,Nacht
+2050,2050-12-25,25 dec,Kerst,5,Dag
+2050,2050-12-26,26 dec,Kerst,1,Dag
+2050,2050-12-26,26 dec,Kerst,2,Nacht
+2050,2050-12-26,26 dec,Kerst,3,Reserve
+2050,2050-12-26,26 dec,Kerst,4,Vrij
+2050,2050-12-26,26 dec,Kerst,5,Vrij
+2050,2050-12-31,31 dec,Oud en nieuw,1,Vrij
+2050,2050-12-31,31 dec,Oud en nieuw,2,Dag
+2050,2050-12-31,31 dec,Oud en nieuw,3,Nacht
+2050,2050-12-31,31 dec,Oud en nieuw,4,Vrij
+2050,2050-12-31,31 dec,Oud en nieuw,5,Reserve
+2050,2051-01-01,1 jan,Oud en nieuw,1,Vrij
+2050,2051-01-01,1 jan,Oud en nieuw,2,Dag
+2050,2051-01-01,1 jan,Oud en nieuw,3,Nacht
+2050,2051-01-01,1 jan,Oud en nieuw,4,Vrij
+2050,2051-01-01,1 jan,Oud en nieuw,5,Reserve
+2051,2051-12-24,24 dec,Kerst,1,Dag
+2051,2051-12-24,24 dec,Kerst,2,Reserve
+2051,2051-12-24,24 dec,Kerst,3,Vrij
+2051,2051-12-24,24 dec,Kerst,4,Vrij
+2051,2051-12-24,24 dec,Kerst,5,Nacht
+2051,2051-12-25,25 dec,Kerst,1,Vrij
+2051,2051-12-25,25 dec,Kerst,2,Reserve
+2051,2051-12-25,25 dec,Kerst,3,Dag
+2051,2051-12-25,25 dec,Kerst,4,Nacht
+2051,2051-12-25,25 dec,Kerst,5,Vrij
+2051,2051-12-26,26 dec,Kerst,1,Vrij
+2051,2051-12-26,26 dec,Kerst,2,Reserve
+2051,2051-12-26,26 dec,Kerst,3,Dag
+2051,2051-12-26,26 dec,Kerst,4,Nacht
+2051,2051-12-26,26 dec,Kerst,5,Vrij
+2051,2051-12-31,31 dec,Oud en nieuw,1,Reserve
+2051,2051-12-31,31 dec,Oud en nieuw,2,Nacht
+2051,2051-12-31,31 dec,Oud en nieuw,3,Vrij
+2051,2051-12-31,31 dec,Oud en nieuw,4,Dag
+2051,2051-12-31,31 dec,Oud en nieuw,5,Vrij
+2051,2052-01-01,1 jan,Oud en nieuw,1,Reserve
+2051,2052-01-01,1 jan,Oud en nieuw,2,Vrij
+2051,2052-01-01,1 jan,Oud en nieuw,3,Nacht
+2051,2052-01-01,1 jan,Oud en nieuw,4,Vrij
+2051,2052-01-01,1 jan,Oud en nieuw,5,Dag
+2052,2052-12-24,24 dec,Kerst,1,Vrij
+2052,2052-12-24,24 dec,Kerst,2,Dag
+2052,2052-12-24,24 dec,Kerst,3,Vrij
+2052,2052-12-24,24 dec,Kerst,4,Reserve
+2052,2052-12-24,24 dec,Kerst,5,Nacht
+2052,2052-12-25,25 dec,Kerst,1,Dag
+2052,2052-12-25,25 dec,Kerst,2,Nacht
+2052,2052-12-25,25 dec,Kerst,3,Reserve
+2052,2052-12-25,25 dec,Kerst,4,Vrij
+2052,2052-12-25,25 dec,Kerst,5,Vrij
+2052,2052-12-26,26 dec,Kerst,1,Dag
+2052,2052-12-26,26 dec,Kerst,2,Nacht
+2052,2052-12-26,26 dec,Kerst,3,Reserve
+2052,2052-12-26,26 dec,Kerst,4,Vrij
+2052,2052-12-26,26 dec,Kerst,5,Vrij
+2052,2052-12-31,31 dec,Oud en nieuw,1,Dag
+2052,2052-12-31,31 dec,Oud en nieuw,2,Nacht
+2052,2052-12-31,31 dec,Oud en nieuw,3,Reserve
+2052,2052-12-31,31 dec,Oud en nieuw,4,Vrij
+2052,2052-12-31,31 dec,Oud en nieuw,5,Vrij
+2052,2053-01-01,1 jan,Oud en nieuw,1,Nacht
+2052,2053-01-01,1 jan,Oud en nieuw,2,Vrij
+2052,2053-01-01,1 jan,Oud en nieuw,3,Vrij
+2052,2053-01-01,1 jan,Oud en nieuw,4,Dag
+2052,2053-01-01,1 jan,Oud en nieuw,5,Reserve
+2053,2053-12-24,24 dec,Kerst,1,Vrij
+2053,2053-12-24,24 dec,Kerst,2,Reserve
+2053,2053-12-24,24 dec,Kerst,3,Dag
+2053,2053-12-24,24 dec,Kerst,4,Nacht
+2053,2053-12-24,24 dec,Kerst,5,Vrij
+2053,2053-12-25,25 dec,Kerst,1,Vrij
+2053,2053-12-25,25 dec,Kerst,2,Reserve
+2053,2053-12-25,25 dec,Kerst,3,Dag
+2053,2053-12-25,25 dec,Kerst,4,Nacht
+2053,2053-12-25,25 dec,Kerst,5,Vrij
+2053,2053-12-26,26 dec,Kerst,1,Dag
+2053,2053-12-26,26 dec,Kerst,2,Reserve
+2053,2053-12-26,26 dec,Kerst,3,Vrij
+2053,2053-12-26,26 dec,Kerst,4,Vrij
+2053,2053-12-26,26 dec,Kerst,5,Nacht
+2053,2053-12-31,31 dec,Oud en nieuw,1,Reserve
+2053,2053-12-31,31 dec,Oud en nieuw,2,Vrij
+2053,2053-12-31,31 dec,Oud en nieuw,3,Nacht
+2053,2053-12-31,31 dec,Oud en nieuw,4,Vrij
+2053,2053-12-31,31 dec,Oud en nieuw,5,Dag
+2053,2054-01-01,1 jan,Oud en nieuw,1,Reserve
+2053,2054-01-01,1 jan,Oud en nieuw,2,Vrij
+2053,2054-01-01,1 jan,Oud en nieuw,3,Nacht
+2053,2054-01-01,1 jan,Oud en nieuw,4,Vrij
+2053,2054-01-01,1 jan,Oud en nieuw,5,Dag
+2054,2054-12-24,24 dec,Kerst,1,Vrij
+2054,2054-12-24,24 dec,Kerst,2,Dag
+2054,2054-12-24,24 dec,Kerst,3,Vrij
+2054,2054-12-24,24 dec,Kerst,4,Reserve
+2054,2054-12-24,24 dec,Kerst,5,Nacht
+2054,2054-12-25,25 dec,Kerst,1,Nacht
+2054,2054-12-25,25 dec,Kerst,2,Vrij
+2054,2054-12-25,25 dec,Kerst,3,Dag
+2054,2054-12-25,25 dec,Kerst,4,Reserve
+2054,2054-12-25,25 dec,Kerst,5,Vrij
+2054,2054-12-26,26 dec,Kerst,1,Nacht
+2054,2054-12-26,26 dec,Kerst,2,Vrij
+2054,2054-12-26,26 dec,Kerst,3,Dag
+2054,2054-12-26,26 dec,Kerst,4,Reserve
+2054,2054-12-26,26 dec,Kerst,5,Vrij
+2054,2054-12-31,31 dec,Oud en nieuw,1,Dag
+2054,2054-12-31,31 dec,Oud en nieuw,2,Nacht
+2054,2054-12-31,31 dec,Oud en nieuw,3,Reserve
+2054,2054-12-31,31 dec,Oud en nieuw,4,Vrij
+2054,2054-12-31,31 dec,Oud en nieuw,5,Vrij
+2054,2055-01-01,1 jan,Oud en nieuw,1,Vrij
+2054,2055-01-01,1 jan,Oud en nieuw,2,Vrij
+2054,2055-01-01,1 jan,Oud en nieuw,3,Reserve
+2054,2055-01-01,1 jan,Oud en nieuw,4,Nacht
+2054,2055-01-01,1 jan,Oud en nieuw,5,Dag
+2055,2055-12-24,24 dec,Kerst,1,Vrij
+2055,2055-12-24,24 dec,Kerst,2,Dag
+2055,2055-12-24,24 dec,Kerst,3,Nacht
+2055,2055-12-24,24 dec,Kerst,4,Vrij
+2055,2055-12-24,24 dec,Kerst,5,Reserve
+2055,2055-12-25,25 dec,Kerst,1,Vrij
+2055,2055-12-25,25 dec,Kerst,2,Dag
+2055,2055-12-25,25 dec,Kerst,3,Nacht
+2055,2055-12-25,25 dec,Kerst,4,Vrij
+2055,2055-12-25,25 dec,Kerst,5,Reserve
+2055,2055-12-26,26 dec,Kerst,1,Vrij
+2055,2055-12-26,26 dec,Kerst,2,Dag
+2055,2055-12-26,26 dec,Kerst,3,Nacht
+2055,2055-12-26,26 dec,Kerst,4,Vrij
+2055,2055-12-26,26 dec,Kerst,5,Reserve
+2055,2055-12-31,31 dec,Oud en nieuw,1,Dag
+2055,2055-12-31,31 dec,Oud en nieuw,2,Reserve
+2055,2055-12-31,31 dec,Oud en nieuw,3,Vrij
+2055,2055-12-31,31 dec,Oud en nieuw,4,Vrij
+2055,2055-12-31,31 dec,Oud en nieuw,5,Nacht
+2055,2056-01-01,1 jan,Oud en nieuw,1,Dag
+2055,2056-01-01,1 jan,Oud en nieuw,2,Reserve
+2055,2056-01-01,1 jan,Oud en nieuw,3,Vrij
+2055,2056-01-01,1 jan,Oud en nieuw,4,Vrij
+2055,2056-01-01,1 jan,Oud en nieuw,5,Nacht
+2056,2056-12-24,24 dec,Kerst,1,Reserve
+2056,2056-12-24,24 dec,Kerst,2,Nacht
+2056,2056-12-24,24 dec,Kerst,3,Vrij
+2056,2056-12-24,24 dec,Kerst,4,Dag
+2056,2056-12-24,24 dec,Kerst,5,Vrij
+2056,2056-12-25,25 dec,Kerst,1,Reserve
+2056,2056-12-25,25 dec,Kerst,2,Vrij
+2056,2056-12-25,25 dec,Kerst,3,Nacht
+2056,2056-12-25,25 dec,Kerst,4,Vrij
+2056,2056-12-25,25 dec,Kerst,5,Dag
+2056,2056-12-26,26 dec,Kerst,1,Reserve
+2056,2056-12-26,26 dec,Kerst,2,Vrij
+2056,2056-12-26,26 dec,Kerst,3,Nacht
+2056,2056-12-26,26 dec,Kerst,4,Vrij
+2056,2056-12-26,26 dec,Kerst,5,Dag
+2056,2056-12-31,31 dec,Oud en nieuw,1,Nacht
+2056,2056-12-31,31 dec,Oud en nieuw,2,Vrij
+2056,2056-12-31,31 dec,Oud en nieuw,3,Dag
+2056,2056-12-31,31 dec,Oud en nieuw,4,Reserve
+2056,2056-12-31,31 dec,Oud en nieuw,5,Vrij
+2056,2057-01-01,1 jan,Oud en nieuw,1,Vrij
+2056,2057-01-01,1 jan,Oud en nieuw,2,Dag
+2056,2057-01-01,1 jan,Oud en nieuw,3,Vrij
+2056,2057-01-01,1 jan,Oud en nieuw,4,Reserve
+2056,2057-01-01,1 jan,Oud en nieuw,5,Nacht
+2057,2057-12-24,24 dec,Kerst,1,Dag
+2057,2057-12-24,24 dec,Kerst,2,Nacht
+2057,2057-12-24,24 dec,Kerst,3,Reserve
+2057,2057-12-24,24 dec,Kerst,4,Vrij
+2057,2057-12-24,24 dec,Kerst,5,Vrij
+2057,2057-12-25,25 dec,Kerst,1,Dag
+2057,2057-12-25,25 dec,Kerst,2,Nacht
+2057,2057-12-25,25 dec,Kerst,3,Reserve
+2057,2057-12-25,25 dec,Kerst,4,Vrij
+2057,2057-12-25,25 dec,Kerst,5,Vrij
+2057,2057-12-26,26 dec,Kerst,1,Nacht
+2057,2057-12-26,26 dec,Kerst,2,Vrij
+2057,2057-12-26,26 dec,Kerst,3,Vrij
+2057,2057-12-26,26 dec,Kerst,4,Dag
+2057,2057-12-26,26 dec,Kerst,5,Reserve
+2057,2057-12-31,31 dec,Oud en nieuw,1,Nacht
+2057,2057-12-31,31 dec,Oud en nieuw,2,Vrij
+2057,2057-12-31,31 dec,Oud en nieuw,3,Vrij
+2057,2057-12-31,31 dec,Oud en nieuw,4,Dag
+2057,2057-12-31,31 dec,Oud en nieuw,5,Reserve
+2057,2058-01-01,1 jan,Oud en nieuw,1,Nacht
+2057,2058-01-01,1 jan,Oud en nieuw,2,Vrij
+2057,2058-01-01,1 jan,Oud en nieuw,3,Vrij
+2057,2058-01-01,1 jan,Oud en nieuw,4,Dag
+2057,2058-01-01,1 jan,Oud en nieuw,5,Reserve
+2058,2058-12-24,24 dec,Kerst,1,Vrij
+2058,2058-12-24,24 dec,Kerst,2,Reserve
+2058,2058-12-24,24 dec,Kerst,3,Dag
+2058,2058-12-24,24 dec,Kerst,4,Nacht
+2058,2058-12-24,24 dec,Kerst,5,Vrij
+2058,2058-12-25,25 dec,Kerst,1,Reserve
+2058,2058-12-25,25 dec,Kerst,2,Vrij
+2058,2058-12-25,25 dec,Kerst,3,Nacht
+2058,2058-12-25,25 dec,Kerst,4,Vrij
+2058,2058-12-25,25 dec,Kerst,5,Dag
+2058,2058-12-26,26 dec,Kerst,1,Reserve
+2058,2058-12-26,26 dec,Kerst,2,Vrij
+2058,2058-12-26,26 dec,Kerst,3,Nacht
+2058,2058-12-26,26 dec,Kerst,4,Vrij
+2058,2058-12-26,26 dec,Kerst,5,Dag
+2058,2058-12-31,31 dec,Oud en nieuw,1,Reserve
+2058,2058-12-31,31 dec,Oud en nieuw,2,Vrij
+2058,2058-12-31,31 dec,Oud en nieuw,3,Nacht
+2058,2058-12-31,31 dec,Oud en nieuw,4,Vrij
+2058,2058-12-31,31 dec,Oud en nieuw,5,Dag
+2058,2059-01-01,1 jan,Oud en nieuw,1,Vrij
+2058,2059-01-01,1 jan,Oud en nieuw,2,Dag
+2058,2059-01-01,1 jan,Oud en nieuw,3,Vrij
+2058,2059-01-01,1 jan,Oud en nieuw,4,Reserve
+2058,2059-01-01,1 jan,Oud en nieuw,5,Nacht
+2059,2059-12-24,24 dec,Kerst,1,Dag
+2059,2059-12-24,24 dec,Kerst,2,Nacht
+2059,2059-12-24,24 dec,Kerst,3,Reserve
+2059,2059-12-24,24 dec,Kerst,4,Vrij
+2059,2059-12-24,24 dec,Kerst,5,Vrij
+2059,2059-12-25,25 dec,Kerst,1,Dag
+2059,2059-12-25,25 dec,Kerst,2,Nacht
+2059,2059-12-25,25 dec,Kerst,3,Reserve
+2059,2059-12-25,25 dec,Kerst,4,Vrij
+2059,2059-12-25,25 dec,Kerst,5,Vrij
+2059,2059-12-26,26 dec,Kerst,1,Vrij
+2059,2059-12-26,26 dec,Kerst,2,Vrij
+2059,2059-12-26,26 dec,Kerst,3,Reserve
+2059,2059-12-26,26 dec,Kerst,4,Nacht
+2059,2059-12-26,26 dec,Kerst,5,Dag
+2059,2059-12-31,31 dec,Oud en nieuw,1,Nacht
+2059,2059-12-31,31 dec,Oud en nieuw,2,Vrij
+2059,2059-12-31,31 dec,Oud en nieuw,3,Vrij
+2059,2059-12-31,31 dec,Oud en nieuw,4,Dag
+2059,2059-12-31,31 dec,Oud en nieuw,5,Reserve
+2059,2060-01-01,1 jan,Oud en nieuw,1,Nacht
+2059,2060-01-01,1 jan,Oud en nieuw,2,Vrij
+2059,2060-01-01,1 jan,Oud en nieuw,3,Vrij
+2059,2060-01-01,1 jan,Oud en nieuw,4,Dag
+2059,2060-01-01,1 jan,Oud en nieuw,5,Reserve
+2060,2060-12-24,24 dec,Kerst,1,Dag
+2060,2060-12-24,24 dec,Kerst,2,Reserve
+2060,2060-12-24,24 dec,Kerst,3,Vrij
+2060,2060-12-24,24 dec,Kerst,4,Vrij
+2060,2060-12-24,24 dec,Kerst,5,Nacht
+2060,2060-12-25,25 dec,Kerst,1,Dag
+2060,2060-12-25,25 dec,Kerst,2,Reserve
+2060,2060-12-25,25 dec,Kerst,3,Vrij
+2060,2060-12-25,25 dec,Kerst,4,Vrij
+2060,2060-12-25,25 dec,Kerst,5,Nacht
+2060,2060-12-26,26 dec,Kerst,1,Dag
+2060,2060-12-26,26 dec,Kerst,2,Reserve
+2060,2060-12-26,26 dec,Kerst,3,Vrij
+2060,2060-12-26,26 dec,Kerst,4,Vrij
+2060,2060-12-26,26 dec,Kerst,5,Nacht
+2060,2060-12-31,31 dec,Oud en nieuw,1,Reserve
+2060,2060-12-31,31 dec,Oud en nieuw,2,Nacht
+2060,2060-12-31,31 dec,Oud en nieuw,3,Vrij
+2060,2060-12-31,31 dec,Oud en nieuw,4,Dag
+2060,2060-12-31,31 dec,Oud en nieuw,5,Vrij
+2060,2061-01-01,1 jan,Oud en nieuw,1,Reserve
+2060,2061-01-01,1 jan,Oud en nieuw,2,Nacht
+2060,2061-01-01,1 jan,Oud en nieuw,3,Vrij
+2060,2061-01-01,1 jan,Oud en nieuw,4,Dag
+2060,2061-01-01,1 jan,Oud en nieuw,5,Vrij
+2061,2061-12-24,24 dec,Kerst,1,Nacht
+2061,2061-12-24,24 dec,Kerst,2,Vrij
+2061,2061-12-24,24 dec,Kerst,3,Dag
+2061,2061-12-24,24 dec,Kerst,4,Reserve
+2061,2061-12-24,24 dec,Kerst,5,Vrij
+2061,2061-12-25,25 dec,Kerst,1,Nacht
+2061,2061-12-25,25 dec,Kerst,2,Vrij
+2061,2061-12-25,25 dec,Kerst,3,Dag
+2061,2061-12-25,25 dec,Kerst,4,Reserve
+2061,2061-12-25,25 dec,Kerst,5,Vrij
+2061,2061-12-26,26 dec,Kerst,1,Vrij
+2061,2061-12-26,26 dec,Kerst,2,Dag
+2061,2061-12-26,26 dec,Kerst,3,Vrij
+2061,2061-12-26,26 dec,Kerst,4,Reserve
+2061,2061-12-26,26 dec,Kerst,5,Nacht
+2061,2061-12-31,31 dec,Oud en nieuw,1,Vrij
+2061,2061-12-31,31 dec,Oud en nieuw,2,Vrij
+2061,2061-12-31,31 dec,Oud en nieuw,3,Reserve
+2061,2061-12-31,31 dec,Oud en nieuw,4,Nacht
+2061,2061-12-31,31 dec,Oud en nieuw,5,Dag
+2061,2062-01-01,1 jan,Oud en nieuw,1,Vrij
+2061,2062-01-01,1 jan,Oud en nieuw,2,Vrij
+2061,2062-01-01,1 jan,Oud en nieuw,3,Reserve
+2061,2062-01-01,1 jan,Oud en nieuw,4,Nacht
+2061,2062-01-01,1 jan,Oud en nieuw,5,Dag
+2062,2062-12-24,24 dec,Kerst,1,Vrij
+2062,2062-12-24,24 dec,Kerst,2,Dag
+2062,2062-12-24,24 dec,Kerst,3,Nacht
+2062,2062-12-24,24 dec,Kerst,4,Vrij
+2062,2062-12-24,24 dec,Kerst,5,Reserve
+2062,2062-12-25,25 dec,Kerst,1,Nacht
+2062,2062-12-25,25 dec,Kerst,2,Vrij
+2062,2062-12-25,25 dec,Kerst,3,Vrij
+2062,2062-12-25,25 dec,Kerst,4,Dag
+2062,2062-12-25,25 dec,Kerst,5,Reserve
+2062,2062-12-26,26 dec,Kerst,1,Nacht
+2062,2062-12-26,26 dec,Kerst,2,Vrij
+2062,2062-12-26,26 dec,Kerst,3,Vrij
+2062,2062-12-26,26 dec,Kerst,4,Dag
+2062,2062-12-26,26 dec,Kerst,5,Reserve
+2062,2062-12-31,31 dec,Oud en nieuw,1,Dag
+2062,2062-12-31,31 dec,Oud en nieuw,2,Reserve
+2062,2062-12-31,31 dec,Oud en nieuw,3,Vrij
+2062,2062-12-31,31 dec,Oud en nieuw,4,Vrij
+2062,2062-12-31,31 dec,Oud en nieuw,5,Nacht
+2062,2063-01-01,1 jan,Oud en nieuw,1,Vrij
+2062,2063-01-01,1 jan,Oud en nieuw,2,Reserve
+2062,2063-01-01,1 jan,Oud en nieuw,3,Dag
+2062,2063-01-01,1 jan,Oud en nieuw,4,Nacht
+2062,2063-01-01,1 jan,Oud en nieuw,5,Vrij
+2063,2063-12-24,24 dec,Kerst,1,Reserve
+2063,2063-12-24,24 dec,Kerst,2,Vrij
+2063,2063-12-24,24 dec,Kerst,3,Nacht
+2063,2063-12-24,24 dec,Kerst,4,Vrij
+2063,2063-12-24,24 dec,Kerst,5,Dag
+2063,2063-12-25,25 dec,Kerst,1,Reserve
+2063,2063-12-25,25 dec,Kerst,2,Vrij
+2063,2063-12-25,25 dec,Kerst,3,Nacht
+2063,2063-12-25,25 dec,Kerst,4,Vrij
+2063,2063-12-25,25 dec,Kerst,5,Dag
+2063,2063-12-26,26 dec,Kerst,1,Vrij
+2063,2063-12-26,26 dec,Kerst,2,Dag
+2063,2063-12-26,26 dec,Kerst,3,Vrij
+2063,2063-12-26,26 dec,Kerst,4,Reserve
+2063,2063-12-26,26 dec,Kerst,5,Nacht
+2063,2063-12-31,31 dec,Oud en nieuw,1,Vrij
+2063,2063-12-31,31 dec,Oud en nieuw,2,Dag
+2063,2063-12-31,31 dec,Oud en nieuw,3,Vrij
+2063,2063-12-31,31 dec,Oud en nieuw,4,Reserve
+2063,2063-12-31,31 dec,Oud en nieuw,5,Nacht
+2063,2064-01-01,1 jan,Oud en nieuw,1,Vrij
+2063,2064-01-01,1 jan,Oud en nieuw,2,Dag
+2063,2064-01-01,1 jan,Oud en nieuw,3,Vrij
+2063,2064-01-01,1 jan,Oud en nieuw,4,Reserve
+2063,2064-01-01,1 jan,Oud en nieuw,5,Nacht
+2064,2064-12-24,24 dec,Kerst,1,Nacht
+2064,2064-12-24,24 dec,Kerst,2,Vrij
+2064,2064-12-24,24 dec,Kerst,3,Vrij
+2064,2064-12-24,24 dec,Kerst,4,Dag
+2064,2064-12-24,24 dec,Kerst,5,Reserve
+2064,2064-12-25,25 dec,Kerst,1,Nacht
+2064,2064-12-25,25 dec,Kerst,2,Vrij
+2064,2064-12-25,25 dec,Kerst,3,Vrij
+2064,2064-12-25,25 dec,Kerst,4,Dag
+2064,2064-12-25,25 dec,Kerst,5,Reserve
+2064,2064-12-26,26 dec,Kerst,1,Vrij
+2064,2064-12-26,26 dec,Kerst,2,Dag
+2064,2064-12-26,26 dec,Kerst,3,Nacht
+2064,2064-12-26,26 dec,Kerst,4,Vrij
+2064,2064-12-26,26 dec,Kerst,5,Reserve
+2064,2064-12-31,31 dec,Oud en nieuw,1,Vrij
+2064,2064-12-31,31 dec,Oud en nieuw,2,Reserve
+2064,2064-12-31,31 dec,Oud en nieuw,3,Dag
+2064,2064-12-31,31 dec,Oud en nieuw,4,Nacht
+2064,2064-12-31,31 dec,Oud en nieuw,5,Vrij
+2064,2065-01-01,1 jan,Oud en nieuw,1,Vrij
+2064,2065-01-01,1 jan,Oud en nieuw,2,Reserve
+2064,2065-01-01,1 jan,Oud en nieuw,3,Dag
+2064,2065-01-01,1 jan,Oud en nieuw,4,Nacht
+2064,2065-01-01,1 jan,Oud en nieuw,5,Vrij
+2065,2065-12-24,24 dec,Kerst,1,Reserve
+2065,2065-12-24,24 dec,Kerst,2,Vrij
+2065,2065-12-24,24 dec,Kerst,3,Nacht
+2065,2065-12-24,24 dec,Kerst,4,Vrij
+2065,2065-12-24,24 dec,Kerst,5,Dag
+2065,2065-12-25,25 dec,Kerst,1,Reserve
+2065,2065-12-25,25 dec,Kerst,2,Nacht
+2065,2065-12-25,25 dec,Kerst,3,Vrij
+2065,2065-12-25,25 dec,Kerst,4,Dag
+2065,2065-12-25,25 dec,Kerst,5,Vrij
+2065,2065-12-26,26 dec,Kerst,1,Reserve
+2065,2065-12-26,26 dec,Kerst,2,Nacht
+2065,2065-12-26,26 dec,Kerst,3,Vrij
+2065,2065-12-26,26 dec,Kerst,4,Dag
+2065,2065-12-26,26 dec,Kerst,5,Vrij
+2065,2065-12-31,31 dec,Oud en nieuw,1,Vrij
+2065,2065-12-31,31 dec,Oud en nieuw,2,Dag
+2065,2065-12-31,31 dec,Oud en nieuw,3,Vrij
+2065,2065-12-31,31 dec,Oud en nieuw,4,Reserve
+2065,2065-12-31,31 dec,Oud en nieuw,5,Nacht
+2065,2066-01-01,1 jan,Oud en nieuw,1,Nacht
+2065,2066-01-01,1 jan,Oud en nieuw,2,Vrij
+2065,2066-01-01,1 jan,Oud en nieuw,3,Dag
+2065,2066-01-01,1 jan,Oud en nieuw,4,Reserve
+2065,2066-01-01,1 jan,Oud en nieuw,5,Vrij
+2066,2066-12-24,24 dec,Kerst,1,Vrij
+2066,2066-12-24,24 dec,Kerst,2,Vrij
+2066,2066-12-24,24 dec,Kerst,3,Reserve
+2066,2066-12-24,24 dec,Kerst,4,Nacht
+2066,2066-12-24,24 dec,Kerst,5,Dag
+2066,2066-12-25,25 dec,Kerst,1,Vrij
+2066,2066-12-25,25 dec,Kerst,2,Vrij
+2066,2066-12-25,25 dec,Kerst,3,Reserve
+2066,2066-12-25,25 dec,Kerst,4,Nacht
+2066,2066-12-25,25 dec,Kerst,5,Dag
+2066,2066-12-26,26 dec,Kerst,1,Vrij
+2066,2066-12-26,26 dec,Kerst,2,Vrij
+2066,2066-12-26,26 dec,Kerst,3,Reserve
+2066,2066-12-26,26 dec,Kerst,4,Nacht
+2066,2066-12-26,26 dec,Kerst,5,Dag
+2066,2066-12-31,31 dec,Oud en nieuw,1,Vrij
+2066,2066-12-31,31 dec,Oud en nieuw,2,Dag
+2066,2066-12-31,31 dec,Oud en nieuw,3,Nacht
+2066,2066-12-31,31 dec,Oud en nieuw,4,Vrij
+2066,2066-12-31,31 dec,Oud en nieuw,5,Reserve
+2066,2067-01-01,1 jan,Oud en nieuw,1,Vrij
+2066,2067-01-01,1 jan,Oud en nieuw,2,Dag
+2066,2067-01-01,1 jan,Oud en nieuw,3,Nacht
+2066,2067-01-01,1 jan,Oud en nieuw,4,Vrij
+2066,2067-01-01,1 jan,Oud en nieuw,5,Reserve
+2067,2067-12-24,24 dec,Kerst,1,Dag
+2067,2067-12-24,24 dec,Kerst,2,Reserve
+2067,2067-12-24,24 dec,Kerst,3,Vrij
+2067,2067-12-24,24 dec,Kerst,4,Vrij
+2067,2067-12-24,24 dec,Kerst,5,Nacht
+2067,2067-12-25,25 dec,Kerst,1,Dag
+2067,2067-12-25,25 dec,Kerst,2,Reserve
+2067,2067-12-25,25 dec,Kerst,3,Vrij
+2067,2067-12-25,25 dec,Kerst,4,Vrij
+2067,2067-12-25,25 dec,Kerst,5,Nacht
+2067,2067-12-26,26 dec,Kerst,1,Vrij
+2067,2067-12-26,26 dec,Kerst,2,Reserve
+2067,2067-12-26,26 dec,Kerst,3,Dag
+2067,2067-12-26,26 dec,Kerst,4,Nacht
+2067,2067-12-26,26 dec,Kerst,5,Vrij
+2067,2067-12-31,31 dec,Oud en nieuw,1,Reserve
+2067,2067-12-31,31 dec,Oud en nieuw,2,Nacht
+2067,2067-12-31,31 dec,Oud en nieuw,3,Vrij
+2067,2067-12-31,31 dec,Oud en nieuw,4,Dag
+2067,2067-12-31,31 dec,Oud en nieuw,5,Vrij
+2067,2068-01-01,1 jan,Oud en nieuw,1,Reserve
+2067,2068-01-01,1 jan,Oud en nieuw,2,Nacht
+2067,2068-01-01,1 jan,Oud en nieuw,3,Vrij
+2067,2068-01-01,1 jan,Oud en nieuw,4,Dag
+2067,2068-01-01,1 jan,Oud en nieuw,5,Vrij
+2068,2068-12-24,24 dec,Kerst,1,Vrij
+2068,2068-12-24,24 dec,Kerst,2,Dag
+2068,2068-12-24,24 dec,Kerst,3,Vrij
+2068,2068-12-24,24 dec,Kerst,4,Reserve
+2068,2068-12-24,24 dec,Kerst,5,Nacht
+2068,2068-12-25,25 dec,Kerst,1,Vrij
+2068,2068-12-25,25 dec,Kerst,2,Dag
+2068,2068-12-25,25 dec,Kerst,3,Vrij
+2068,2068-12-25,25 dec,Kerst,4,Reserve
+2068,2068-12-25,25 dec,Kerst,5,Nacht
+2068,2068-12-26,26 dec,Kerst,1,Dag
+2068,2068-12-26,26 dec,Kerst,2,Nacht
+2068,2068-12-26,26 dec,Kerst,3,Reserve
+2068,2068-12-26,26 dec,Kerst,4,Vrij
+2068,2068-12-26,26 dec,Kerst,5,Vrij
+2068,2068-12-31,31 dec,Oud en nieuw,1,Dag
+2068,2068-12-31,31 dec,Oud en nieuw,2,Nacht
+2068,2068-12-31,31 dec,Oud en nieuw,3,Reserve
+2068,2068-12-31,31 dec,Oud en nieuw,4,Vrij
+2068,2068-12-31,31 dec,Oud en nieuw,5,Vrij
+2068,2069-01-01,1 jan,Oud en nieuw,1,Dag
+2068,2069-01-01,1 jan,Oud en nieuw,2,Nacht
+2068,2069-01-01,1 jan,Oud en nieuw,3,Reserve
+2068,2069-01-01,1 jan,Oud en nieuw,4,Vrij
+2068,2069-01-01,1 jan,Oud en nieuw,5,Vrij
+2069,2069-12-24,24 dec,Kerst,1,Nacht
+2069,2069-12-24,24 dec,Kerst,2,Vrij
+2069,2069-12-24,24 dec,Kerst,3,Vrij
+2069,2069-12-24,24 dec,Kerst,4,Dag
+2069,2069-12-24,24 dec,Kerst,5,Reserve
+2069,2069-12-25,25 dec,Kerst,1,Vrij
+2069,2069-12-25,25 dec,Kerst,2,Reserve
+2069,2069-12-25,25 dec,Kerst,3,Dag
+2069,2069-12-25,25 dec,Kerst,4,Nacht
+2069,2069-12-25,25 dec,Kerst,5,Vrij
+2069,2069-12-26,26 dec,Kerst,1,Vrij
+2069,2069-12-26,26 dec,Kerst,2,Reserve
+2069,2069-12-26,26 dec,Kerst,3,Dag
+2069,2069-12-26,26 dec,Kerst,4,Nacht
+2069,2069-12-26,26 dec,Kerst,5,Vrij
+2069,2069-12-31,31 dec,Oud en nieuw,1,Vrij
+2069,2069-12-31,31 dec,Oud en nieuw,2,Reserve
+2069,2069-12-31,31 dec,Oud en nieuw,3,Dag
+2069,2069-12-31,31 dec,Oud en nieuw,4,Nacht
+2069,2069-12-31,31 dec,Oud en nieuw,5,Vrij
+2069,2070-01-01,1 jan,Oud en nieuw,1,Reserve
+2069,2070-01-01,1 jan,Oud en nieuw,2,Vrij
+2069,2070-01-01,1 jan,Oud en nieuw,3,Nacht
+2069,2070-01-01,1 jan,Oud en nieuw,4,Vrij
+2069,2070-01-01,1 jan,Oud en nieuw,5,Dag
+2070,2070-12-24,24 dec,Kerst,1,Vrij
+2070,2070-12-24,24 dec,Kerst,2,Dag
+2070,2070-12-24,24 dec,Kerst,3,Vrij
+2070,2070-12-24,24 dec,Kerst,4,Reserve
+2070,2070-12-24,24 dec,Kerst,5,Nacht
+2070,2070-12-25,25 dec,Kerst,1,Vrij
+2070,2070-12-25,25 dec,Kerst,2,Dag
+2070,2070-12-25,25 dec,Kerst,3,Vrij
+2070,2070-12-25,25 dec,Kerst,4,Reserve
+2070,2070-12-25,25 dec,Kerst,5,Nacht
+2070,2070-12-26,26 dec,Kerst,1,Nacht
+2070,2070-12-26,26 dec,Kerst,2,Vrij
+2070,2070-12-26,26 dec,Kerst,3,Dag
+2070,2070-12-26,26 dec,Kerst,4,Reserve
+2070,2070-12-26,26 dec,Kerst,5,Vrij
+2070,2070-12-31,31 dec,Oud en nieuw,1,Dag
+2070,2070-12-31,31 dec,Oud en nieuw,2,Nacht
+2070,2070-12-31,31 dec,Oud en nieuw,3,Reserve
+2070,2070-12-31,31 dec,Oud en nieuw,4,Vrij
+2070,2070-12-31,31 dec,Oud en nieuw,5,Vrij
+2070,2071-01-01,1 jan,Oud en nieuw,1,Dag
+2070,2071-01-01,1 jan,Oud en nieuw,2,Nacht
+2070,2071-01-01,1 jan,Oud en nieuw,3,Reserve
+2070,2071-01-01,1 jan,Oud en nieuw,4,Vrij
+2070,2071-01-01,1 jan,Oud en nieuw,5,Vrij
+2071,2071-12-24,24 dec,Kerst,1,Nacht
+2071,2071-12-24,24 dec,Kerst,2,Vrij
+2071,2071-12-24,24 dec,Kerst,3,Vrij
+2071,2071-12-24,24 dec,Kerst,4,Dag
+2071,2071-12-24,24 dec,Kerst,5,Reserve
+2071,2071-12-25,25 dec,Kerst,1,Vrij
+2071,2071-12-25,25 dec,Kerst,2,Dag
+2071,2071-12-25,25 dec,Kerst,3,Nacht
+2071,2071-12-25,25 dec,Kerst,4,Vrij
+2071,2071-12-25,25 dec,Kerst,5,Reserve
+2071,2071-12-26,26 dec,Kerst,1,Vrij
+2071,2071-12-26,26 dec,Kerst,2,Dag
+2071,2071-12-26,26 dec,Kerst,3,Nacht
+2071,2071-12-26,26 dec,Kerst,4,Vrij
+2071,2071-12-26,26 dec,Kerst,5,Reserve
+2071,2071-12-31,31 dec,Oud en nieuw,1,Vrij
+2071,2071-12-31,31 dec,Oud en nieuw,2,Reserve
+2071,2071-12-31,31 dec,Oud en nieuw,3,Dag
+2071,2071-12-31,31 dec,Oud en nieuw,4,Nacht
+2071,2071-12-31,31 dec,Oud en nieuw,5,Vrij
+2071,2072-01-01,1 jan,Oud en nieuw,1,Dag
+2071,2072-01-01,1 jan,Oud en nieuw,2,Reserve
+2071,2072-01-01,1 jan,Oud en nieuw,3,Vrij
+2071,2072-01-01,1 jan,Oud en nieuw,4,Vrij
+2071,2072-01-01,1 jan,Oud en nieuw,5,Nacht
+2072,2072-12-24,24 dec,Kerst,1,Reserve
+2072,2072-12-24,24 dec,Kerst,2,Nacht
+2072,2072-12-24,24 dec,Kerst,3,Vrij
+2072,2072-12-24,24 dec,Kerst,4,Dag
+2072,2072-12-24,24 dec,Kerst,5,Vrij
+2072,2072-12-25,25 dec,Kerst,1,Reserve
+2072,2072-12-25,25 dec,Kerst,2,Nacht
+2072,2072-12-25,25 dec,Kerst,3,Vrij
+2072,2072-12-25,25 dec,Kerst,4,Dag
+2072,2072-12-25,25 dec,Kerst,5,Vrij
+2072,2072-12-26,26 dec,Kerst,1,Reserve
+2072,2072-12-26,26 dec,Kerst,2,Vrij
+2072,2072-12-26,26 dec,Kerst,3,Nacht
+2072,2072-12-26,26 dec,Kerst,4,Vrij
+2072,2072-12-26,26 dec,Kerst,5,Dag
+2072,2072-12-31,31 dec,Oud en nieuw,1,Nacht
+2072,2072-12-31,31 dec,Oud en nieuw,2,Vrij
+2072,2072-12-31,31 dec,Oud en nieuw,3,Dag
+2072,2072-12-31,31 dec,Oud en nieuw,4,Reserve
+2072,2072-12-31,31 dec,Oud en nieuw,5,Vrij
+2072,2073-01-01,1 jan,Oud en nieuw,1,Nacht
+2072,2073-01-01,1 jan,Oud en nieuw,2,Vrij
+2072,2073-01-01,1 jan,Oud en nieuw,3,Dag
+2072,2073-01-01,1 jan,Oud en nieuw,4,Reserve
+2072,2073-01-01,1 jan,Oud en nieuw,5,Vrij
+2073,2073-12-24,24 dec,Kerst,1,Vrij
+2073,2073-12-24,24 dec,Kerst,2,Vrij
+2073,2073-12-24,24 dec,Kerst,3,Reserve
+2073,2073-12-24,24 dec,Kerst,4,Nacht
+2073,2073-12-24,24 dec,Kerst,5,Dag
+2073,2073-12-25,25 dec,Kerst,1,Dag
+2073,2073-12-25,25 dec,Kerst,2,Nacht
+2073,2073-12-25,25 dec,Kerst,3,Reserve
+2073,2073-12-25,25 dec,Kerst,4,Vrij
+2073,2073-12-25,25 dec,Kerst,5,Vrij
+2073,2073-12-26,26 dec,Kerst,1,Dag
+2073,2073-12-26,26 dec,Kerst,2,Nacht
+2073,2073-12-26,26 dec,Kerst,3,Reserve
+2073,2073-12-26,26 dec,Kerst,4,Vrij
+2073,2073-12-26,26 dec,Kerst,5,Vrij
+2073,2073-12-31,31 dec,Oud en nieuw,1,Vrij
+2073,2073-12-31,31 dec,Oud en nieuw,2,Dag
+2073,2073-12-31,31 dec,Oud en nieuw,3,Nacht
+2073,2073-12-31,31 dec,Oud en nieuw,4,Vrij
+2073,2073-12-31,31 dec,Oud en nieuw,5,Reserve
+2073,2074-01-01,1 jan,Oud en nieuw,1,Nacht
+2073,2074-01-01,1 jan,Oud en nieuw,2,Vrij
+2073,2074-01-01,1 jan,Oud en nieuw,3,Vrij
+2073,2074-01-01,1 jan,Oud en nieuw,4,Dag
+2073,2074-01-01,1 jan,Oud en nieuw,5,Reserve
+2074,2074-12-24,24 dec,Kerst,1,Vrij
+2074,2074-12-24,24 dec,Kerst,2,Reserve
+2074,2074-12-24,24 dec,Kerst,3,Dag
+2074,2074-12-24,24 dec,Kerst,4,Nacht
+2074,2074-12-24,24 dec,Kerst,5,Vrij
+2074,2074-12-25,25 dec,Kerst,1,Vrij
+2074,2074-12-25,25 dec,Kerst,2,Reserve
+2074,2074-12-25,25 dec,Kerst,3,Dag
+2074,2074-12-25,25 dec,Kerst,4,Nacht
+2074,2074-12-25,25 dec,Kerst,5,Vrij
+2074,2074-12-26,26 dec,Kerst,1,Reserve
+2074,2074-12-26,26 dec,Kerst,2,Vrij
+2074,2074-12-26,26 dec,Kerst,3,Nacht
+2074,2074-12-26,26 dec,Kerst,4,Vrij
+2074,2074-12-26,26 dec,Kerst,5,Dag
+2074,2074-12-31,31 dec,Oud en nieuw,1,Reserve
+2074,2074-12-31,31 dec,Oud en nieuw,2,Vrij
+2074,2074-12-31,31 dec,Oud en nieuw,3,Nacht
+2074,2074-12-31,31 dec,Oud en nieuw,4,Vrij
+2074,2074-12-31,31 dec,Oud en nieuw,5,Dag
+2074,2075-01-01,1 jan,Oud en nieuw,1,Reserve
+2074,2075-01-01,1 jan,Oud en nieuw,2,Vrij
+2074,2075-01-01,1 jan,Oud en nieuw,3,Nacht
+2074,2075-01-01,1 jan,Oud en nieuw,4,Vrij
+2074,2075-01-01,1 jan,Oud en nieuw,5,Dag
+2075,2075-12-24,24 dec,Kerst,1,Vrij
+2075,2075-12-24,24 dec,Kerst,2,Dag
+2075,2075-12-24,24 dec,Kerst,3,Vrij
+2075,2075-12-24,24 dec,Kerst,4,Reserve
+2075,2075-12-24,24 dec,Kerst,5,Nacht
+2075,2075-12-25,25 dec,Kerst,1,Dag
+2075,2075-12-25,25 dec,Kerst,2,Nacht
+2075,2075-12-25,25 dec,Kerst,3,Reserve
+2075,2075-12-25,25 dec,Kerst,4,Vrij
+2075,2075-12-25,25 dec,Kerst,5,Vrij
+2075,2075-12-26,26 dec,Kerst,1,Dag
+2075,2075-12-26,26 dec,Kerst,2,Nacht
+2075,2075-12-26,26 dec,Kerst,3,Reserve
+2075,2075-12-26,26 dec,Kerst,4,Vrij
+2075,2075-12-26,26 dec,Kerst,5,Vrij
+2075,2075-12-31,31 dec,Oud en nieuw,1,Dag
+2075,2075-12-31,31 dec,Oud en nieuw,2,Nacht
+2075,2075-12-31,31 dec,Oud en nieuw,3,Reserve
+2075,2075-12-31,31 dec,Oud en nieuw,4,Vrij
+2075,2075-12-31,31 dec,Oud en nieuw,5,Vrij
+2075,2076-01-01,1 jan,Oud en nieuw,1,Nacht
+2075,2076-01-01,1 jan,Oud en nieuw,2,Vrij
+2075,2076-01-01,1 jan,Oud en nieuw,3,Vrij
+2075,2076-01-01,1 jan,Oud en nieuw,4,Dag
+2075,2076-01-01,1 jan,Oud en nieuw,5,Reserve
+2076,2076-12-24,24 dec,Kerst,1,Vrij
+2076,2076-12-24,24 dec,Kerst,2,Reserve
+2076,2076-12-24,24 dec,Kerst,3,Dag
+2076,2076-12-24,24 dec,Kerst,4,Nacht
+2076,2076-12-24,24 dec,Kerst,5,Vrij
+2076,2076-12-25,25 dec,Kerst,1,Dag
+2076,2076-12-25,25 dec,Kerst,2,Reserve
+2076,2076-12-25,25 dec,Kerst,3,Vrij
+2076,2076-12-25,25 dec,Kerst,4,Vrij
+2076,2076-12-25,25 dec,Kerst,5,Nacht
+2076,2076-12-26,26 dec,Kerst,1,Dag
+2076,2076-12-26,26 dec,Kerst,2,Reserve
+2076,2076-12-26,26 dec,Kerst,3,Vrij
+2076,2076-12-26,26 dec,Kerst,4,Vrij
+2076,2076-12-26,26 dec,Kerst,5,Nacht
+2076,2076-12-31,31 dec,Oud en nieuw,1,Reserve
+2076,2076-12-31,31 dec,Oud en nieuw,2,Vrij
+2076,2076-12-31,31 dec,Oud en nieuw,3,Nacht
+2076,2076-12-31,31 dec,Oud en nieuw,4,Vrij
+2076,2076-12-31,31 dec,Oud en nieuw,5,Dag
+2076,2077-01-01,1 jan,Oud en nieuw,1,Reserve
+2076,2077-01-01,1 jan,Oud en nieuw,2,Nacht
+2076,2077-01-01,1 jan,Oud en nieuw,3,Vrij
+2076,2077-01-01,1 jan,Oud en nieuw,4,Dag
+2076,2077-01-01,1 jan,Oud en nieuw,5,Vrij
+2077,2077-12-24,24 dec,Kerst,1,Nacht
+2077,2077-12-24,24 dec,Kerst,2,Vrij
+2077,2077-12-24,24 dec,Kerst,3,Dag
+2077,2077-12-24,24 dec,Kerst,4,Reserve
+2077,2077-12-24,24 dec,Kerst,5,Vrij
+2077,2077-12-25,25 dec,Kerst,1,Nacht
+2077,2077-12-25,25 dec,Kerst,2,Vrij
+2077,2077-12-25,25 dec,Kerst,3,Dag
+2077,2077-12-25,25 dec,Kerst,4,Reserve
+2077,2077-12-25,25 dec,Kerst,5,Vrij
+2077,2077-12-26,26 dec,Kerst,1,Nacht
+2077,2077-12-26,26 dec,Kerst,2,Vrij
+2077,2077-12-26,26 dec,Kerst,3,Dag
+2077,2077-12-26,26 dec,Kerst,4,Reserve
+2077,2077-12-26,26 dec,Kerst,5,Vrij
+2077,2077-12-31,31 dec,Oud en nieuw,1,Vrij
+2077,2077-12-31,31 dec,Oud en nieuw,2,Vrij
+2077,2077-12-31,31 dec,Oud en nieuw,3,Reserve
+2077,2077-12-31,31 dec,Oud en nieuw,4,Nacht
+2077,2077-12-31,31 dec,Oud en nieuw,5,Dag
+2077,2078-01-01,1 jan,Oud en nieuw,1,Vrij
+2077,2078-01-01,1 jan,Oud en nieuw,2,Vrij
+2077,2078-01-01,1 jan,Oud en nieuw,3,Reserve
+2077,2078-01-01,1 jan,Oud en nieuw,4,Nacht
+2077,2078-01-01,1 jan,Oud en nieuw,5,Dag
+2078,2078-12-24,24 dec,Kerst,1,Vrij
+2078,2078-12-24,24 dec,Kerst,2,Dag
+2078,2078-12-24,24 dec,Kerst,3,Nacht
+2078,2078-12-24,24 dec,Kerst,4,Vrij
+2078,2078-12-24,24 dec,Kerst,5,Reserve
+2078,2078-12-25,25 dec,Kerst,1,Vrij
+2078,2078-12-25,25 dec,Kerst,2,Dag
+2078,2078-12-25,25 dec,Kerst,3,Nacht
+2078,2078-12-25,25 dec,Kerst,4,Vrij
+2078,2078-12-25,25 dec,Kerst,5,Reserve
+2078,2078-12-26,26 dec,Kerst,1,Nacht
+2078,2078-12-26,26 dec,Kerst,2,Vrij
+2078,2078-12-26,26 dec,Kerst,3,Vrij
+2078,2078-12-26,26 dec,Kerst,4,Dag
+2078,2078-12-26,26 dec,Kerst,5,Reserve
+2078,2078-12-31,31 dec,Oud en nieuw,1,Dag
+2078,2078-12-31,31 dec,Oud en nieuw,2,Reserve
+2078,2078-12-31,31 dec,Oud en nieuw,3,Vrij
+2078,2078-12-31,31 dec,Oud en nieuw,4,Vrij
+2078,2078-12-31,31 dec,Oud en nieuw,5,Nacht
+2078,2079-01-01,1 jan,Oud en nieuw,1,Dag
+2078,2079-01-01,1 jan,Oud en nieuw,2,Reserve
+2078,2079-01-01,1 jan,Oud en nieuw,3,Vrij
+2078,2079-01-01,1 jan,Oud en nieuw,4,Vrij
+2078,2079-01-01,1 jan,Oud en nieuw,5,Nacht
+2079,2079-12-24,24 dec,Kerst,1,Reserve
+2079,2079-12-24,24 dec,Kerst,2,Nacht
+2079,2079-12-24,24 dec,Kerst,3,Vrij
+2079,2079-12-24,24 dec,Kerst,4,Dag
+2079,2079-12-24,24 dec,Kerst,5,Vrij
+2079,2079-12-25,25 dec,Kerst,1,Reserve
+2079,2079-12-25,25 dec,Kerst,2,Vrij
+2079,2079-12-25,25 dec,Kerst,3,Nacht
+2079,2079-12-25,25 dec,Kerst,4,Vrij
+2079,2079-12-25,25 dec,Kerst,5,Dag
+2079,2079-12-26,26 dec,Kerst,1,Reserve
+2079,2079-12-26,26 dec,Kerst,2,Vrij
+2079,2079-12-26,26 dec,Kerst,3,Nacht
+2079,2079-12-26,26 dec,Kerst,4,Vrij
+2079,2079-12-26,26 dec,Kerst,5,Dag
+2079,2079-12-31,31 dec,Oud en nieuw,1,Nacht
+2079,2079-12-31,31 dec,Oud en nieuw,2,Vrij
+2079,2079-12-31,31 dec,Oud en nieuw,3,Dag
+2079,2079-12-31,31 dec,Oud en nieuw,4,Reserve
+2079,2079-12-31,31 dec,Oud en nieuw,5,Vrij
+2079,2080-01-01,1 jan,Oud en nieuw,1,Vrij
+2079,2080-01-01,1 jan,Oud en nieuw,2,Dag
+2079,2080-01-01,1 jan,Oud en nieuw,3,Vrij
+2079,2080-01-01,1 jan,Oud en nieuw,4,Reserve
+2079,2080-01-01,1 jan,Oud en nieuw,5,Nacht
+2080,2080-12-24,24 dec,Kerst,1,Dag
+2080,2080-12-24,24 dec,Kerst,2,Nacht
+2080,2080-12-24,24 dec,Kerst,3,Reserve
+2080,2080-12-24,24 dec,Kerst,4,Vrij
+2080,2080-12-24,24 dec,Kerst,5,Vrij
+2080,2080-12-25,25 dec,Kerst,1,Nacht
+2080,2080-12-25,25 dec,Kerst,2,Vrij
+2080,2080-12-25,25 dec,Kerst,3,Vrij
+2080,2080-12-25,25 dec,Kerst,4,Dag
+2080,2080-12-25,25 dec,Kerst,5,Reserve
+2080,2080-12-26,26 dec,Kerst,1,Nacht
+2080,2080-12-26,26 dec,Kerst,2,Vrij
+2080,2080-12-26,26 dec,Kerst,3,Vrij
+2080,2080-12-26,26 dec,Kerst,4,Dag
+2080,2080-12-26,26 dec,Kerst,5,Reserve
+2080,2080-12-31,31 dec,Oud en nieuw,1,Nacht
+2080,2080-12-31,31 dec,Oud en nieuw,2,Vrij
+2080,2080-12-31,31 dec,Oud en nieuw,3,Vrij
+2080,2080-12-31,31 dec,Oud en nieuw,4,Dag
+2080,2080-12-31,31 dec,Oud en nieuw,5,Reserve
+2080,2081-01-01,1 jan,Oud en nieuw,1,Vrij
+2080,2081-01-01,1 jan,Oud en nieuw,2,Reserve
+2080,2081-01-01,1 jan,Oud en nieuw,3,Dag
+2080,2081-01-01,1 jan,Oud en nieuw,4,Nacht
+2080,2081-01-01,1 jan,Oud en nieuw,5,Vrij
+2081,2081-12-24,24 dec,Kerst,1,Reserve
+2081,2081-12-24,24 dec,Kerst,2,Vrij
+2081,2081-12-24,24 dec,Kerst,3,Nacht
+2081,2081-12-24,24 dec,Kerst,4,Vrij
+2081,2081-12-24,24 dec,Kerst,5,Dag
+2081,2081-12-25,25 dec,Kerst,1,Reserve
+2081,2081-12-25,25 dec,Kerst,2,Vrij
+2081,2081-12-25,25 dec,Kerst,3,Nacht
+2081,2081-12-25,25 dec,Kerst,4,Vrij
+2081,2081-12-25,25 dec,Kerst,5,Dag
+2081,2081-12-26,26 dec,Kerst,1,Reserve
+2081,2081-12-26,26 dec,Kerst,2,Nacht
+2081,2081-12-26,26 dec,Kerst,3,Vrij
+2081,2081-12-26,26 dec,Kerst,4,Dag
+2081,2081-12-26,26 dec,Kerst,5,Vrij
+2081,2081-12-31,31 dec,Oud en nieuw,1,Vrij
+2081,2081-12-31,31 dec,Oud en nieuw,2,Dag
+2081,2081-12-31,31 dec,Oud en nieuw,3,Vrij
+2081,2081-12-31,31 dec,Oud en nieuw,4,Reserve
+2081,2081-12-31,31 dec,Oud en nieuw,5,Nacht
+2081,2082-01-01,1 jan,Oud en nieuw,1,Vrij
+2081,2082-01-01,1 jan,Oud en nieuw,2,Dag
+2081,2082-01-01,1 jan,Oud en nieuw,3,Vrij
+2081,2082-01-01,1 jan,Oud en nieuw,4,Reserve
+2081,2082-01-01,1 jan,Oud en nieuw,5,Nacht
+2082,2082-12-24,24 dec,Kerst,1,Dag
+2082,2082-12-24,24 dec,Kerst,2,Nacht
+2082,2082-12-24,24 dec,Kerst,3,Reserve
+2082,2082-12-24,24 dec,Kerst,4,Vrij
+2082,2082-12-24,24 dec,Kerst,5,Vrij
+2082,2082-12-25,25 dec,Kerst,1,Vrij
+2082,2082-12-25,25 dec,Kerst,2,Vrij
+2082,2082-12-25,25 dec,Kerst,3,Reserve
+2082,2082-12-25,25 dec,Kerst,4,Nacht
+2082,2082-12-25,25 dec,Kerst,5,Dag
+2082,2082-12-26,26 dec,Kerst,1,Vrij
+2082,2082-12-26,26 dec,Kerst,2,Vrij
+2082,2082-12-26,26 dec,Kerst,3,Reserve
+2082,2082-12-26,26 dec,Kerst,4,Nacht
+2082,2082-12-26,26 dec,Kerst,5,Dag
+2082,2082-12-31,31 dec,Oud en nieuw,1,Nacht
+2082,2082-12-31,31 dec,Oud en nieuw,2,Vrij
+2082,2082-12-31,31 dec,Oud en nieuw,3,Vrij
+2082,2082-12-31,31 dec,Oud en nieuw,4,Dag
+2082,2082-12-31,31 dec,Oud en nieuw,5,Reserve
+2082,2083-01-01,1 jan,Oud en nieuw,1,Vrij
+2082,2083-01-01,1 jan,Oud en nieuw,2,Dag
+2082,2083-01-01,1 jan,Oud en nieuw,3,Nacht
+2082,2083-01-01,1 jan,Oud en nieuw,4,Vrij
+2082,2083-01-01,1 jan,Oud en nieuw,5,Reserve
+2083,2083-12-24,24 dec,Kerst,1,Dag
+2083,2083-12-24,24 dec,Kerst,2,Reserve
+2083,2083-12-24,24 dec,Kerst,3,Vrij
+2083,2083-12-24,24 dec,Kerst,4,Vrij
+2083,2083-12-24,24 dec,Kerst,5,Nacht
+2083,2083-12-25,25 dec,Kerst,1,Dag
+2083,2083-12-25,25 dec,Kerst,2,Reserve
+2083,2083-12-25,25 dec,Kerst,3,Vrij
+2083,2083-12-25,25 dec,Kerst,4,Vrij
+2083,2083-12-25,25 dec,Kerst,5,Nacht
+2083,2083-12-26,26 dec,Kerst,1,Dag
+2083,2083-12-26,26 dec,Kerst,2,Reserve
+2083,2083-12-26,26 dec,Kerst,3,Vrij
+2083,2083-12-26,26 dec,Kerst,4,Vrij
+2083,2083-12-26,26 dec,Kerst,5,Nacht
+2083,2083-12-31,31 dec,Oud en nieuw,1,Reserve
+2083,2083-12-31,31 dec,Oud en nieuw,2,Nacht
+2083,2083-12-31,31 dec,Oud en nieuw,3,Vrij
+2083,2083-12-31,31 dec,Oud en nieuw,4,Dag
+2083,2083-12-31,31 dec,Oud en nieuw,5,Vrij
+2083,2084-01-01,1 jan,Oud en nieuw,1,Reserve
+2083,2084-01-01,1 jan,Oud en nieuw,2,Nacht
+2083,2084-01-01,1 jan,Oud en nieuw,3,Vrij
+2083,2084-01-01,1 jan,Oud en nieuw,4,Dag
+2083,2084-01-01,1 jan,Oud en nieuw,5,Vrij
+2084,2084-12-24,24 dec,Kerst,1,Nacht
+2084,2084-12-24,24 dec,Kerst,2,Vrij
+2084,2084-12-24,24 dec,Kerst,3,Dag
+2084,2084-12-24,24 dec,Kerst,4,Reserve
+2084,2084-12-24,24 dec,Kerst,5,Vrij
+2084,2084-12-25,25 dec,Kerst,1,Vrij
+2084,2084-12-25,25 dec,Kerst,2,Dag
+2084,2084-12-25,25 dec,Kerst,3,Vrij
+2084,2084-12-25,25 dec,Kerst,4,Reserve
+2084,2084-12-25,25 dec,Kerst,5,Nacht
+2084,2084-12-26,26 dec,Kerst,1,Vrij
+2084,2084-12-26,26 dec,Kerst,2,Dag
+2084,2084-12-26,26 dec,Kerst,3,Vrij
+2084,2084-12-26,26 dec,Kerst,4,Reserve
+2084,2084-12-26,26 dec,Kerst,5,Nacht
+2084,2084-12-31,31 dec,Oud en nieuw,1,Vrij
+2084,2084-12-31,31 dec,Oud en nieuw,2,Vrij
+2084,2084-12-31,31 dec,Oud en nieuw,3,Reserve
+2084,2084-12-31,31 dec,Oud en nieuw,4,Nacht
+2084,2084-12-31,31 dec,Oud en nieuw,5,Dag
+2084,2085-01-01,1 jan,Oud en nieuw,1,Dag
+2084,2085-01-01,1 jan,Oud en nieuw,2,Nacht
+2084,2085-01-01,1 jan,Oud en nieuw,3,Reserve
+2084,2085-01-01,1 jan,Oud en nieuw,4,Vrij
+2084,2085-01-01,1 jan,Oud en nieuw,5,Vrij
+2085,2085-12-24,24 dec,Kerst,1,Nacht
+2085,2085-12-24,24 dec,Kerst,2,Vrij
+2085,2085-12-24,24 dec,Kerst,3,Vrij
+2085,2085-12-24,24 dec,Kerst,4,Dag
+2085,2085-12-24,24 dec,Kerst,5,Reserve
+2085,2085-12-25,25 dec,Kerst,1,Nacht
+2085,2085-12-25,25 dec,Kerst,2,Vrij
+2085,2085-12-25,25 dec,Kerst,3,Vrij
+2085,2085-12-25,25 dec,Kerst,4,Dag
+2085,2085-12-25,25 dec,Kerst,5,Reserve
+2085,2085-12-26,26 dec,Kerst,1,Vrij
+2085,2085-12-26,26 dec,Kerst,2,Reserve
+2085,2085-12-26,26 dec,Kerst,3,Dag
+2085,2085-12-26,26 dec,Kerst,4,Nacht
+2085,2085-12-26,26 dec,Kerst,5,Vrij
+2085,2085-12-31,31 dec,Oud en nieuw,1,Vrij
+2085,2085-12-31,31 dec,Oud en nieuw,2,Reserve
+2085,2085-12-31,31 dec,Oud en nieuw,3,Dag
+2085,2085-12-31,31 dec,Oud en nieuw,4,Nacht
+2085,2085-12-31,31 dec,Oud en nieuw,5,Vrij
+2085,2086-01-01,1 jan,Oud en nieuw,1,Vrij
+2085,2086-01-01,1 jan,Oud en nieuw,2,Reserve
+2085,2086-01-01,1 jan,Oud en nieuw,3,Dag
+2085,2086-01-01,1 jan,Oud en nieuw,4,Nacht
+2085,2086-01-01,1 jan,Oud en nieuw,5,Vrij
+2086,2086-12-24,24 dec,Kerst,1,Reserve
+2086,2086-12-24,24 dec,Kerst,2,Vrij
+2086,2086-12-24,24 dec,Kerst,3,Nacht
+2086,2086-12-24,24 dec,Kerst,4,Vrij
+2086,2086-12-24,24 dec,Kerst,5,Dag
+2086,2086-12-25,25 dec,Kerst,1,Vrij
+2086,2086-12-25,25 dec,Kerst,2,Dag
+2086,2086-12-25,25 dec,Kerst,3,Vrij
+2086,2086-12-25,25 dec,Kerst,4,Reserve
+2086,2086-12-25,25 dec,Kerst,5,Nacht
+2086,2086-12-26,26 dec,Kerst,1,Vrij
+2086,2086-12-26,26 dec,Kerst,2,Dag
+2086,2086-12-26,26 dec,Kerst,3,Vrij
+2086,2086-12-26,26 dec,Kerst,4,Reserve
+2086,2086-12-26,26 dec,Kerst,5,Nacht
+2086,2086-12-31,31 dec,Oud en nieuw,1,Vrij
+2086,2086-12-31,31 dec,Oud en nieuw,2,Dag
+2086,2086-12-31,31 dec,Oud en nieuw,3,Vrij
+2086,2086-12-31,31 dec,Oud en nieuw,4,Reserve
+2086,2086-12-31,31 dec,Oud en nieuw,5,Nacht
+2086,2087-01-01,1 jan,Oud en nieuw,1,Dag
+2086,2087-01-01,1 jan,Oud en nieuw,2,Nacht
+2086,2087-01-01,1 jan,Oud en nieuw,3,Reserve
+2086,2087-01-01,1 jan,Oud en nieuw,4,Vrij
+2086,2087-01-01,1 jan,Oud en nieuw,5,Vrij
+2087,2087-12-24,24 dec,Kerst,1,Nacht
+2087,2087-12-24,24 dec,Kerst,2,Vrij
+2087,2087-12-24,24 dec,Kerst,3,Vrij
+2087,2087-12-24,24 dec,Kerst,4,Dag
+2087,2087-12-24,24 dec,Kerst,5,Reserve
+2087,2087-12-25,25 dec,Kerst,1,Nacht
+2087,2087-12-25,25 dec,Kerst,2,Vrij
+2087,2087-12-25,25 dec,Kerst,3,Vrij
+2087,2087-12-25,25 dec,Kerst,4,Dag
+2087,2087-12-25,25 dec,Kerst,5,Reserve
+2087,2087-12-26,26 dec,Kerst,1,Vrij
+2087,2087-12-26,26 dec,Kerst,2,Dag
+2087,2087-12-26,26 dec,Kerst,3,Nacht
+2087,2087-12-26,26 dec,Kerst,4,Vrij
+2087,2087-12-26,26 dec,Kerst,5,Reserve
+2087,2087-12-31,31 dec,Oud en nieuw,1,Vrij
+2087,2087-12-31,31 dec,Oud en nieuw,2,Reserve
+2087,2087-12-31,31 dec,Oud en nieuw,3,Dag
+2087,2087-12-31,31 dec,Oud en nieuw,4,Nacht
+2087,2087-12-31,31 dec,Oud en nieuw,5,Vrij
+2087,2088-01-01,1 jan,Oud en nieuw,1,Vrij
+2087,2088-01-01,1 jan,Oud en nieuw,2,Reserve
+2087,2088-01-01,1 jan,Oud en nieuw,3,Dag
+2087,2088-01-01,1 jan,Oud en nieuw,4,Nacht
+2087,2088-01-01,1 jan,Oud en nieuw,5,Vrij
+2088,2088-12-24,24 dec,Kerst,1,Reserve
+2088,2088-12-24,24 dec,Kerst,2,Nacht
+2088,2088-12-24,24 dec,Kerst,3,Vrij
+2088,2088-12-24,24 dec,Kerst,4,Dag
+2088,2088-12-24,24 dec,Kerst,5,Vrij
+2088,2088-12-25,25 dec,Kerst,1,Reserve
+2088,2088-12-25,25 dec,Kerst,2,Nacht
+2088,2088-12-25,25 dec,Kerst,3,Vrij
+2088,2088-12-25,25 dec,Kerst,4,Dag
+2088,2088-12-25,25 dec,Kerst,5,Vrij
+2088,2088-12-26,26 dec,Kerst,1,Reserve
+2088,2088-12-26,26 dec,Kerst,2,Nacht
+2088,2088-12-26,26 dec,Kerst,3,Vrij
+2088,2088-12-26,26 dec,Kerst,4,Dag
+2088,2088-12-26,26 dec,Kerst,5,Vrij
+2088,2088-12-31,31 dec,Oud en nieuw,1,Nacht
+2088,2088-12-31,31 dec,Oud en nieuw,2,Vrij
+2088,2088-12-31,31 dec,Oud en nieuw,3,Dag
+2088,2088-12-31,31 dec,Oud en nieuw,4,Reserve
+2088,2088-12-31,31 dec,Oud en nieuw,5,Vrij
+2088,2089-01-01,1 jan,Oud en nieuw,1,Nacht
+2088,2089-01-01,1 jan,Oud en nieuw,2,Vrij
+2088,2089-01-01,1 jan,Oud en nieuw,3,Dag
+2088,2089-01-01,1 jan,Oud en nieuw,4,Reserve
+2088,2089-01-01,1 jan,Oud en nieuw,5,Vrij
+2089,2089-12-24,24 dec,Kerst,1,Vrij
+2089,2089-12-24,24 dec,Kerst,2,Vrij
+2089,2089-12-24,24 dec,Kerst,3,Reserve
+2089,2089-12-24,24 dec,Kerst,4,Nacht
+2089,2089-12-24,24 dec,Kerst,5,Dag
+2089,2089-12-25,25 dec,Kerst,1,Vrij
+2089,2089-12-25,25 dec,Kerst,2,Vrij
+2089,2089-12-25,25 dec,Kerst,3,Reserve
+2089,2089-12-25,25 dec,Kerst,4,Nacht
+2089,2089-12-25,25 dec,Kerst,5,Dag
+2089,2089-12-26,26 dec,Kerst,1,Dag
+2089,2089-12-26,26 dec,Kerst,2,Nacht
+2089,2089-12-26,26 dec,Kerst,3,Reserve
+2089,2089-12-26,26 dec,Kerst,4,Vrij
+2089,2089-12-26,26 dec,Kerst,5,Vrij
+2089,2089-12-31,31 dec,Oud en nieuw,1,Vrij
+2089,2089-12-31,31 dec,Oud en nieuw,2,Dag
+2089,2089-12-31,31 dec,Oud en nieuw,3,Nacht
+2089,2089-12-31,31 dec,Oud en nieuw,4,Vrij
+2089,2089-12-31,31 dec,Oud en nieuw,5,Reserve
+2089,2090-01-01,1 jan,Oud en nieuw,1,Vrij
+2089,2090-01-01,1 jan,Oud en nieuw,2,Dag
+2089,2090-01-01,1 jan,Oud en nieuw,3,Nacht
+2089,2090-01-01,1 jan,Oud en nieuw,4,Vrij
+2089,2090-01-01,1 jan,Oud en nieuw,5,Reserve
+2090,2090-12-24,24 dec,Kerst,1,Dag
+2090,2090-12-24,24 dec,Kerst,2,Reserve
+2090,2090-12-24,24 dec,Kerst,3,Vrij
+2090,2090-12-24,24 dec,Kerst,4,Vrij
+2090,2090-12-24,24 dec,Kerst,5,Nacht
+2090,2090-12-25,25 dec,Kerst,1,Vrij
+2090,2090-12-25,25 dec,Kerst,2,Reserve
+2090,2090-12-25,25 dec,Kerst,3,Dag
+2090,2090-12-25,25 dec,Kerst,4,Nacht
+2090,2090-12-25,25 dec,Kerst,5,Vrij
+2090,2090-12-26,26 dec,Kerst,1,Vrij
+2090,2090-12-26,26 dec,Kerst,2,Reserve
+2090,2090-12-26,26 dec,Kerst,3,Dag
+2090,2090-12-26,26 dec,Kerst,4,Nacht
+2090,2090-12-26,26 dec,Kerst,5,Vrij
+2090,2090-12-31,31 dec,Oud en nieuw,1,Reserve
+2090,2090-12-31,31 dec,Oud en nieuw,2,Nacht
+2090,2090-12-31,31 dec,Oud en nieuw,3,Vrij
+2090,2090-12-31,31 dec,Oud en nieuw,4,Dag
+2090,2090-12-31,31 dec,Oud en nieuw,5,Vrij
+2090,2091-01-01,1 jan,Oud en nieuw,1,Reserve
+2090,2091-01-01,1 jan,Oud en nieuw,2,Vrij
+2090,2091-01-01,1 jan,Oud en nieuw,3,Nacht
+2090,2091-01-01,1 jan,Oud en nieuw,4,Vrij
+2090,2091-01-01,1 jan,Oud en nieuw,5,Dag
+2091,2091-12-24,24 dec,Kerst,1,Vrij
+2091,2091-12-24,24 dec,Kerst,2,Dag
+2091,2091-12-24,24 dec,Kerst,3,Vrij
+2091,2091-12-24,24 dec,Kerst,4,Reserve
+2091,2091-12-24,24 dec,Kerst,5,Nacht
+2091,2091-12-25,25 dec,Kerst,1,Vrij
+2091,2091-12-25,25 dec,Kerst,2,Dag
+2091,2091-12-25,25 dec,Kerst,3,Vrij
+2091,2091-12-25,25 dec,Kerst,4,Reserve
+2091,2091-12-25,25 dec,Kerst,5,Nacht
+2091,2091-12-26,26 dec,Kerst,1,Dag
+2091,2091-12-26,26 dec,Kerst,2,Nacht
+2091,2091-12-26,26 dec,Kerst,3,Reserve
+2091,2091-12-26,26 dec,Kerst,4,Vrij
+2091,2091-12-26,26 dec,Kerst,5,Vrij
+2091,2091-12-31,31 dec,Oud en nieuw,1,Dag
+2091,2091-12-31,31 dec,Oud en nieuw,2,Nacht
+2091,2091-12-31,31 dec,Oud en nieuw,3,Reserve
+2091,2091-12-31,31 dec,Oud en nieuw,4,Vrij
+2091,2091-12-31,31 dec,Oud en nieuw,5,Vrij
+2091,2092-01-01,1 jan,Oud en nieuw,1,Dag
+2091,2092-01-01,1 jan,Oud en nieuw,2,Nacht
+2091,2092-01-01,1 jan,Oud en nieuw,3,Reserve
+2091,2092-01-01,1 jan,Oud en nieuw,4,Vrij
+2091,2092-01-01,1 jan,Oud en nieuw,5,Vrij
+2092,2092-12-24,24 dec,Kerst,1,Vrij
+2092,2092-12-24,24 dec,Kerst,2,Reserve
+2092,2092-12-24,24 dec,Kerst,3,Dag
+2092,2092-12-24,24 dec,Kerst,4,Nacht
+2092,2092-12-24,24 dec,Kerst,5,Vrij
+2092,2092-12-25,25 dec,Kerst,1,Vrij
+2092,2092-12-25,25 dec,Kerst,2,Reserve
+2092,2092-12-25,25 dec,Kerst,3,Dag
+2092,2092-12-25,25 dec,Kerst,4,Nacht
+2092,2092-12-25,25 dec,Kerst,5,Vrij
+2092,2092-12-26,26 dec,Kerst,1,Dag
+2092,2092-12-26,26 dec,Kerst,2,Reserve
+2092,2092-12-26,26 dec,Kerst,3,Vrij
+2092,2092-12-26,26 dec,Kerst,4,Vrij
+2092,2092-12-26,26 dec,Kerst,5,Nacht
+2092,2092-12-31,31 dec,Oud en nieuw,1,Reserve
+2092,2092-12-31,31 dec,Oud en nieuw,2,Vrij
+2092,2092-12-31,31 dec,Oud en nieuw,3,Nacht
+2092,2092-12-31,31 dec,Oud en nieuw,4,Vrij
+2092,2092-12-31,31 dec,Oud en nieuw,5,Dag
+2092,2093-01-01,1 jan,Oud en nieuw,1,Reserve
+2092,2093-01-01,1 jan,Oud en nieuw,2,Vrij
+2092,2093-01-01,1 jan,Oud en nieuw,3,Nacht
+2092,2093-01-01,1 jan,Oud en nieuw,4,Vrij
+2092,2093-01-01,1 jan,Oud en nieuw,5,Dag
+2093,2093-12-24,24 dec,Kerst,1,Vrij
+2093,2093-12-24,24 dec,Kerst,2,Dag
+2093,2093-12-24,24 dec,Kerst,3,Vrij
+2093,2093-12-24,24 dec,Kerst,4,Reserve
+2093,2093-12-24,24 dec,Kerst,5,Nacht
+2093,2093-12-25,25 dec,Kerst,1,Nacht
+2093,2093-12-25,25 dec,Kerst,2,Vrij
+2093,2093-12-25,25 dec,Kerst,3,Dag
+2093,2093-12-25,25 dec,Kerst,4,Reserve
+2093,2093-12-25,25 dec,Kerst,5,Vrij
+2093,2093-12-26,26 dec,Kerst,1,Nacht
+2093,2093-12-26,26 dec,Kerst,2,Vrij
+2093,2093-12-26,26 dec,Kerst,3,Dag
+2093,2093-12-26,26 dec,Kerst,4,Reserve
+2093,2093-12-26,26 dec,Kerst,5,Vrij
+2093,2093-12-31,31 dec,Oud en nieuw,1,Dag
+2093,2093-12-31,31 dec,Oud en nieuw,2,Nacht
+2093,2093-12-31,31 dec,Oud en nieuw,3,Reserve
+2093,2093-12-31,31 dec,Oud en nieuw,4,Vrij
+2093,2093-12-31,31 dec,Oud en nieuw,5,Vrij
+2093,2094-01-01,1 jan,Oud en nieuw,1,Vrij
+2093,2094-01-01,1 jan,Oud en nieuw,2,Vrij
+2093,2094-01-01,1 jan,Oud en nieuw,3,Reserve
+2093,2094-01-01,1 jan,Oud en nieuw,4,Nacht
+2093,2094-01-01,1 jan,Oud en nieuw,5,Dag
+2094,2094-12-24,24 dec,Kerst,1,Vrij
+2094,2094-12-24,24 dec,Kerst,2,Dag
+2094,2094-12-24,24 dec,Kerst,3,Nacht
+2094,2094-12-24,24 dec,Kerst,4,Vrij
+2094,2094-12-24,24 dec,Kerst,5,Reserve
+2094,2094-12-25,25 dec,Kerst,1,Vrij
+2094,2094-12-25,25 dec,Kerst,2,Dag
+2094,2094-12-25,25 dec,Kerst,3,Nacht
+2094,2094-12-25,25 dec,Kerst,4,Vrij
+2094,2094-12-25,25 dec,Kerst,5,Reserve
+2094,2094-12-26,26 dec,Kerst,1,Vrij
+2094,2094-12-26,26 dec,Kerst,2,Dag
+2094,2094-12-26,26 dec,Kerst,3,Nacht
+2094,2094-12-26,26 dec,Kerst,4,Vrij
+2094,2094-12-26,26 dec,Kerst,5,Reserve
+2094,2094-12-31,31 dec,Oud en nieuw,1,Dag
+2094,2094-12-31,31 dec,Oud en nieuw,2,Reserve
+2094,2094-12-31,31 dec,Oud en nieuw,3,Vrij
+2094,2094-12-31,31 dec,Oud en nieuw,4,Vrij
+2094,2094-12-31,31 dec,Oud en nieuw,5,Nacht
+2094,2095-01-01,1 jan,Oud en nieuw,1,Dag
+2094,2095-01-01,1 jan,Oud en nieuw,2,Reserve
+2094,2095-01-01,1 jan,Oud en nieuw,3,Vrij
+2094,2095-01-01,1 jan,Oud en nieuw,4,Vrij
+2094,2095-01-01,1 jan,Oud en nieuw,5,Nacht
+2095,2095-12-24,24 dec,Kerst,1,Reserve
+2095,2095-12-24,24 dec,Kerst,2,Nacht
+2095,2095-12-24,24 dec,Kerst,3,Vrij
+2095,2095-12-24,24 dec,Kerst,4,Dag
+2095,2095-12-24,24 dec,Kerst,5,Vrij
+2095,2095-12-25,25 dec,Kerst,1,Reserve
+2095,2095-12-25,25 dec,Kerst,2,Nacht
+2095,2095-12-25,25 dec,Kerst,3,Vrij
+2095,2095-12-25,25 dec,Kerst,4,Dag
+2095,2095-12-25,25 dec,Kerst,5,Vrij
+2095,2095-12-26,26 dec,Kerst,1,Reserve
+2095,2095-12-26,26 dec,Kerst,2,Vrij
+2095,2095-12-26,26 dec,Kerst,3,Nacht
+2095,2095-12-26,26 dec,Kerst,4,Vrij
+2095,2095-12-26,26 dec,Kerst,5,Dag
+2095,2095-12-31,31 dec,Oud en nieuw,1,Nacht
+2095,2095-12-31,31 dec,Oud en nieuw,2,Vrij
+2095,2095-12-31,31 dec,Oud en nieuw,3,Dag
+2095,2095-12-31,31 dec,Oud en nieuw,4,Reserve
+2095,2095-12-31,31 dec,Oud en nieuw,5,Vrij
+2095,2096-01-01,1 jan,Oud en nieuw,1,Nacht
+2095,2096-01-01,1 jan,Oud en nieuw,2,Vrij
+2095,2096-01-01,1 jan,Oud en nieuw,3,Dag
+2095,2096-01-01,1 jan,Oud en nieuw,4,Reserve
+2095,2096-01-01,1 jan,Oud en nieuw,5,Vrij
+2096,2096-12-24,24 dec,Kerst,1,Dag
+2096,2096-12-24,24 dec,Kerst,2,Nacht
+2096,2096-12-24,24 dec,Kerst,3,Reserve
+2096,2096-12-24,24 dec,Kerst,4,Vrij
+2096,2096-12-24,24 dec,Kerst,5,Vrij
+2096,2096-12-25,25 dec,Kerst,1,Dag
+2096,2096-12-25,25 dec,Kerst,2,Nacht
+2096,2096-12-25,25 dec,Kerst,3,Reserve
+2096,2096-12-25,25 dec,Kerst,4,Vrij
+2096,2096-12-25,25 dec,Kerst,5,Vrij
+2096,2096-12-26,26 dec,Kerst,1,Nacht
+2096,2096-12-26,26 dec,Kerst,2,Vrij
+2096,2096-12-26,26 dec,Kerst,3,Vrij
+2096,2096-12-26,26 dec,Kerst,4,Dag
+2096,2096-12-26,26 dec,Kerst,5,Reserve
+2096,2096-12-31,31 dec,Oud en nieuw,1,Nacht
+2096,2096-12-31,31 dec,Oud en nieuw,2,Vrij
+2096,2096-12-31,31 dec,Oud en nieuw,3,Vrij
+2096,2096-12-31,31 dec,Oud en nieuw,4,Dag
+2096,2096-12-31,31 dec,Oud en nieuw,5,Reserve
+2096,2097-01-01,1 jan,Oud en nieuw,1,Nacht
+2096,2097-01-01,1 jan,Oud en nieuw,2,Vrij
+2096,2097-01-01,1 jan,Oud en nieuw,3,Vrij
+2096,2097-01-01,1 jan,Oud en nieuw,4,Dag
+2096,2097-01-01,1 jan,Oud en nieuw,5,Reserve
+2097,2097-12-24,24 dec,Kerst,1,Vrij
+2097,2097-12-24,24 dec,Kerst,2,Reserve
+2097,2097-12-24,24 dec,Kerst,3,Dag
+2097,2097-12-24,24 dec,Kerst,4,Nacht
+2097,2097-12-24,24 dec,Kerst,5,Vrij
+2097,2097-12-25,25 dec,Kerst,1,Reserve
+2097,2097-12-25,25 dec,Kerst,2,Vrij
+2097,2097-12-25,25 dec,Kerst,3,Nacht
+2097,2097-12-25,25 dec,Kerst,4,Vrij
+2097,2097-12-25,25 dec,Kerst,5,Dag
+2097,2097-12-26,26 dec,Kerst,1,Reserve
+2097,2097-12-26,26 dec,Kerst,2,Vrij
+2097,2097-12-26,26 dec,Kerst,3,Nacht
+2097,2097-12-26,26 dec,Kerst,4,Vrij
+2097,2097-12-26,26 dec,Kerst,5,Dag
+2097,2097-12-31,31 dec,Oud en nieuw,1,Reserve
+2097,2097-12-31,31 dec,Oud en nieuw,2,Vrij
+2097,2097-12-31,31 dec,Oud en nieuw,3,Nacht
+2097,2097-12-31,31 dec,Oud en nieuw,4,Vrij
+2097,2097-12-31,31 dec,Oud en nieuw,5,Dag
+2097,2098-01-01,1 jan,Oud en nieuw,1,Vrij
+2097,2098-01-01,1 jan,Oud en nieuw,2,Dag
+2097,2098-01-01,1 jan,Oud en nieuw,3,Vrij
+2097,2098-01-01,1 jan,Oud en nieuw,4,Reserve
+2097,2098-01-01,1 jan,Oud en nieuw,5,Nacht
+2098,2098-12-24,24 dec,Kerst,1,Dag
+2098,2098-12-24,24 dec,Kerst,2,Nacht
+2098,2098-12-24,24 dec,Kerst,3,Reserve
+2098,2098-12-24,24 dec,Kerst,4,Vrij
+2098,2098-12-24,24 dec,Kerst,5,Vrij
+2098,2098-12-25,25 dec,Kerst,1,Dag
+2098,2098-12-25,25 dec,Kerst,2,Nacht
+2098,2098-12-25,25 dec,Kerst,3,Reserve
+2098,2098-12-25,25 dec,Kerst,4,Vrij
+2098,2098-12-25,25 dec,Kerst,5,Vrij
+2098,2098-12-26,26 dec,Kerst,1,Vrij
+2098,2098-12-26,26 dec,Kerst,2,Vrij
+2098,2098-12-26,26 dec,Kerst,3,Reserve
+2098,2098-12-26,26 dec,Kerst,4,Nacht
+2098,2098-12-26,26 dec,Kerst,5,Dag
+2098,2098-12-31,31 dec,Oud en nieuw,1,Nacht
+2098,2098-12-31,31 dec,Oud en nieuw,2,Vrij
+2098,2098-12-31,31 dec,Oud en nieuw,3,Vrij
+2098,2098-12-31,31 dec,Oud en nieuw,4,Dag
+2098,2098-12-31,31 dec,Oud en nieuw,5,Reserve
+2098,2099-01-01,1 jan,Oud en nieuw,1,Nacht
+2098,2099-01-01,1 jan,Oud en nieuw,2,Vrij
+2098,2099-01-01,1 jan,Oud en nieuw,3,Vrij
+2098,2099-01-01,1 jan,Oud en nieuw,4,Dag
+2098,2099-01-01,1 jan,Oud en nieuw,5,Reserve
+2099,2099-12-24,24 dec,Kerst,1,Vrij
+2099,2099-12-24,24 dec,Kerst,2,Reserve
+2099,2099-12-24,24 dec,Kerst,3,Dag
+2099,2099-12-24,24 dec,Kerst,4,Nacht
+2099,2099-12-24,24 dec,Kerst,5,Vrij
+2099,2099-12-25,25 dec,Kerst,1,Dag
+2099,2099-12-25,25 dec,Kerst,2,Reserve
+2099,2099-12-25,25 dec,Kerst,3,Vrij
+2099,2099-12-25,25 dec,Kerst,4,Vrij
+2099,2099-12-25,25 dec,Kerst,5,Nacht
+2099,2099-12-26,26 dec,Kerst,1,Dag
+2099,2099-12-26,26 dec,Kerst,2,Reserve
+2099,2099-12-26,26 dec,Kerst,3,Vrij
+2099,2099-12-26,26 dec,Kerst,4,Vrij
+2099,2099-12-26,26 dec,Kerst,5,Nacht
+2099,2099-12-31,31 dec,Oud en nieuw,1,Reserve
+2099,2099-12-31,31 dec,Oud en nieuw,2,Vrij
+2099,2099-12-31,31 dec,Oud en nieuw,3,Nacht
+2099,2099-12-31,31 dec,Oud en nieuw,4,Vrij
+2099,2099-12-31,31 dec,Oud en nieuw,5,Dag
+2099,2100-01-01,1 jan,Oud en nieuw,1,Reserve
+2099,2100-01-01,1 jan,Oud en nieuw,2,Nacht
+2099,2100-01-01,1 jan,Oud en nieuw,3,Vrij
+2099,2100-01-01,1 jan,Oud en nieuw,4,Dag
+2099,2100-01-01,1 jan,Oud en nieuw,5,Vrij
+2100,2100-12-24,24 dec,Kerst,1,Nacht
+2100,2100-12-24,24 dec,Kerst,2,Vrij
+2100,2100-12-24,24 dec,Kerst,3,Dag
+2100,2100-12-24,24 dec,Kerst,4,Reserve
+2100,2100-12-24,24 dec,Kerst,5,Vrij
+2100,2100-12-25,25 dec,Kerst,1,Nacht
+2100,2100-12-25,25 dec,Kerst,2,Vrij
+2100,2100-12-25,25 dec,Kerst,3,Dag
+2100,2100-12-25,25 dec,Kerst,4,Reserve
+2100,2100-12-25,25 dec,Kerst,5,Vrij
+2100,2100-12-26,26 dec,Kerst,1,Nacht
+2100,2100-12-26,26 dec,Kerst,2,Vrij
+2100,2100-12-26,26 dec,Kerst,3,Dag
+2100,2100-12-26,26 dec,Kerst,4,Reserve
+2100,2100-12-26,26 dec,Kerst,5,Vrij
+2100,2100-12-31,31 dec,Oud en nieuw,1,Vrij
+2100,2100-12-31,31 dec,Oud en nieuw,2,Vrij
+2100,2100-12-31,31 dec,Oud en nieuw,3,Reserve
+2100,2100-12-31,31 dec,Oud en nieuw,4,Nacht
+2100,2100-12-31,31 dec,Oud en nieuw,5,Dag
+2100,2101-01-01,1 jan,Oud en nieuw,1,Vrij
+2100,2101-01-01,1 jan,Oud en nieuw,2,Vrij
+2100,2101-01-01,1 jan,Oud en nieuw,3,Reserve
+2100,2101-01-01,1 jan,Oud en nieuw,4,Nacht
+2100,2101-01-01,1 jan,Oud en nieuw,5,Dag
+2101,2101-12-24,24 dec,Kerst,1,Vrij
+2101,2101-12-24,24 dec,Kerst,2,Dag
+2101,2101-12-24,24 dec,Kerst,3,Nacht
+2101,2101-12-24,24 dec,Kerst,4,Vrij
+2101,2101-12-24,24 dec,Kerst,5,Reserve
+2101,2101-12-25,25 dec,Kerst,1,Vrij
+2101,2101-12-25,25 dec,Kerst,2,Dag
+2101,2101-12-25,25 dec,Kerst,3,Nacht
+2101,2101-12-25,25 dec,Kerst,4,Vrij
+2101,2101-12-25,25 dec,Kerst,5,Reserve
+2101,2101-12-26,26 dec,Kerst,1,Nacht
+2101,2101-12-26,26 dec,Kerst,2,Vrij
+2101,2101-12-26,26 dec,Kerst,3,Vrij
+2101,2101-12-26,26 dec,Kerst,4,Dag
+2101,2101-12-26,26 dec,Kerst,5,Reserve
+2101,2101-12-31,31 dec,Oud en nieuw,1,Dag
+2101,2101-12-31,31 dec,Oud en nieuw,2,Reserve
+2101,2101-12-31,31 dec,Oud en nieuw,3,Vrij
+2101,2101-12-31,31 dec,Oud en nieuw,4,Vrij
+2101,2101-12-31,31 dec,Oud en nieuw,5,Nacht
+2101,2102-01-01,1 jan,Oud en nieuw,1,Dag
+2101,2102-01-01,1 jan,Oud en nieuw,2,Reserve
+2101,2102-01-01,1 jan,Oud en nieuw,3,Vrij
+2101,2102-01-01,1 jan,Oud en nieuw,4,Vrij
+2101,2102-01-01,1 jan,Oud en nieuw,5,Nacht
+2102,2102-12-24,24 dec,Kerst,1,Reserve
+2102,2102-12-24,24 dec,Kerst,2,Nacht
+2102,2102-12-24,24 dec,Kerst,3,Vrij
+2102,2102-12-24,24 dec,Kerst,4,Dag
+2102,2102-12-24,24 dec,Kerst,5,Vrij
+2102,2102-12-25,25 dec,Kerst,1,Reserve
+2102,2102-12-25,25 dec,Kerst,2,Vrij
+2102,2102-12-25,25 dec,Kerst,3,Nacht
+2102,2102-12-25,25 dec,Kerst,4,Vrij
+2102,2102-12-25,25 dec,Kerst,5,Dag
+2102,2102-12-26,26 dec,Kerst,1,Reserve
+2102,2102-12-26,26 dec,Kerst,2,Vrij
+2102,2102-12-26,26 dec,Kerst,3,Nacht
+2102,2102-12-26,26 dec,Kerst,4,Vrij
+2102,2102-12-26,26 dec,Kerst,5,Dag
+2102,2102-12-31,31 dec,Oud en nieuw,1,Nacht
+2102,2102-12-31,31 dec,Oud en nieuw,2,Vrij
+2102,2102-12-31,31 dec,Oud en nieuw,3,Dag
+2102,2102-12-31,31 dec,Oud en nieuw,4,Reserve
+2102,2102-12-31,31 dec,Oud en nieuw,5,Vrij
+2102,2103-01-01,1 jan,Oud en nieuw,1,Vrij
+2102,2103-01-01,1 jan,Oud en nieuw,2,Dag
+2102,2103-01-01,1 jan,Oud en nieuw,3,Vrij
+2102,2103-01-01,1 jan,Oud en nieuw,4,Reserve
+2102,2103-01-01,1 jan,Oud en nieuw,5,Nacht
+2103,2103-12-24,24 dec,Kerst,1,Dag
+2103,2103-12-24,24 dec,Kerst,2,Nacht
+2103,2103-12-24,24 dec,Kerst,3,Reserve
+2103,2103-12-24,24 dec,Kerst,4,Vrij
+2103,2103-12-24,24 dec,Kerst,5,Vrij
+2103,2103-12-25,25 dec,Kerst,1,Dag
+2103,2103-12-25,25 dec,Kerst,2,Nacht
+2103,2103-12-25,25 dec,Kerst,3,Reserve
+2103,2103-12-25,25 dec,Kerst,4,Vrij
+2103,2103-12-25,25 dec,Kerst,5,Vrij
+2103,2103-12-26,26 dec,Kerst,1,Nacht
+2103,2103-12-26,26 dec,Kerst,2,Vrij
+2103,2103-12-26,26 dec,Kerst,3,Vrij
+2103,2103-12-26,26 dec,Kerst,4,Dag
+2103,2103-12-26,26 dec,Kerst,5,Reserve
+2103,2103-12-31,31 dec,Oud en nieuw,1,Nacht
+2103,2103-12-31,31 dec,Oud en nieuw,2,Vrij
+2103,2103-12-31,31 dec,Oud en nieuw,3,Vrij
+2103,2103-12-31,31 dec,Oud en nieuw,4,Dag
+2103,2103-12-31,31 dec,Oud en nieuw,5,Reserve
+2103,2104-01-01,1 jan,Oud en nieuw,1,Nacht
+2103,2104-01-01,1 jan,Oud en nieuw,2,Vrij
+2103,2104-01-01,1 jan,Oud en nieuw,3,Vrij
+2103,2104-01-01,1 jan,Oud en nieuw,4,Dag
+2103,2104-01-01,1 jan,Oud en nieuw,5,Reserve
+2104,2104-12-24,24 dec,Kerst,1,Reserve
+2104,2104-12-24,24 dec,Kerst,2,Vrij
+2104,2104-12-24,24 dec,Kerst,3,Nacht
+2104,2104-12-24,24 dec,Kerst,4,Vrij
+2104,2104-12-24,24 dec,Kerst,5,Dag
+2104,2104-12-25,25 dec,Kerst,1,Reserve
+2104,2104-12-25,25 dec,Kerst,2,Vrij
+2104,2104-12-25,25 dec,Kerst,3,Nacht
+2104,2104-12-25,25 dec,Kerst,4,Vrij
+2104,2104-12-25,25 dec,Kerst,5,Dag
+2104,2104-12-26,26 dec,Kerst,1,Reserve
+2104,2104-12-26,26 dec,Kerst,2,Nacht
+2104,2104-12-26,26 dec,Kerst,3,Vrij
+2104,2104-12-26,26 dec,Kerst,4,Dag
+2104,2104-12-26,26 dec,Kerst,5,Vrij
+2104,2104-12-31,31 dec,Oud en nieuw,1,Vrij
+2104,2104-12-31,31 dec,Oud en nieuw,2,Dag
+2104,2104-12-31,31 dec,Oud en nieuw,3,Vrij
+2104,2104-12-31,31 dec,Oud en nieuw,4,Reserve
+2104,2104-12-31,31 dec,Oud en nieuw,5,Nacht
+2104,2105-01-01,1 jan,Oud en nieuw,1,Vrij
+2104,2105-01-01,1 jan,Oud en nieuw,2,Dag
+2104,2105-01-01,1 jan,Oud en nieuw,3,Vrij
+2104,2105-01-01,1 jan,Oud en nieuw,4,Reserve
+2104,2105-01-01,1 jan,Oud en nieuw,5,Nacht
+2105,2105-12-24,24 dec,Kerst,1,Dag
+2105,2105-12-24,24 dec,Kerst,2,Nacht
+2105,2105-12-24,24 dec,Kerst,3,Reserve
+2105,2105-12-24,24 dec,Kerst,4,Vrij
+2105,2105-12-24,24 dec,Kerst,5,Vrij
+2105,2105-12-25,25 dec,Kerst,1,Vrij
+2105,2105-12-25,25 dec,Kerst,2,Vrij
+2105,2105-12-25,25 dec,Kerst,3,Reserve
+2105,2105-12-25,25 dec,Kerst,4,Nacht
+2105,2105-12-25,25 dec,Kerst,5,Dag
+2105,2105-12-26,26 dec,Kerst,1,Vrij
+2105,2105-12-26,26 dec,Kerst,2,Vrij
+2105,2105-12-26,26 dec,Kerst,3,Reserve
+2105,2105-12-26,26 dec,Kerst,4,Nacht
+2105,2105-12-26,26 dec,Kerst,5,Dag
+2105,2105-12-31,31 dec,Oud en nieuw,1,Nacht
+2105,2105-12-31,31 dec,Oud en nieuw,2,Vrij
+2105,2105-12-31,31 dec,Oud en nieuw,3,Vrij
+2105,2105-12-31,31 dec,Oud en nieuw,4,Dag
+2105,2105-12-31,31 dec,Oud en nieuw,5,Reserve
+2105,2106-01-01,1 jan,Oud en nieuw,1,Vrij
+2105,2106-01-01,1 jan,Oud en nieuw,2,Dag
+2105,2106-01-01,1 jan,Oud en nieuw,3,Nacht
+2105,2106-01-01,1 jan,Oud en nieuw,4,Vrij
+2105,2106-01-01,1 jan,Oud en nieuw,5,Reserve
+2106,2106-12-24,24 dec,Kerst,1,Dag
+2106,2106-12-24,24 dec,Kerst,2,Reserve
+2106,2106-12-24,24 dec,Kerst,3,Vrij
+2106,2106-12-24,24 dec,Kerst,4,Vrij
+2106,2106-12-24,24 dec,Kerst,5,Nacht
+2106,2106-12-25,25 dec,Kerst,1,Dag
+2106,2106-12-25,25 dec,Kerst,2,Reserve
+2106,2106-12-25,25 dec,Kerst,3,Vrij
+2106,2106-12-25,25 dec,Kerst,4,Vrij
+2106,2106-12-25,25 dec,Kerst,5,Nacht
+2106,2106-12-26,26 dec,Kerst,1,Dag
+2106,2106-12-26,26 dec,Kerst,2,Reserve
+2106,2106-12-26,26 dec,Kerst,3,Vrij
+2106,2106-12-26,26 dec,Kerst,4,Vrij
+2106,2106-12-26,26 dec,Kerst,5,Nacht
+2106,2106-12-31,31 dec,Oud en nieuw,1,Reserve
+2106,2106-12-31,31 dec,Oud en nieuw,2,Nacht
+2106,2106-12-31,31 dec,Oud en nieuw,3,Vrij
+2106,2106-12-31,31 dec,Oud en nieuw,4,Dag
+2106,2106-12-31,31 dec,Oud en nieuw,5,Vrij
+2106,2107-01-01,1 jan,Oud en nieuw,1,Reserve
+2106,2107-01-01,1 jan,Oud en nieuw,2,Nacht
+2106,2107-01-01,1 jan,Oud en nieuw,3,Vrij
+2106,2107-01-01,1 jan,Oud en nieuw,4,Dag
+2106,2107-01-01,1 jan,Oud en nieuw,5,Vrij
+2107,2107-12-24,24 dec,Kerst,1,Nacht
+2107,2107-12-24,24 dec,Kerst,2,Vrij
+2107,2107-12-24,24 dec,Kerst,3,Dag
+2107,2107-12-24,24 dec,Kerst,4,Reserve
+2107,2107-12-24,24 dec,Kerst,5,Vrij
+2107,2107-12-25,25 dec,Kerst,1,Nacht
+2107,2107-12-25,25 dec,Kerst,2,Vrij
+2107,2107-12-25,25 dec,Kerst,3,Dag
+2107,2107-12-25,25 dec,Kerst,4,Reserve
+2107,2107-12-25,25 dec,Kerst,5,Vrij
+2107,2107-12-26,26 dec,Kerst,1,Vrij
+2107,2107-12-26,26 dec,Kerst,2,Dag
+2107,2107-12-26,26 dec,Kerst,3,Vrij
+2107,2107-12-26,26 dec,Kerst,4,Reserve
+2107,2107-12-26,26 dec,Kerst,5,Nacht
+2107,2107-12-31,31 dec,Oud en nieuw,1,Vrij
+2107,2107-12-31,31 dec,Oud en nieuw,2,Vrij
+2107,2107-12-31,31 dec,Oud en nieuw,3,Reserve
+2107,2107-12-31,31 dec,Oud en nieuw,4,Nacht
+2107,2107-12-31,31 dec,Oud en nieuw,5,Dag
+2107,2108-01-01,1 jan,Oud en nieuw,1,Vrij
+2107,2108-01-01,1 jan,Oud en nieuw,2,Vrij
+2107,2108-01-01,1 jan,Oud en nieuw,3,Reserve
+2107,2108-01-01,1 jan,Oud en nieuw,4,Nacht
+2107,2108-01-01,1 jan,Oud en nieuw,5,Dag
+2108,2108-12-24,24 dec,Kerst,1,Nacht
+2108,2108-12-24,24 dec,Kerst,2,Vrij
+2108,2108-12-24,24 dec,Kerst,3,Vrij
+2108,2108-12-24,24 dec,Kerst,4,Dag
+2108,2108-12-24,24 dec,Kerst,5,Reserve
+2108,2108-12-25,25 dec,Kerst,1,Nacht
+2108,2108-12-25,25 dec,Kerst,2,Vrij
+2108,2108-12-25,25 dec,Kerst,3,Vrij
+2108,2108-12-25,25 dec,Kerst,4,Dag
+2108,2108-12-25,25 dec,Kerst,5,Reserve
+2108,2108-12-26,26 dec,Kerst,1,Vrij
+2108,2108-12-26,26 dec,Kerst,2,Reserve
+2108,2108-12-26,26 dec,Kerst,3,Dag
+2108,2108-12-26,26 dec,Kerst,4,Nacht
+2108,2108-12-26,26 dec,Kerst,5,Vrij
+2108,2108-12-31,31 dec,Oud en nieuw,1,Vrij
+2108,2108-12-31,31 dec,Oud en nieuw,2,Reserve
+2108,2108-12-31,31 dec,Oud en nieuw,3,Dag
+2108,2108-12-31,31 dec,Oud en nieuw,4,Nacht
+2108,2108-12-31,31 dec,Oud en nieuw,5,Vrij
+2108,2109-01-01,1 jan,Oud en nieuw,1,Vrij
+2108,2109-01-01,1 jan,Oud en nieuw,2,Reserve
+2108,2109-01-01,1 jan,Oud en nieuw,3,Dag
+2108,2109-01-01,1 jan,Oud en nieuw,4,Nacht
+2108,2109-01-01,1 jan,Oud en nieuw,5,Vrij
+2109,2109-12-24,24 dec,Kerst,1,Reserve
+2109,2109-12-24,24 dec,Kerst,2,Vrij
+2109,2109-12-24,24 dec,Kerst,3,Nacht
+2109,2109-12-24,24 dec,Kerst,4,Vrij
+2109,2109-12-24,24 dec,Kerst,5,Dag
+2109,2109-12-25,25 dec,Kerst,1,Vrij
+2109,2109-12-25,25 dec,Kerst,2,Dag
+2109,2109-12-25,25 dec,Kerst,3,Vrij
+2109,2109-12-25,25 dec,Kerst,4,Reserve
+2109,2109-12-25,25 dec,Kerst,5,Nacht
+2109,2109-12-26,26 dec,Kerst,1,Vrij
+2109,2109-12-26,26 dec,Kerst,2,Dag
+2109,2109-12-26,26 dec,Kerst,3,Vrij
+2109,2109-12-26,26 dec,Kerst,4,Reserve
+2109,2109-12-26,26 dec,Kerst,5,Nacht
+2109,2109-12-31,31 dec,Oud en nieuw,1,Vrij
+2109,2109-12-31,31 dec,Oud en nieuw,2,Dag
+2109,2109-12-31,31 dec,Oud en nieuw,3,Vrij
+2109,2109-12-31,31 dec,Oud en nieuw,4,Reserve
+2109,2109-12-31,31 dec,Oud en nieuw,5,Nacht
+2109,2110-01-01,1 jan,Oud en nieuw,1,Dag
+2109,2110-01-01,1 jan,Oud en nieuw,2,Nacht
+2109,2110-01-01,1 jan,Oud en nieuw,3,Reserve
+2109,2110-01-01,1 jan,Oud en nieuw,4,Vrij
+2109,2110-01-01,1 jan,Oud en nieuw,5,Vrij
+2110,2110-12-24,24 dec,Kerst,1,Nacht
+2110,2110-12-24,24 dec,Kerst,2,Vrij
+2110,2110-12-24,24 dec,Kerst,3,Vrij
+2110,2110-12-24,24 dec,Kerst,4,Dag
+2110,2110-12-24,24 dec,Kerst,5,Reserve
+2110,2110-12-25,25 dec,Kerst,1,Nacht
+2110,2110-12-25,25 dec,Kerst,2,Vrij
+2110,2110-12-25,25 dec,Kerst,3,Vrij
+2110,2110-12-25,25 dec,Kerst,4,Dag
+2110,2110-12-25,25 dec,Kerst,5,Reserve
+2110,2110-12-26,26 dec,Kerst,1,Vrij
+2110,2110-12-26,26 dec,Kerst,2,Dag
+2110,2110-12-26,26 dec,Kerst,3,Nacht
+2110,2110-12-26,26 dec,Kerst,4,Vrij
+2110,2110-12-26,26 dec,Kerst,5,Reserve
+2110,2110-12-31,31 dec,Oud en nieuw,1,Vrij
+2110,2110-12-31,31 dec,Oud en nieuw,2,Reserve
+2110,2110-12-31,31 dec,Oud en nieuw,3,Dag
+2110,2110-12-31,31 dec,Oud en nieuw,4,Nacht
+2110,2110-12-31,31 dec,Oud en nieuw,5,Vrij
+2110,2111-01-01,1 jan,Oud en nieuw,1,Vrij
+2110,2111-01-01,1 jan,Oud en nieuw,2,Reserve
+2110,2111-01-01,1 jan,Oud en nieuw,3,Dag
+2110,2111-01-01,1 jan,Oud en nieuw,4,Nacht
+2110,2111-01-01,1 jan,Oud en nieuw,5,Vrij
+2111,2111-12-24,24 dec,Kerst,1,Reserve
+2111,2111-12-24,24 dec,Kerst,2,Vrij
+2111,2111-12-24,24 dec,Kerst,3,Nacht
+2111,2111-12-24,24 dec,Kerst,4,Vrij
+2111,2111-12-24,24 dec,Kerst,5,Dag
+2111,2111-12-25,25 dec,Kerst,1,Reserve
+2111,2111-12-25,25 dec,Kerst,2,Nacht
+2111,2111-12-25,25 dec,Kerst,3,Vrij
+2111,2111-12-25,25 dec,Kerst,4,Dag
+2111,2111-12-25,25 dec,Kerst,5,Vrij
+2111,2111-12-26,26 dec,Kerst,1,Reserve
+2111,2111-12-26,26 dec,Kerst,2,Nacht
+2111,2111-12-26,26 dec,Kerst,3,Vrij
+2111,2111-12-26,26 dec,Kerst,4,Dag
+2111,2111-12-26,26 dec,Kerst,5,Vrij
+2111,2111-12-31,31 dec,Oud en nieuw,1,Vrij
+2111,2111-12-31,31 dec,Oud en nieuw,2,Dag
+2111,2111-12-31,31 dec,Oud en nieuw,3,Vrij
+2111,2111-12-31,31 dec,Oud en nieuw,4,Reserve
+2111,2111-12-31,31 dec,Oud en nieuw,5,Nacht
+2111,2112-01-01,1 jan,Oud en nieuw,1,Nacht
+2111,2112-01-01,1 jan,Oud en nieuw,2,Vrij
+2111,2112-01-01,1 jan,Oud en nieuw,3,Dag
+2111,2112-01-01,1 jan,Oud en nieuw,4,Reserve
+2111,2112-01-01,1 jan,Oud en nieuw,5,Vrij
+2112,2112-12-24,24 dec,Kerst,1,Vrij
+2112,2112-12-24,24 dec,Kerst,2,Vrij
+2112,2112-12-24,24 dec,Kerst,3,Reserve
+2112,2112-12-24,24 dec,Kerst,4,Nacht
+2112,2112-12-24,24 dec,Kerst,5,Dag
+2112,2112-12-25,25 dec,Kerst,1,Vrij
+2112,2112-12-25,25 dec,Kerst,2,Vrij
+2112,2112-12-25,25 dec,Kerst,3,Reserve
+2112,2112-12-25,25 dec,Kerst,4,Nacht
+2112,2112-12-25,25 dec,Kerst,5,Dag
+2112,2112-12-26,26 dec,Kerst,1,Dag
+2112,2112-12-26,26 dec,Kerst,2,Nacht
+2112,2112-12-26,26 dec,Kerst,3,Reserve
+2112,2112-12-26,26 dec,Kerst,4,Vrij
+2112,2112-12-26,26 dec,Kerst,5,Vrij
+2112,2112-12-31,31 dec,Oud en nieuw,1,Vrij
+2112,2112-12-31,31 dec,Oud en nieuw,2,Dag
+2112,2112-12-31,31 dec,Oud en nieuw,3,Nacht
+2112,2112-12-31,31 dec,Oud en nieuw,4,Vrij
+2112,2112-12-31,31 dec,Oud en nieuw,5,Reserve
+2112,2113-01-01,1 jan,Oud en nieuw,1,Vrij
+2112,2113-01-01,1 jan,Oud en nieuw,2,Dag
+2112,2113-01-01,1 jan,Oud en nieuw,3,Nacht
+2112,2113-01-01,1 jan,Oud en nieuw,4,Vrij
+2112,2113-01-01,1 jan,Oud en nieuw,5,Reserve
+2113,2113-12-24,24 dec,Kerst,1,Dag
+2113,2113-12-24,24 dec,Kerst,2,Reserve
+2113,2113-12-24,24 dec,Kerst,3,Vrij
+2113,2113-12-24,24 dec,Kerst,4,Vrij
+2113,2113-12-24,24 dec,Kerst,5,Nacht
+2113,2113-12-25,25 dec,Kerst,1,Vrij
+2113,2113-12-25,25 dec,Kerst,2,Reserve
+2113,2113-12-25,25 dec,Kerst,3,Dag
+2113,2113-12-25,25 dec,Kerst,4,Nacht
+2113,2113-12-25,25 dec,Kerst,5,Vrij
+2113,2113-12-26,26 dec,Kerst,1,Vrij
+2113,2113-12-26,26 dec,Kerst,2,Reserve
+2113,2113-12-26,26 dec,Kerst,3,Dag
+2113,2113-12-26,26 dec,Kerst,4,Nacht
+2113,2113-12-26,26 dec,Kerst,5,Vrij
+2113,2113-12-31,31 dec,Oud en nieuw,1,Reserve
+2113,2113-12-31,31 dec,Oud en nieuw,2,Nacht
+2113,2113-12-31,31 dec,Oud en nieuw,3,Vrij
+2113,2113-12-31,31 dec,Oud en nieuw,4,Dag
+2113,2113-12-31,31 dec,Oud en nieuw,5,Vrij
+2113,2114-01-01,1 jan,Oud en nieuw,1,Reserve
+2113,2114-01-01,1 jan,Oud en nieuw,2,Vrij
+2113,2114-01-01,1 jan,Oud en nieuw,3,Nacht
+2113,2114-01-01,1 jan,Oud en nieuw,4,Vrij
+2113,2114-01-01,1 jan,Oud en nieuw,5,Dag
+2114,2114-12-24,24 dec,Kerst,1,Vrij
+2114,2114-12-24,24 dec,Kerst,2,Dag
+2114,2114-12-24,24 dec,Kerst,3,Vrij
+2114,2114-12-24,24 dec,Kerst,4,Reserve
+2114,2114-12-24,24 dec,Kerst,5,Nacht
+2114,2114-12-25,25 dec,Kerst,1,Vrij
+2114,2114-12-25,25 dec,Kerst,2,Dag
+2114,2114-12-25,25 dec,Kerst,3,Vrij
+2114,2114-12-25,25 dec,Kerst,4,Reserve
+2114,2114-12-25,25 dec,Kerst,5,Nacht
+2114,2114-12-26,26 dec,Kerst,1,Dag
+2114,2114-12-26,26 dec,Kerst,2,Nacht
+2114,2114-12-26,26 dec,Kerst,3,Reserve
+2114,2114-12-26,26 dec,Kerst,4,Vrij
+2114,2114-12-26,26 dec,Kerst,5,Vrij
+2114,2114-12-31,31 dec,Oud en nieuw,1,Dag
+2114,2114-12-31,31 dec,Oud en nieuw,2,Nacht
+2114,2114-12-31,31 dec,Oud en nieuw,3,Reserve
+2114,2114-12-31,31 dec,Oud en nieuw,4,Vrij
+2114,2114-12-31,31 dec,Oud en nieuw,5,Vrij
+2114,2115-01-01,1 jan,Oud en nieuw,1,Dag
+2114,2115-01-01,1 jan,Oud en nieuw,2,Nacht
+2114,2115-01-01,1 jan,Oud en nieuw,3,Reserve
+2114,2115-01-01,1 jan,Oud en nieuw,4,Vrij
+2114,2115-01-01,1 jan,Oud en nieuw,5,Vrij
+2115,2115-12-24,24 dec,Kerst,1,Nacht
+2115,2115-12-24,24 dec,Kerst,2,Vrij
+2115,2115-12-24,24 dec,Kerst,3,Vrij
+2115,2115-12-24,24 dec,Kerst,4,Dag
+2115,2115-12-24,24 dec,Kerst,5,Reserve
+2115,2115-12-25,25 dec,Kerst,1,Vrij
+2115,2115-12-25,25 dec,Kerst,2,Reserve
+2115,2115-12-25,25 dec,Kerst,3,Dag
+2115,2115-12-25,25 dec,Kerst,4,Nacht
+2115,2115-12-25,25 dec,Kerst,5,Vrij
+2115,2115-12-26,26 dec,Kerst,1,Vrij
+2115,2115-12-26,26 dec,Kerst,2,Reserve
+2115,2115-12-26,26 dec,Kerst,3,Dag
+2115,2115-12-26,26 dec,Kerst,4,Nacht
+2115,2115-12-26,26 dec,Kerst,5,Vrij
+2115,2115-12-31,31 dec,Oud en nieuw,1,Vrij
+2115,2115-12-31,31 dec,Oud en nieuw,2,Reserve
+2115,2115-12-31,31 dec,Oud en nieuw,3,Dag
+2115,2115-12-31,31 dec,Oud en nieuw,4,Nacht
+2115,2115-12-31,31 dec,Oud en nieuw,5,Vrij
+2115,2116-01-01,1 jan,Oud en nieuw,1,Reserve
+2115,2116-01-01,1 jan,Oud en nieuw,2,Vrij
+2115,2116-01-01,1 jan,Oud en nieuw,3,Nacht
+2115,2116-01-01,1 jan,Oud en nieuw,4,Vrij
+2115,2116-01-01,1 jan,Oud en nieuw,5,Dag
+2116,2116-12-24,24 dec,Kerst,1,Vrij
+2116,2116-12-24,24 dec,Kerst,2,Dag
+2116,2116-12-24,24 dec,Kerst,3,Vrij
+2116,2116-12-24,24 dec,Kerst,4,Reserve
+2116,2116-12-24,24 dec,Kerst,5,Nacht
+2116,2116-12-25,25 dec,Kerst,1,Nacht
+2116,2116-12-25,25 dec,Kerst,2,Vrij
+2116,2116-12-25,25 dec,Kerst,3,Dag
+2116,2116-12-25,25 dec,Kerst,4,Reserve
+2116,2116-12-25,25 dec,Kerst,5,Vrij
+2116,2116-12-26,26 dec,Kerst,1,Nacht
+2116,2116-12-26,26 dec,Kerst,2,Vrij
+2116,2116-12-26,26 dec,Kerst,3,Dag
+2116,2116-12-26,26 dec,Kerst,4,Reserve
+2116,2116-12-26,26 dec,Kerst,5,Vrij
+2116,2116-12-31,31 dec,Oud en nieuw,1,Dag
+2116,2116-12-31,31 dec,Oud en nieuw,2,Nacht
+2116,2116-12-31,31 dec,Oud en nieuw,3,Reserve
+2116,2116-12-31,31 dec,Oud en nieuw,4,Vrij
+2116,2116-12-31,31 dec,Oud en nieuw,5,Vrij
+2116,2117-01-01,1 jan,Oud en nieuw,1,Vrij
+2116,2117-01-01,1 jan,Oud en nieuw,2,Vrij
+2116,2117-01-01,1 jan,Oud en nieuw,3,Reserve
+2116,2117-01-01,1 jan,Oud en nieuw,4,Nacht
+2116,2117-01-01,1 jan,Oud en nieuw,5,Dag
+2117,2117-12-24,24 dec,Kerst,1,Vrij
+2117,2117-12-24,24 dec,Kerst,2,Dag
+2117,2117-12-24,24 dec,Kerst,3,Nacht
+2117,2117-12-24,24 dec,Kerst,4,Vrij
+2117,2117-12-24,24 dec,Kerst,5,Reserve
+2117,2117-12-25,25 dec,Kerst,1,Vrij
+2117,2117-12-25,25 dec,Kerst,2,Dag
+2117,2117-12-25,25 dec,Kerst,3,Nacht
+2117,2117-12-25,25 dec,Kerst,4,Vrij
+2117,2117-12-25,25 dec,Kerst,5,Reserve
+2117,2117-12-26,26 dec,Kerst,1,Vrij
+2117,2117-12-26,26 dec,Kerst,2,Dag
+2117,2117-12-26,26 dec,Kerst,3,Nacht
+2117,2117-12-26,26 dec,Kerst,4,Vrij
+2117,2117-12-26,26 dec,Kerst,5,Reserve
+2117,2117-12-31,31 dec,Oud en nieuw,1,Dag
+2117,2117-12-31,31 dec,Oud en nieuw,2,Reserve
+2117,2117-12-31,31 dec,Oud en nieuw,3,Vrij
+2117,2117-12-31,31 dec,Oud en nieuw,4,Vrij
+2117,2117-12-31,31 dec,Oud en nieuw,5,Nacht
+2117,2118-01-01,1 jan,Oud en nieuw,1,Dag
+2117,2118-01-01,1 jan,Oud en nieuw,2,Reserve
+2117,2118-01-01,1 jan,Oud en nieuw,3,Vrij
+2117,2118-01-01,1 jan,Oud en nieuw,4,Vrij
+2117,2118-01-01,1 jan,Oud en nieuw,5,Nacht
+2118,2118-12-24,24 dec,Kerst,1,Reserve
+2118,2118-12-24,24 dec,Kerst,2,Nacht
+2118,2118-12-24,24 dec,Kerst,3,Vrij
+2118,2118-12-24,24 dec,Kerst,4,Dag
+2118,2118-12-24,24 dec,Kerst,5,Vrij
+2118,2118-12-25,25 dec,Kerst,1,Reserve
+2118,2118-12-25,25 dec,Kerst,2,Nacht
+2118,2118-12-25,25 dec,Kerst,3,Vrij
+2118,2118-12-25,25 dec,Kerst,4,Dag
+2118,2118-12-25,25 dec,Kerst,5,Vrij
+2118,2118-12-26,26 dec,Kerst,1,Reserve
+2118,2118-12-26,26 dec,Kerst,2,Vrij
+2118,2118-12-26,26 dec,Kerst,3,Nacht
+2118,2118-12-26,26 dec,Kerst,4,Vrij
+2118,2118-12-26,26 dec,Kerst,5,Dag
+2118,2118-12-31,31 dec,Oud en nieuw,1,Nacht
+2118,2118-12-31,31 dec,Oud en nieuw,2,Vrij
+2118,2118-12-31,31 dec,Oud en nieuw,3,Dag
+2118,2118-12-31,31 dec,Oud en nieuw,4,Reserve
+2118,2118-12-31,31 dec,Oud en nieuw,5,Vrij
+2118,2119-01-01,1 jan,Oud en nieuw,1,Nacht
+2118,2119-01-01,1 jan,Oud en nieuw,2,Vrij
+2118,2119-01-01,1 jan,Oud en nieuw,3,Dag
+2118,2119-01-01,1 jan,Oud en nieuw,4,Reserve
+2118,2119-01-01,1 jan,Oud en nieuw,5,Vrij
+2119,2119-12-24,24 dec,Kerst,1,Vrij
+2119,2119-12-24,24 dec,Kerst,2,Vrij
+2119,2119-12-24,24 dec,Kerst,3,Reserve
+2119,2119-12-24,24 dec,Kerst,4,Nacht
+2119,2119-12-24,24 dec,Kerst,5,Dag
+2119,2119-12-25,25 dec,Kerst,1,Dag
+2119,2119-12-25,25 dec,Kerst,2,Nacht
+2119,2119-12-25,25 dec,Kerst,3,Reserve
+2119,2119-12-25,25 dec,Kerst,4,Vrij
+2119,2119-12-25,25 dec,Kerst,5,Vrij
+2119,2119-12-26,26 dec,Kerst,1,Dag
+2119,2119-12-26,26 dec,Kerst,2,Nacht
+2119,2119-12-26,26 dec,Kerst,3,Reserve
+2119,2119-12-26,26 dec,Kerst,4,Vrij
+2119,2119-12-26,26 dec,Kerst,5,Vrij
+2119,2119-12-31,31 dec,Oud en nieuw,1,Vrij
+2119,2119-12-31,31 dec,Oud en nieuw,2,Dag
+2119,2119-12-31,31 dec,Oud en nieuw,3,Nacht
+2119,2119-12-31,31 dec,Oud en nieuw,4,Vrij
+2119,2119-12-31,31 dec,Oud en nieuw,5,Reserve
+2119,2120-01-01,1 jan,Oud en nieuw,1,Nacht
+2119,2120-01-01,1 jan,Oud en nieuw,2,Vrij
+2119,2120-01-01,1 jan,Oud en nieuw,3,Vrij
+2119,2120-01-01,1 jan,Oud en nieuw,4,Dag
+2119,2120-01-01,1 jan,Oud en nieuw,5,Reserve
+2120,2120-12-24,24 dec,Kerst,1,Vrij
+2120,2120-12-24,24 dec,Kerst,2,Reserve
+2120,2120-12-24,24 dec,Kerst,3,Dag
+2120,2120-12-24,24 dec,Kerst,4,Nacht
+2120,2120-12-24,24 dec,Kerst,5,Vrij
+2120,2120-12-25,25 dec,Kerst,1,Reserve
+2120,2120-12-25,25 dec,Kerst,2,Vrij
+2120,2120-12-25,25 dec,Kerst,3,Nacht
+2120,2120-12-25,25 dec,Kerst,4,Vrij
+2120,2120-12-25,25 dec,Kerst,5,Dag
+2120,2120-12-26,26 dec,Kerst,1,Reserve
+2120,2120-12-26,26 dec,Kerst,2,Vrij
+2120,2120-12-26,26 dec,Kerst,3,Nacht
+2120,2120-12-26,26 dec,Kerst,4,Vrij
+2120,2120-12-26,26 dec,Kerst,5,Dag
+2120,2120-12-31,31 dec,Oud en nieuw,1,Reserve
+2120,2120-12-31,31 dec,Oud en nieuw,2,Vrij
+2120,2120-12-31,31 dec,Oud en nieuw,3,Nacht
+2120,2120-12-31,31 dec,Oud en nieuw,4,Vrij
+2120,2120-12-31,31 dec,Oud en nieuw,5,Dag
+2120,2121-01-01,1 jan,Oud en nieuw,1,Vrij
+2120,2121-01-01,1 jan,Oud en nieuw,2,Dag
+2120,2121-01-01,1 jan,Oud en nieuw,3,Vrij
+2120,2121-01-01,1 jan,Oud en nieuw,4,Reserve
+2120,2121-01-01,1 jan,Oud en nieuw,5,Nacht
+2121,2121-12-24,24 dec,Kerst,1,Dag
+2121,2121-12-24,24 dec,Kerst,2,Nacht
+2121,2121-12-24,24 dec,Kerst,3,Reserve
+2121,2121-12-24,24 dec,Kerst,4,Vrij
+2121,2121-12-24,24 dec,Kerst,5,Vrij
+2121,2121-12-25,25 dec,Kerst,1,Dag
+2121,2121-12-25,25 dec,Kerst,2,Nacht
+2121,2121-12-25,25 dec,Kerst,3,Reserve
+2121,2121-12-25,25 dec,Kerst,4,Vrij
+2121,2121-12-25,25 dec,Kerst,5,Vrij
+2121,2121-12-26,26 dec,Kerst,1,Vrij
+2121,2121-12-26,26 dec,Kerst,2,Vrij
+2121,2121-12-26,26 dec,Kerst,3,Reserve
+2121,2121-12-26,26 dec,Kerst,4,Nacht
+2121,2121-12-26,26 dec,Kerst,5,Dag
+2121,2121-12-31,31 dec,Oud en nieuw,1,Nacht
+2121,2121-12-31,31 dec,Oud en nieuw,2,Vrij
+2121,2121-12-31,31 dec,Oud en nieuw,3,Vrij
+2121,2121-12-31,31 dec,Oud en nieuw,4,Dag
+2121,2121-12-31,31 dec,Oud en nieuw,5,Reserve
+2121,2122-01-01,1 jan,Oud en nieuw,1,Nacht
+2121,2122-01-01,1 jan,Oud en nieuw,2,Vrij
+2121,2122-01-01,1 jan,Oud en nieuw,3,Vrij
+2121,2122-01-01,1 jan,Oud en nieuw,4,Dag
+2121,2122-01-01,1 jan,Oud en nieuw,5,Reserve
+2122,2122-12-24,24 dec,Kerst,1,Vrij
+2122,2122-12-24,24 dec,Kerst,2,Reserve
+2122,2122-12-24,24 dec,Kerst,3,Dag
+2122,2122-12-24,24 dec,Kerst,4,Nacht
+2122,2122-12-24,24 dec,Kerst,5,Vrij
+2122,2122-12-25,25 dec,Kerst,1,Dag
+2122,2122-12-25,25 dec,Kerst,2,Reserve
+2122,2122-12-25,25 dec,Kerst,3,Vrij
+2122,2122-12-25,25 dec,Kerst,4,Vrij
+2122,2122-12-25,25 dec,Kerst,5,Nacht
+2122,2122-12-26,26 dec,Kerst,1,Dag
+2122,2122-12-26,26 dec,Kerst,2,Reserve
+2122,2122-12-26,26 dec,Kerst,3,Vrij
+2122,2122-12-26,26 dec,Kerst,4,Vrij
+2122,2122-12-26,26 dec,Kerst,5,Nacht
+2122,2122-12-31,31 dec,Oud en nieuw,1,Reserve
+2122,2122-12-31,31 dec,Oud en nieuw,2,Vrij
+2122,2122-12-31,31 dec,Oud en nieuw,3,Nacht
+2122,2122-12-31,31 dec,Oud en nieuw,4,Vrij
+2122,2122-12-31,31 dec,Oud en nieuw,5,Dag
+2122,2123-01-01,1 jan,Oud en nieuw,1,Reserve
+2122,2123-01-01,1 jan,Oud en nieuw,2,Nacht
+2122,2123-01-01,1 jan,Oud en nieuw,3,Vrij
+2122,2123-01-01,1 jan,Oud en nieuw,4,Dag
+2122,2123-01-01,1 jan,Oud en nieuw,5,Vrij
+2123,2123-12-24,24 dec,Kerst,1,Nacht
+2123,2123-12-24,24 dec,Kerst,2,Vrij
+2123,2123-12-24,24 dec,Kerst,3,Dag
+2123,2123-12-24,24 dec,Kerst,4,Reserve
+2123,2123-12-24,24 dec,Kerst,5,Vrij
+2123,2123-12-25,25 dec,Kerst,1,Nacht
+2123,2123-12-25,25 dec,Kerst,2,Vrij
+2123,2123-12-25,25 dec,Kerst,3,Dag
+2123,2123-12-25,25 dec,Kerst,4,Reserve
+2123,2123-12-25,25 dec,Kerst,5,Vrij
+2123,2123-12-26,26 dec,Kerst,1,Nacht
+2123,2123-12-26,26 dec,Kerst,2,Vrij
+2123,2123-12-26,26 dec,Kerst,3,Dag
+2123,2123-12-26,26 dec,Kerst,4,Reserve
+2123,2123-12-26,26 dec,Kerst,5,Vrij
+2123,2123-12-31,31 dec,Oud en nieuw,1,Vrij
+2123,2123-12-31,31 dec,Oud en nieuw,2,Vrij
+2123,2123-12-31,31 dec,Oud en nieuw,3,Reserve
+2123,2123-12-31,31 dec,Oud en nieuw,4,Nacht
+2123,2123-12-31,31 dec,Oud en nieuw,5,Dag
+2123,2124-01-01,1 jan,Oud en nieuw,1,Vrij
+2123,2124-01-01,1 jan,Oud en nieuw,2,Vrij
+2123,2124-01-01,1 jan,Oud en nieuw,3,Reserve
+2123,2124-01-01,1 jan,Oud en nieuw,4,Nacht
+2123,2124-01-01,1 jan,Oud en nieuw,5,Dag
+2124,2124-12-24,24 dec,Kerst,1,Vrij
+2124,2124-12-24,24 dec,Kerst,2,Dag
+2124,2124-12-24,24 dec,Kerst,3,Nacht
+2124,2124-12-24,24 dec,Kerst,4,Vrij
+2124,2124-12-24,24 dec,Kerst,5,Reserve
+2124,2124-12-25,25 dec,Kerst,1,Nacht
+2124,2124-12-25,25 dec,Kerst,2,Vrij
+2124,2124-12-25,25 dec,Kerst,3,Vrij
+2124,2124-12-25,25 dec,Kerst,4,Dag
+2124,2124-12-25,25 dec,Kerst,5,Reserve
+2124,2124-12-26,26 dec,Kerst,1,Nacht
+2124,2124-12-26,26 dec,Kerst,2,Vrij
+2124,2124-12-26,26 dec,Kerst,3,Vrij
+2124,2124-12-26,26 dec,Kerst,4,Dag
+2124,2124-12-26,26 dec,Kerst,5,Reserve
+2124,2124-12-31,31 dec,Oud en nieuw,1,Dag
+2124,2124-12-31,31 dec,Oud en nieuw,2,Reserve
+2124,2124-12-31,31 dec,Oud en nieuw,3,Vrij
+2124,2124-12-31,31 dec,Oud en nieuw,4,Vrij
+2124,2124-12-31,31 dec,Oud en nieuw,5,Nacht
+2124,2125-01-01,1 jan,Oud en nieuw,1,Vrij
+2124,2125-01-01,1 jan,Oud en nieuw,2,Reserve
+2124,2125-01-01,1 jan,Oud en nieuw,3,Dag
+2124,2125-01-01,1 jan,Oud en nieuw,4,Nacht
+2124,2125-01-01,1 jan,Oud en nieuw,5,Vrij
+2125,2125-12-24,24 dec,Kerst,1,Reserve
+2125,2125-12-24,24 dec,Kerst,2,Vrij
+2125,2125-12-24,24 dec,Kerst,3,Nacht
+2125,2125-12-24,24 dec,Kerst,4,Vrij
+2125,2125-12-24,24 dec,Kerst,5,Dag
+2125,2125-12-25,25 dec,Kerst,1,Reserve
+2125,2125-12-25,25 dec,Kerst,2,Vrij
+2125,2125-12-25,25 dec,Kerst,3,Nacht
+2125,2125-12-25,25 dec,Kerst,4,Vrij
+2125,2125-12-25,25 dec,Kerst,5,Dag
+2125,2125-12-26,26 dec,Kerst,1,Vrij
+2125,2125-12-26,26 dec,Kerst,2,Dag
+2125,2125-12-26,26 dec,Kerst,3,Vrij
+2125,2125-12-26,26 dec,Kerst,4,Reserve
+2125,2125-12-26,26 dec,Kerst,5,Nacht
+2125,2125-12-31,31 dec,Oud en nieuw,1,Vrij
+2125,2125-12-31,31 dec,Oud en nieuw,2,Dag
+2125,2125-12-31,31 dec,Oud en nieuw,3,Vrij
+2125,2125-12-31,31 dec,Oud en nieuw,4,Reserve
+2125,2125-12-31,31 dec,Oud en nieuw,5,Nacht
+2125,2126-01-01,1 jan,Oud en nieuw,1,Vrij
+2125,2126-01-01,1 jan,Oud en nieuw,2,Dag
+2125,2126-01-01,1 jan,Oud en nieuw,3,Vrij
+2125,2126-01-01,1 jan,Oud en nieuw,4,Reserve
+2125,2126-01-01,1 jan,Oud en nieuw,5,Nacht
+2126,2126-12-24,24 dec,Kerst,1,Dag
+2126,2126-12-24,24 dec,Kerst,2,Nacht
+2126,2126-12-24,24 dec,Kerst,3,Reserve
+2126,2126-12-24,24 dec,Kerst,4,Vrij
+2126,2126-12-24,24 dec,Kerst,5,Vrij
+2126,2126-12-25,25 dec,Kerst,1,Nacht
+2126,2126-12-25,25 dec,Kerst,2,Vrij
+2126,2126-12-25,25 dec,Kerst,3,Vrij
+2126,2126-12-25,25 dec,Kerst,4,Dag
+2126,2126-12-25,25 dec,Kerst,5,Reserve
+2126,2126-12-26,26 dec,Kerst,1,Nacht
+2126,2126-12-26,26 dec,Kerst,2,Vrij
+2126,2126-12-26,26 dec,Kerst,3,Vrij
+2126,2126-12-26,26 dec,Kerst,4,Dag
+2126,2126-12-26,26 dec,Kerst,5,Reserve
+2126,2126-12-31,31 dec,Oud en nieuw,1,Nacht
+2126,2126-12-31,31 dec,Oud en nieuw,2,Vrij
+2126,2126-12-31,31 dec,Oud en nieuw,3,Vrij
+2126,2126-12-31,31 dec,Oud en nieuw,4,Dag
+2126,2126-12-31,31 dec,Oud en nieuw,5,Reserve
+2126,2127-01-01,1 jan,Oud en nieuw,1,Vrij
+2126,2127-01-01,1 jan,Oud en nieuw,2,Reserve
+2126,2127-01-01,1 jan,Oud en nieuw,3,Dag
+2126,2127-01-01,1 jan,Oud en nieuw,4,Nacht
+2126,2127-01-01,1 jan,Oud en nieuw,5,Vrij
