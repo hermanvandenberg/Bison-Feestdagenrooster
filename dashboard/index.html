@@ -15,6 +15,7 @@
 .bx-tiles { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: var(--cds-gap-sm); }
 .bx-tile { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-sm); display: flex; flex-direction: column; align-items: center; gap: 2px; min-width: 0; }
 .bx-tile-label { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); white-space: nowrap; }
+.bx-tile-sub { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); text-align: center; line-height: 1.25; }
 .bx-tile-num { font-family: var(--font-anthropic-serif); font-size: var(--cds-font-size-title); font-variant-numeric: tabular-nums; min-height: 1.3em; line-height: 1.3; }
 .bx-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 24rem), 1fr)); gap: var(--cds-gap-md); }
 .bx-card { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-md); display: flex; flex-direction: column; gap: var(--cds-gap-sm); min-width: 0; }
@@ -99,11 +100,11 @@
     <h2>Jaren zonder feestdagdienst</h2>
     <p class="bx-note">Hoe vaak een ploeg in de gekozen periode op geen van de vijf dagen (24, 25, 26, 31 december en 1 januari) een dag- of nachtdienst heeft. Het kleine getal telt de jaren waarin de ploeg ook geen reserve heeft, dus helemaal vrij is.</p>
     <div class="bx-tiles">
-      <div class="bx-tile"><span class="bx-tile-label">Ploeg 1</span><span class="bx-tile-num dash-skeleton" data-draw="v1" data-source="cumulatief" data-field="jaren_vrij">—</span><span class="bx-tile-label">helemaal vrij <b data-draw="h1" data-source="cumulatief" data-field="jaren_helemaal_vrij">—</b></span></div>
-      <div class="bx-tile"><span class="bx-tile-label">Ploeg 2</span><span class="bx-tile-num dash-skeleton" data-draw="v2" data-source="cumulatief" data-field="jaren_vrij">—</span><span class="bx-tile-label">helemaal vrij <b data-draw="h2" data-source="cumulatief" data-field="jaren_helemaal_vrij">—</b></span></div>
-      <div class="bx-tile"><span class="bx-tile-label">Ploeg 3</span><span class="bx-tile-num dash-skeleton" data-draw="v3" data-source="cumulatief" data-field="jaren_vrij">—</span><span class="bx-tile-label">helemaal vrij <b data-draw="h3" data-source="cumulatief" data-field="jaren_helemaal_vrij">—</b></span></div>
-      <div class="bx-tile"><span class="bx-tile-label">Ploeg 4</span><span class="bx-tile-num dash-skeleton" data-draw="v4" data-source="cumulatief" data-field="jaren_vrij">—</span><span class="bx-tile-label">helemaal vrij <b data-draw="h4" data-source="cumulatief" data-field="jaren_helemaal_vrij">—</b></span></div>
-      <div class="bx-tile"><span class="bx-tile-label">Ploeg 5</span><span class="bx-tile-num dash-skeleton" data-draw="v5" data-source="cumulatief" data-field="jaren_vrij">—</span><span class="bx-tile-label">helemaal vrij <b data-draw="h5" data-source="cumulatief" data-field="jaren_helemaal_vrij">—</b></span></div>
+      <div class="bx-tile"><span class="bx-tile-label">Ploeg 1</span><span class="bx-tile-num dash-skeleton" data-draw="v1" data-source="cumulatief" data-field="jaren_vrij">—</span><span class="bx-tile-sub">helemaal vrij <b data-draw="h1" data-source="cumulatief" data-field="jaren_helemaal_vrij">—</b></span></div>
+      <div class="bx-tile"><span class="bx-tile-label">Ploeg 2</span><span class="bx-tile-num dash-skeleton" data-draw="v2" data-source="cumulatief" data-field="jaren_vrij">—</span><span class="bx-tile-sub">helemaal vrij <b data-draw="h2" data-source="cumulatief" data-field="jaren_helemaal_vrij">—</b></span></div>
+      <div class="bx-tile"><span class="bx-tile-label">Ploeg 3</span><span class="bx-tile-num dash-skeleton" data-draw="v3" data-source="cumulatief" data-field="jaren_vrij">—</span><span class="bx-tile-sub">helemaal vrij <b data-draw="h3" data-source="cumulatief" data-field="jaren_helemaal_vrij">—</b></span></div>
+      <div class="bx-tile"><span class="bx-tile-label">Ploeg 4</span><span class="bx-tile-num dash-skeleton" data-draw="v4" data-source="cumulatief" data-field="jaren_vrij">—</span><span class="bx-tile-sub">helemaal vrij <b data-draw="h4" data-source="cumulatief" data-field="jaren_helemaal_vrij">—</b></span></div>
+      <div class="bx-tile"><span class="bx-tile-label">Ploeg 5</span><span class="bx-tile-num dash-skeleton" data-draw="v5" data-source="cumulatief" data-field="jaren_vrij">—</span><span class="bx-tile-sub">helemaal vrij <b data-draw="h5" data-source="cumulatief" data-field="jaren_helemaal_vrij">—</b></span></div>
     </div>
   </section>
 

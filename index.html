@@ -1,0 +1,525 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Bison feestdagenrooster</title>
+<meta name="description" content="Wie van de Bison werkt er met kerst en oud en nieuw, en is dat eerlijk verdeeld?">
+<style>
+:root {
+  --color-bg: #f6f7f9; --color-panel: #ffffff; --color-fg: #1b1f27; --color-fg-muted: #5b6372;
+  --color-border-line: #e1e4ea; --color-ok: #1f7a4d; --color-warn: #a35f00; --color-bad: #b42318;
+  --cds-surface-popover: #ffffff; --cds-border: #d5d9e0; --cds-text-secondary: #5b6372;
+  --cds-shadow-popover: 0 4px 16px rgba(20, 30, 50, .14);
+  --cds-chart-grid: #eceef2; --cds-chart-axis: #c4c9d2; --cds-chart-reference: #1b1f27; --cds-chart-muted: #c4c9d2;
+  --font-anthropic-sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-anthropic-serif: Georgia, "Times New Roman", serif;
+  --cds-font-size-caption: 12px; --cds-font-size-body: 14px; --cds-font-size-heading: 16px; --cds-font-size-title: 26px;
+  --cds-font-weight-medium: 600;
+  --cds-gap-xs: 4px; --cds-gap-sm: 8px; --cds-gap-md: 12px; --cds-gap-lg: 20px; --cds-gap-xl: 32px;
+  --cds-pad-xs: 4px; --cds-pad-sm: 8px; --cds-pad-md: 12px; --cds-pad-lg: 16px; --cds-pad-xl: 24px;
+  --cds-radius: 8px; --cds-dur-slow: .3s; --cds-ease-out: cubic-bezier(.2, .8, .2, 1);
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: #12151b; --color-panel: #1b1f27; --color-fg: #e8eaee; --color-fg-muted: #9aa3b2;
+    --color-border-line: #2c323d; --cds-surface-popover: #232833; --cds-border: #353c48; --cds-text-secondary: #9aa3b2;
+    --cds-shadow-popover: 0 4px 16px rgba(0, 0, 0, .5);
+    --cds-chart-grid: #262b35; --cds-chart-axis: #3a414d; --cds-chart-reference: #e8eaee; --cds-chart-muted: #3a414d;
+    color-scheme: dark;
+  }
+}
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--color-bg); color: var(--color-fg); font-family: var(--font-anthropic-sans); font-size: 14px;
+  padding-top: env(safe-area-inset-top, 0px); padding-bottom: max(24px, env(safe-area-inset-bottom, 0px)); }
+#dash-root { --dash-gutter: 12px; padding-left: max(var(--dash-gutter), env(safe-area-inset-left, 0px));
+  padding-right: max(var(--dash-gutter), env(safe-area-inset-right, 0px)); padding-block: 16px; }
+.dash-skeleton:empty, .dash-skeleton { color: transparent; }
+.dash-skeleton { background: linear-gradient(90deg, var(--color-border-line), var(--color-panel), var(--color-border-line));
+  background-size: 200% 100%; border-radius: 4px; animation: dash-sk 1.4s linear infinite; }
+@keyframes dash-sk { to { background-position: -200% 0; } }
+.bx-bron { font-size: 12px; color: var(--color-fg-muted); text-align: center; margin: 24px 0 0; }
+.bx-bron a { color: inherit; }
+</style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+<script>
+// Kleine vervanger van de dash-functies van het Claude-dashboard.
+(() => {
+  const CSV = "data/bison_diensten_2026-2126.csv";
+  const sources = {};   // id -> {status, data, columns}
+  const calcs = {};     // id -> {inputs, fn}
+  const draws = {};     // name -> fn
+  const listeners = [];
+  const st = (id) => sources[id] || { status: 'loading', data: [], columns: [] };
+  const runCalcs = () => {
+    let changed = true;
+    while (changed) {
+      changed = false;
+      for (const [id, c] of Object.entries(calcs)) {
+        if (sources[id]) continue;
+        const ins = c.inputs.map(st);
+        if (ins.every((s) => s.status === 'ok')) {
+          try { sources[id] = { status: 'ok', data: c.fn(...ins.map((s) => s.data)), columns: [] }; }
+          catch (e) { console.error(e); sources[id] = { status: 'error', data: [], columns: [], message: String(e) }; }
+          changed = true;
+        } else if (ins.some((s) => s.status === 'error')) {
+          sources[id] = { status: 'error', data: [], columns: [] }; changed = true;
+        }
+      }
+    }
+  };
+  const runDraw = (name) => document.querySelectorAll('[data-draw="' + name + '"]').forEach((el) => {
+    try { draws[name](el); } catch (e) { console.error(e); }
+  });
+  const all = () => { listeners.forEach((f) => { try { f(); } catch (e) { console.error(e); } }); Object.keys(draws).forEach(runDraw); };
+  window.dash = {
+    colors: ['#3b6fd8', '#8a4fd1', '#e0912f', '#1f9e89', '#d6457a', '#6b7a8f', '#b5a22c', '#4aa3c8'],
+    data: (id) => ({ ...st(id), get rows() { return this.data; } }),
+    calc: (id, o) => { calcs[id] = o; },
+    loader: () => {},
+    onData: (fn) => { listeners.push(fn); try { fn(); } catch (e) { console.error(e); } },
+    draw: (name, fn) => { if (fn) { draws[name] = typeof fn === 'function' ? fn : fn.update; } else if (draws[name]) runDraw(name); },
+    params: () => ({}), setParams: () => {}, resetParams: () => {}, setLink: () => {}, refresh: () => {},
+  };
+  const load = () => fetch(CSV).then((r) => { if (!r.ok) throw new Error(r.status); return r.text(); }).then((t) => {
+    const rows = d3.csvParse(t);
+    sources.diensten = { status: 'ok', data: rows, columns: rows.columns };
+  }).catch((e) => { console.error(e); sources.diensten = { status: 'error', data: [], columns: [] }; })
+    .then(() => { runCalcs(); all(); });
+  document.addEventListener('DOMContentLoaded', () => { all(); load(); });
+  let w = window.innerWidth;
+  window.addEventListener('resize', () => { if (window.innerWidth !== w) { w = window.innerWidth; all(); } });
+})();
+</script>
+</head>
+<body>
+<div id="dash-root">
+<meta name="dash-one-writer">
+<style>
+#dash-root { --dash-gutter: 12px; }
+.bx { display: flex; flex-direction: column; gap: var(--cds-gap-lg); font-family: var(--font-anthropic-sans); max-width: 64rem; margin-inline: auto; }
+.bx-head { display: flex; flex-direction: column; gap: var(--cds-gap-xs); }
+.bx-title { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); line-height: 1.15; margin: 0; text-wrap: balance; }
+.bx-lead { margin: 0; color: var(--color-fg-muted); max-width: 70ch; line-height: 1.5; }
+.bx .bx-lead b { color: var(--color-fg); font-weight: 600; font-variant-numeric: tabular-nums; }
+.bx-range { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--color-bg); padding-block: var(--cds-pad-sm); display: flex; flex-direction: column; gap: var(--cds-gap-xs); border-bottom: 1px solid var(--color-border-line); }
+.bx-range-row { display: flex; align-items: center; gap: var(--cds-gap-sm); flex-wrap: wrap; }
+.bx-range label { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+.bx .bx-range b { font-variant-numeric: tabular-nums; font-weight: 600; color: var(--color-fg); }
+.bx-slider { flex: 1 1 12rem; min-width: 0; accent-color: var(--color-fg); height: 28px; }
+.bx-presets { display: flex; gap: var(--cds-gap-xs); flex-wrap: wrap; }
+.bx-tiles { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: var(--cds-gap-sm); }
+.bx-tile { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-sm); display: flex; flex-direction: column; align-items: center; gap: 2px; min-width: 0; }
+.bx-tile-label { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); white-space: nowrap; }
+.bx-tile-sub { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); text-align: center; line-height: 1.25; }
+.bx-tile-num { font-family: var(--font-anthropic-serif); font-size: var(--cds-font-size-title); font-variant-numeric: tabular-nums; min-height: 1.3em; line-height: 1.3; }
+.bx-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 24rem), 1fr)); gap: var(--cds-gap-md); }
+.bx-card { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-md); display: flex; flex-direction: column; gap: var(--cds-gap-sm); min-width: 0; }
+.bx-card h2 { font-size: var(--cds-font-size-heading); font-weight: var(--cds-font-weight-medium); margin: 0; }
+.bx-note { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); margin: 0; line-height: 1.45; }
+.bx-legend { display: flex; flex-wrap: wrap; gap: var(--cds-gap-xs) var(--cds-gap-md); font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); list-style: none; margin: 0; padding: 0; }
+.bx-legend li { display: flex; align-items: center; gap: 6px; }
+.bx-sw { width: 10px; height: 10px; border-radius: 2px; display: inline-block; }
+.bx-chart { position: relative; min-height: 210px; }
+.bx-tip { position: absolute; pointer-events: none; background: var(--cds-surface-popover); border: 1px solid var(--cds-border); border-radius: var(--cds-radius); box-shadow: var(--cds-shadow-popover); padding: var(--cds-pad-xs) var(--cds-pad-sm); font-size: var(--cds-font-size-caption); white-space: nowrap; z-index: 2; }
+.bx-tip-h { color: var(--cds-text-secondary); }
+.bx-table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.bx-table { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; font-size: var(--cds-font-size-body); }
+.bx-table th, .bx-table td { text-align: right; padding: 8px 6px; border-bottom: 1px solid var(--color-border-line); }
+.bx-table th:first-child, .bx-table td:first-child { text-align: left; }
+.bx-table th { font-weight: var(--cds-font-weight-medium); color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); line-height: 1.2; vertical-align: bottom; }
+.bx-table td.bx-strong { font-weight: 600; }
+.bx-filter { display: flex; flex-wrap: wrap; gap: var(--cds-gap-xs); align-items: center; }
+.bx-filter span { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); margin-right: 2px; }
+.bx-btn { font: inherit; font-size: var(--cds-font-size-caption); min-height: 36px; min-width: 40px; padding: 4px 12px; border-radius: 999px; border: 1px solid var(--color-border-line); background: var(--color-bg); color: var(--color-fg); cursor: pointer; touch-action: manipulation; }
+.bx-btn:hover { border-color: var(--color-fg-muted); }
+.bx-btn:focus-visible { outline: 2px solid var(--color-fg); outline-offset: 2px; }
+.bx-btn.is-on { background: var(--color-fg); color: var(--color-bg); border-color: var(--color-fg); }
+.bx-matrix { min-height: 200px; }
+.bx-mx { border-collapse: separate; border-spacing: 3px; width: 100%; table-layout: fixed; font-variant-numeric: tabular-nums; font-size: var(--cds-font-size-caption); }
+.bx-mx thead th { position: sticky; top: calc(env(safe-area-inset-top, 0px) + var(--bx-sticky, 0px)); background: var(--color-panel); z-index: 1; }
+.bx-mx th { color: var(--color-fg-muted); font-weight: var(--cds-font-weight-medium); text-align: center; padding: 4px 0; line-height: 1.15; }
+.bx-mx th.bx-yr { text-align: left; width: 2.6rem; }
+.bx-mx col.bx-gapc { width: 4px; }
+.bx-mx td { padding: 0; vertical-align: top; }
+.bx-cell { display: flex; flex-direction: column; gap: 2px; }
+.bx-chip { display: flex; align-items: center; justify-content: center; gap: 3px; border-radius: 4px; padding: 3px 0; color: var(--color-fg); min-width: 0; line-height: 1.2; }
+.bx-chip i { font-style: normal; opacity: .65; font-size: 10px; }
+.bx .bx-chip b { font-weight: 600; }
+.bx-chip.is-dim { opacity: .15; }
+.bx-chip.is-hit { box-shadow: inset 0 0 0 2px var(--color-fg); }
+.bx-wd { display: block; font-weight: 400; font-size: 10px; opacity: .7; }
+@media (min-width: 640px) {
+  #dash-root { --dash-gutter: 24px; }
+  .bx-cell { flex-direction: row; gap: 3px; }
+  .bx-chip { flex: 1; padding: 4px 2px; }
+  .bx-mx { border-spacing: 4px; }
+  .bx-mx th.bx-yr { width: 3.5rem; }
+  .bx-card { padding: var(--cds-pad-lg); }
+}
+@media (max-width: 380px) { .bx-tile-num { font-size: var(--cds-font-size-heading); } }
+[data-dash-source-state=refreshing] { opacity: .5; transition: opacity var(--cds-dur-slow); }
+[data-dash-source-state=empty] { color: transparent; }
+</style>
+
+<div class="bx">
+  <header class="bx-head">
+    <h1 class="bx-title" id="titel">Bison feestdagenrooster</h1>
+    <p class="bx-lead">Van kerst 2026 tot en met kerst <b data-draw="eind1" data-source="cumulatief" data-field="tot_jaar" class="dash-skeleton">—</b> draait iedere ploeg tussen <b data-draw="min" data-source="spreiding" data-field="min" class="dash-skeleton">—</b> en <b data-draw="max" data-source="spreiding" data-field="max" class="dash-skeleton">—</b> diensten op 24, 25, 26 en 31 december en 1 januari. Bij een perfect gelijke verdeling is dat <b data-draw="gem" data-source="spreiding" data-field="gemiddeld" class="dash-skeleton">—</b> per ploeg.</p>
+  </header>
+
+  <section class="bx-range" aria-label="Periode kiezen">
+    <div class="bx-range-row">
+      <label for="bx-eind">Kijk vooruit tot en met</label>
+      <b data-draw="eind2" data-source="cumulatief" data-field="tot_jaar">—</b>
+    </div>
+    <div class="bx-range-row">
+      <input id="bx-eind" class="bx-slider" type="range" min="2026" max="2126" step="1" value="2046" aria-label="Laatste jaar">
+    </div>
+    <div class="bx-presets" role="group" aria-label="Snel kiezen">
+      <button type="button" class="bx-btn" data-eind="2036">10 jaar</button>
+      <button type="button" class="bx-btn is-on" data-eind="2046">20 jaar</button>
+      <button type="button" class="bx-btn" data-eind="2076">50 jaar</button>
+      <button type="button" class="bx-btn" data-eind="2126">100 jaar</button>
+    </div>
+  </section>
+
+  <section class="bx-tiles" aria-label="Totaal per ploeg">
+    <div class="bx-tile"><span class="bx-tile-label">Ploeg 1</span><span class="bx-tile-num dash-skeleton" data-draw="t1" data-source="cumulatief" data-field="totaal">—</span></div>
+    <div class="bx-tile"><span class="bx-tile-label">Ploeg 2</span><span class="bx-tile-num dash-skeleton" data-draw="t2" data-source="cumulatief" data-field="totaal">—</span></div>
+    <div class="bx-tile"><span class="bx-tile-label">Ploeg 3</span><span class="bx-tile-num dash-skeleton" data-draw="t3" data-source="cumulatief" data-field="totaal">—</span></div>
+    <div class="bx-tile"><span class="bx-tile-label">Ploeg 4</span><span class="bx-tile-num dash-skeleton" data-draw="t4" data-source="cumulatief" data-field="totaal">—</span></div>
+    <div class="bx-tile"><span class="bx-tile-label">Ploeg 5</span><span class="bx-tile-num dash-skeleton" data-draw="t5" data-source="cumulatief" data-field="totaal">—</span></div>
+  </section>
+
+  <section class="bx-card" id="vrije-jaren">
+    <h2>Jaren zonder feestdagdienst</h2>
+    <p class="bx-note">Hoe vaak een ploeg in de gekozen periode op geen van de vijf dagen (24, 25, 26, 31 december en 1 januari) een dag- of nachtdienst heeft. Het kleine getal telt de jaren waarin de ploeg ook geen reserve heeft, dus helemaal vrij is.</p>
+    <div class="bx-tiles">
+      <div class="bx-tile"><span class="bx-tile-label">Ploeg 1</span><span class="bx-tile-num dash-skeleton" data-draw="v1" data-source="cumulatief" data-field="jaren_vrij">—</span><span class="bx-tile-sub">helemaal vrij <b data-draw="h1" data-source="cumulatief" data-field="jaren_helemaal_vrij">—</b></span></div>
+      <div class="bx-tile"><span class="bx-tile-label">Ploeg 2</span><span class="bx-tile-num dash-skeleton" data-draw="v2" data-source="cumulatief" data-field="jaren_vrij">—</span><span class="bx-tile-sub">helemaal vrij <b data-draw="h2" data-source="cumulatief" data-field="jaren_helemaal_vrij">—</b></span></div>
+      <div class="bx-tile"><span class="bx-tile-label">Ploeg 3</span><span class="bx-tile-num dash-skeleton" data-draw="v3" data-source="cumulatief" data-field="jaren_vrij">—</span><span class="bx-tile-sub">helemaal vrij <b data-draw="h3" data-source="cumulatief" data-field="jaren_helemaal_vrij">—</b></span></div>
+      <div class="bx-tile"><span class="bx-tile-label">Ploeg 4</span><span class="bx-tile-num dash-skeleton" data-draw="v4" data-source="cumulatief" data-field="jaren_vrij">—</span><span class="bx-tile-sub">helemaal vrij <b data-draw="h4" data-source="cumulatief" data-field="jaren_helemaal_vrij">—</b></span></div>
+      <div class="bx-tile"><span class="bx-tile-label">Ploeg 5</span><span class="bx-tile-num dash-skeleton" data-draw="v5" data-source="cumulatief" data-field="jaren_vrij">—</span><span class="bx-tile-sub">helemaal vrij <b data-draw="h5" data-source="cumulatief" data-field="jaren_helemaal_vrij">—</b></span></div>
+    </div>
+  </section>
+
+  <div class="bx-grid">
+    <section class="bx-card" id="verdeling">
+      <h2>Verdeling per ploeg</h2>
+      <p class="bx-note">Aantal feestdagdiensten in de gekozen periode. De stippellijn is een gelijke verdeling.</p>
+      <ul class="bx-legend">
+        <li><span class="bx-sw" data-sw="0"></span>Kerst dag</li>
+        <li><span class="bx-sw" data-sw="1"></span>Kerst nacht</li>
+        <li><span class="bx-sw" data-sw="2"></span>O&amp;N dag</li>
+        <li><span class="bx-sw" data-sw="3"></span>O&amp;N nacht</li>
+      </ul>
+      <div class="bx-chart dash-skeleton" data-draw="staaf" data-source="cumulatief spreiding"></div>
+    </section>
+
+    <section class="bx-card" id="tabel">
+      <h2>Totalen per ploeg</h2>
+      <p class="bx-note">Kerst is 24, 25 en 26 december. O&amp;N (oud en nieuw) is 31 december en 1 januari. Oudejaarsnacht is de nachtdienst van 31 december.</p>
+      <div class="bx-table-wrap">
+        <table class="bx-table" data-source="cumulatief" data-row-key="tot_jaar,ploeg">
+          <thead><tr>
+            <th data-field="ploeg">Ploeg</th>
+            <th data-field="kerst_dag">Kerst dag</th>
+            <th data-field="kerst_nacht">Kerst nacht</th>
+            <th data-field="on_dag">O&amp;N dag</th>
+            <th data-field="on_nacht">O&amp;N nacht</th>
+            <th data-field="oudejaarsnacht">Oudj. nacht</th>
+            <th data-field="totaal">Totaal</th>
+            <th data-field="jaren_vrij">Jaren vrij</th>
+          </tr></thead>
+          <tbody data-draw="tabel"></tbody>
+        </table>
+      </div>
+    </section>
+  </div>
+
+  <section class="bx-card" id="per-jaar">
+    <h2>Wie werkt wanneer</h2>
+    <p class="bx-note">Per jaar en per datum de ploeg met dagdienst (D) en nachtdienst (N). Tik op een ploeg om te zien wanneer die werkt.</p>
+    <div class="bx-filter" role="group" aria-label="Kies ploeg">
+      <span>Ploeg</span>
+      <button type="button" class="bx-btn is-on" data-ploeg="" aria-pressed="true">Alle</button>
+      <button type="button" class="bx-btn" data-ploeg="1" aria-pressed="false">1</button>
+      <button type="button" class="bx-btn" data-ploeg="2" aria-pressed="false">2</button>
+      <button type="button" class="bx-btn" data-ploeg="3" aria-pressed="false">3</button>
+      <button type="button" class="bx-btn" data-ploeg="4" aria-pressed="false">4</button>
+      <button type="button" class="bx-btn" data-ploeg="5" aria-pressed="false">5</button>
+    </div>
+    <ul class="bx-legend">
+      <li><span class="bx-sw" data-sw="dag"></span>Dagdienst</li>
+      <li><span class="bx-sw" data-sw="nacht"></span>Nachtdienst</li>
+    </ul>
+    <div class="bx-matrix dash-skeleton" data-draw="matrix" data-source="diensten"></div>
+    <p class="bx-note">Aanname: de 5-weekse cyclus uit het rooster van 2027 loopt elk jaar ongewijzigd door, zonder ruilen of verlof.</p>
+  </section>
+</div>
+
+<script>
+dash.calc('cumulatief', {
+  title: 'Diensten per ploeg, opgeteld vanaf 2026',
+  description: 'Per eindjaar en ploeg: de dag- en nachtdiensten op kerst en oud en nieuw vanaf kerst 2026, opgeteld tot en met dat jaar, en het aantal jaren zonder enige feestdagdienst (en daarvan ook zonder reserve).',
+  inputs: ['diensten'],
+  fn: (diensten) => {
+    const jaren = Array.from(new Set(diensten.map((d) => Number(d.jaar)))).sort((a, b) => a - b);
+    const per = new Map();
+    diensten.forEach((d) => {
+      const k = d.jaar + '|' + d.ploeg;
+      const c = per.get(k) || { kd: 0, kn: 0, od: 0, on: 0, oj: 0, res: 0 };
+      if (d.dienst === 'Reserve') c.res++;
+      if (d.periode === 'Kerst' && d.dienst === 'Dag') c.kd++;
+      if (d.periode === 'Kerst' && d.dienst === 'Nacht') c.kn++;
+      if (d.periode === 'Oud en nieuw' && d.dienst === 'Dag') c.od++;
+      if (d.periode === 'Oud en nieuw' && d.dienst === 'Nacht') c.on++;
+      if (d.dag === '31 dec' && d.dienst === 'Nacht') c.oj++;
+      per.set(k, c);
+    });
+    const out = [];
+    [1, 2, 3, 4, 5].forEach((p) => {
+      const s = { kd: 0, kn: 0, od: 0, on: 0, oj: 0, vrij: 0, helevrij: 0 };
+      jaren.forEach((j) => {
+        const c = per.get(j + '|' + p) || {};
+        ['kd', 'kn', 'od', 'on', 'oj'].forEach((k) => { s[k] += c[k] || 0; });
+        const n = (c.kd || 0) + (c.kn || 0) + (c.od || 0) + (c.on || 0);
+        if (n === 0) s.vrij++;
+        if (n === 0 && !c.res) s.helevrij++;
+        out.push({ tot_jaar: j, ploeg: p, kerst_dag: s.kd, kerst_nacht: s.kn, on_dag: s.od, on_nacht: s.on,
+          oudejaarsnacht: s.oj, totaal: s.kd + s.kn + s.od + s.on,
+          jaren_vrij: s.vrij, jaren_helemaal_vrij: s.helevrij });
+      });
+    });
+    return out;
+  }
+});
+dash.calc('spreiding', {
+  title: 'Spreiding tussen ploegen',
+  description: 'Per eindjaar het laagste, hoogste en gemiddelde aantal diensten per ploeg.',
+  inputs: ['cumulatief'],
+  fn: (cumulatief) => {
+    const g = new Map();
+    cumulatief.forEach((r) => { (g.get(r.tot_jaar) || g.set(r.tot_jaar, []).get(r.tot_jaar)).push(r.totaal); });
+    return Array.from(g, ([tot_jaar, t]) => ({ tot_jaar, min: Math.min(...t), max: Math.max(...t), gemiddeld: t.reduce((a, b) => a + b, 0) / t.length }));
+  }
+});
+</script>
+
+<script>
+(() => {
+  const SER = [
+    { key: 'kerst_dag', label: 'Kerst dag' },
+    { key: 'kerst_nacht', label: 'Kerst nacht' },
+    { key: 'on_dag', label: 'Oud en nieuw dag' },
+    { key: 'on_nacht', label: 'Oud en nieuw nacht' }
+  ];
+  const DAG = () => dash.colors[0], NACHT = () => dash.colors[1];
+  const setSkel = (el, on) => el.classList.toggle('dash-skeleton', on);
+  const fmt = d3.format(',.0f');
+  const fmtGem = d3.format(',.1~f');
+  let eind = 2046;
+  let gekozen = '';
+  const ALLES = ['eind1', 'eind2', 'min', 'max', 'gem', 't1', 't2', 't3', 't4', 't5', 'v1', 'v2', 'v3', 'v4', 'v5', 'h1', 'h2', 'h3', 'h4', 'h5', 'tabel', 'staaf', 'matrix'];
+  const herteken = () => ALLES.forEach((n) => dash.draw(n));
+
+  // kleuren van de legenda
+  dash.onData(() => {
+    document.querySelectorAll('[data-sw]').forEach((s) => {
+      const k = s.getAttribute('data-sw');
+      s.style.background = k === 'dag' ? DAG() : k === 'nacht' ? NACHT() : dash.colors[Number(k)];
+    });
+    const r = document.querySelector('.bx-range');
+    if (r) document.querySelectorAll('#per-jaar').forEach((s) => s.style.setProperty('--bx-sticky', r.offsetHeight + 'px'));
+  });
+
+  // eindjaar kiezen
+  const zetEind = (j) => {
+    eind = Math.max(2026, Math.min(2126, Number(j) || 2046));
+    document.querySelectorAll('#bx-eind').forEach((s) => { s.value = String(eind); });
+    document.querySelectorAll('.bx-btn[data-eind]').forEach((b) => b.classList.toggle('is-on', Number(b.getAttribute('data-eind')) === eind));
+    herteken();
+  };
+  document.querySelectorAll('#bx-eind').forEach((s) => s.addEventListener('input', () => zetEind(s.value)));
+  document.querySelectorAll('.bx-btn[data-eind]').forEach((b) => b.addEventListener('click', () => zetEind(b.getAttribute('data-eind'))));
+
+  const rijCum = (p) => {
+    const c = dash.data('cumulatief');
+    return c.status === 'ok' ? c.data.find((r) => r.tot_jaar === eind && r.ploeg === p) : null;
+  };
+  const rijSpr = () => {
+    const s = dash.data('spreiding');
+    return s.status === 'ok' ? s.data.find((r) => r.tot_jaar === eind) : null;
+  };
+  const busy = (id) => dash.data(id).status === 'loading';
+
+  // eindjaar in de tekst
+  ['eind1', 'eind2'].forEach((name) => dash.draw(name, (el) => {
+    const r = rijCum(1);
+    if (!r) { el.textContent = '—'; setSkel(el, busy('cumulatief')); return; }
+    el.setAttribute('data-where', 'tot_jaar=' + eind + '&ploeg=1');
+    el.textContent = String(r.tot_jaar); setSkel(el, false);
+  }));
+
+  // spreiding in de tekst
+  [['min', 'min', fmt], ['max', 'max', fmt], ['gem', 'gemiddeld', fmtGem]].forEach(([name, f, ff]) => dash.draw(name, (el) => {
+    const r = rijSpr();
+    if (!r) { el.textContent = '—'; setSkel(el, busy('spreiding')); return; }
+    el.setAttribute('data-where', 'tot_jaar=' + eind);
+    el.textContent = ff(r[f]); setSkel(el, false);
+  }));
+
+  // tegels
+  [1, 2, 3, 4, 5].forEach((p) => dash.draw('t' + p, (el) => {
+    const r = rijCum(p);
+    if (!r) { el.textContent = '—'; setSkel(el, busy('cumulatief')); return; }
+    el.setAttribute('data-where', 'tot_jaar=' + eind + '&ploeg=' + p);
+    el.textContent = fmt(r.totaal); setSkel(el, false);
+  }));
+
+  // jaren zonder feestdagdienst
+  [1, 2, 3, 4, 5].forEach((p) => {
+    [['v', 'jaren_vrij'], ['h', 'jaren_helemaal_vrij']].forEach(([pre, f]) => dash.draw(pre + p, (el) => {
+      const r = rijCum(p);
+      if (!r) { el.textContent = '—'; setSkel(el, busy('cumulatief')); return; }
+      el.setAttribute('data-where', 'tot_jaar=' + eind + '&ploeg=' + p);
+      el.textContent = fmt(r[f]); setSkel(el, false);
+    }));
+  });
+
+  // tabel
+  dash.draw('tabel', (tb) => {
+    tb.replaceChildren();
+    const rows = [1, 2, 3, 4, 5].map(rijCum).filter(Boolean);
+    rows.forEach((r) => {
+      const tr = document.createElement('tr');
+      tr.setAttribute('data-key', r.tot_jaar + ',' + r.ploeg);
+      ['ploeg', 'kerst_dag', 'kerst_nacht', 'on_dag', 'on_nacht', 'oudejaarsnacht', 'totaal', 'jaren_vrij'].forEach((k) => {
+        const td = document.createElement('td');
+        td.textContent = k === 'ploeg' ? String(r[k]) : fmt(r[k]);
+        if (k === 'totaal') td.className = 'bx-strong';
+        tr.appendChild(td);
+      });
+      tb.appendChild(tr);
+    });
+  });
+
+  // gestapelde staven
+  dash.draw('staaf', (el) => {
+    el.replaceChildren();
+    const rows = [1, 2, 3, 4, 5].map(rijCum).filter(Boolean), s = rijSpr();
+    if (rows.length < 5 || !s) { setSkel(el, busy('cumulatief') || busy('spreiding')); return; }
+    setSkel(el, false);
+    const gem = s.gemiddeld;
+    const W = Math.max(260, el.clientWidth), rowH = 32;
+    const svg = d3.select(el).append('svg').attr('width', '100%').attr('role', 'img').attr('aria-label', 'Diensten per ploeg');
+    const probe = svg.append('text').style('font-size', 'var(--cds-font-size-caption)').text('Ploeg 5');
+    const lw = probe.node().getComputedTextLength(); probe.remove();
+    const maxT = d3.max(rows, (r) => r.totaal);
+    const probe2 = svg.append('text').style('font-size', 'var(--cds-font-size-caption)').style('font-weight', 600).text(fmt(maxT));
+    const rw = probe2.node().getComputedTextLength(); probe2.remove();
+    const m = { t: 6, r: rw + 10, b: 24, l: lw + 10 };
+    const H = m.t + m.b + rows.length * rowH;
+    svg.attr('viewBox', `0 0 ${W} ${H}`);
+    const x = d3.scaleLinear([0, Math.max(maxT, gem)], [m.l, W - m.r]).nice();
+    const y = d3.scaleBand(rows.map((r) => r.ploeg), [m.t, H - m.b]).padding(0.25);
+    const nt = W < 400 ? 3 : 5;
+    svg.append('g').selectAll('line').data(x.ticks(nt)).join('line')
+      .attr('x1', (d) => x(d)).attr('x2', (d) => x(d)).attr('y1', m.t).attr('y2', H - m.b)
+      .attr('stroke', 'var(--cds-chart-grid)').attr('stroke-width', 1);
+    const ax = svg.append('g').attr('transform', `translate(0,${H - m.b})`).call(d3.axisBottom(x).ticks(nt).tickSize(0).tickPadding(8).tickFormat(fmt));
+    ax.attr('font-size', null).attr('font-family', null);
+    ax.select('.domain').attr('stroke', 'var(--cds-chart-axis)');
+    ax.selectAll('text').attr('fill', 'var(--color-fg-muted)').style('font-size', 'var(--cds-font-size-caption)');
+    svg.append('g').selectAll('text').data(rows).join('text')
+      .attr('x', m.l - 8).attr('y', (r) => y(r.ploeg) + y.bandwidth() / 2).attr('dy', '0.35em').attr('text-anchor', 'end')
+      .attr('fill', 'var(--color-fg)').style('font-size', 'var(--cds-font-size-caption)').text((r) => 'Ploeg ' + r.ploeg);
+    const stack = d3.stack().keys(SER.map((q) => q.key))(rows);
+    const tip = d3.select(el).append('div').attr('class', 'bx-tip').style('display', 'none');
+    const toon = (ev, d, i) => {
+      const [px, py] = d3.pointer(ev, el);
+      tip.style('display', null).selectAll('*').remove();
+      tip.append('div').attr('class', 'bx-tip-h').text('Ploeg ' + d.data.ploeg + ' · t/m ' + d.data.tot_jaar);
+      tip.append('div').text(SER[i].label + ': ' + fmt(d.data[SER[i].key]));
+      tip.append('div').text('Totaal: ' + fmt(d.data.totaal));
+      const tw = tip.node().offsetWidth;
+      tip.style('left', Math.min(Math.max(0, px - tw / 2), el.clientWidth - tw) + 'px').style('top', Math.max(0, py - 64) + 'px');
+    };
+    stack.forEach((layer, i) => {
+      svg.append('g').selectAll('rect').data(layer).join('rect')
+        .attr('x', (d) => x(d[0])).attr('width', (d) => Math.max(0, x(d[1]) - x(d[0]) - 1))
+        .attr('y', (d) => y(d.data.ploeg)).attr('height', y.bandwidth()).attr('rx', 2)
+        .attr('fill', dash.colors[i])
+        .on('pointermove', (ev, d) => toon(ev, d, i))
+        .on('pointerdown', (ev, d) => toon(ev, d, i))
+        .on('pointerleave', () => tip.style('display', 'none'));
+    });
+    svg.append('g').selectAll('text').data(rows).join('text')
+      .attr('x', (r) => x(r.totaal) + 5).attr('y', (r) => y(r.ploeg) + y.bandwidth() / 2).attr('dy', '0.35em')
+      .attr('fill', 'var(--color-fg)').style('font-size', 'var(--cds-font-size-caption)').style('font-weight', 600).text((r) => fmt(r.totaal));
+    svg.append('line').attr('x1', x(gem)).attr('x2', x(gem)).attr('y1', m.t - 2).attr('y2', H - m.b)
+      .attr('stroke', 'var(--cds-chart-reference)').attr('stroke-width', 1.5).attr('stroke-dasharray', '4 3');
+  });
+
+  // per jaar en datum: dag- en nachtploeg
+  const DATES = ['24 dec', '25 dec', '26 dec', '31 dec', '1 jan'];
+  const WD = ['zo', 'ma', 'di', 'wo', 'do', 'vr', 'za'];
+  dash.draw('matrix', (el) => {
+    const d = dash.data('diensten');
+    el.replaceChildren();
+    if (d.status !== 'ok') { setSkel(el, d.status === 'loading'); return; }
+    setSkel(el, false);
+    const by = d3.group(d.data.filter((r) => Number(r.jaar) <= eind), (r) => String(r.jaar), (r) => r.dag);
+    const tbl = document.createElement('table'); tbl.className = 'bx-mx';
+    const cg = document.createElement('colgroup');
+    ['bx-yrc', '', '', '', 'bx-gapc', '', ''].forEach((c) => { const col = document.createElement('col'); if (c) col.className = c; cg.appendChild(col); });
+    tbl.appendChild(cg);
+    const hr = tbl.createTHead().insertRow();
+    const add = (row, tag, txt, cls) => { const c = document.createElement(tag); if (cls) c.className = cls; c.textContent = txt; row.appendChild(c); return c; };
+    add(hr, 'th', 'Jaar', 'bx-yr');
+    DATES.forEach((dt, i) => { if (i === 3) add(hr, 'th', ''); add(hr, 'th', dt); });
+    const body = tbl.createTBody();
+    const tint = (c) => `color-mix(in srgb, ${c} 30%, transparent)`;
+    Array.from(by.keys()).sort().forEach((jaar) => {
+      const tr = body.insertRow();
+      add(tr, 'th', jaar, 'bx-yr');
+      DATES.forEach((dt, i) => {
+        if (i === 3) add(tr, 'td', '');
+        const rs = (by.get(jaar) && by.get(jaar).get(dt)) || [];
+        const td = document.createElement('td');
+        const cell = document.createElement('div'); cell.className = 'bx-cell';
+        const wd = rs[0] ? WD[new Date(rs[0].datum + 'T12:00:00').getDay()] : '';
+        [['Dag', 'D', DAG()], ['Nacht', 'N', NACHT()]].forEach(([dienst, code, col]) => {
+          const ps = rs.filter((r) => r.dienst === dienst).map((r) => String(r.ploeg));
+          const chip = document.createElement('div'); chip.className = 'bx-chip';
+          chip.style.background = tint(col);
+          const i1 = document.createElement('i'); i1.textContent = code;
+          const b = document.createElement('b'); b.textContent = ps.join(',') || '–';
+          chip.append(i1, b);
+          chip.title = `${dt} ${dt === '1 jan' ? Number(jaar) + 1 : jaar} (${wd}): ${dienst.toLowerCase()}dienst ploeg ${ps.join(', ')}`;
+          if (gekozen) chip.classList.add(ps.includes(gekozen) ? 'is-hit' : 'is-dim');
+          cell.appendChild(chip);
+        });
+        td.appendChild(cell); tr.appendChild(td);
+      });
+    });
+    el.appendChild(tbl);
+  });
+  document.querySelectorAll('.bx-btn[data-ploeg]').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      gekozen = btn.getAttribute('data-ploeg');
+      document.querySelectorAll('.bx-btn[data-ploeg]').forEach((b) => {
+        const on = b === btn; b.classList.toggle('is-on', on); b.setAttribute('aria-pressed', on ? 'true' : 'false');
+      });
+      dash.draw('matrix');
+    });
+  });
+})();
+</script>
+
+<p class="bx-bron">Bron: <a href="https://github.com/hermanvandenberg/Bison-Feestdagenrooster">Bison-Feestdagenrooster</a> · berekend uit het rooster van 2027</p>
+</div>
+</body>
+</html>
