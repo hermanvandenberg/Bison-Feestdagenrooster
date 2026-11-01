@@ -159,6 +159,21 @@ body { margin: 0; background: var(--color-bg); color: var(--color-fg); font-fami
   .bx-card { padding: var(--cds-pad-lg); }
 }
 @media (max-width: 380px) { .bx-tile-num { font-size: var(--cds-font-size-heading); } }
+.bx-boef-wrap { display: flex; justify-content: center; padding-block: var(--cds-pad-sm); }
+.bx-boef { display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; padding: 0; border-radius: 999px; border: 1px solid var(--color-border-line); background: var(--color-panel); color: var(--color-fg); cursor: pointer; opacity: .75; touch-action: manipulation; }
+.bx-boef:hover, .bx-boef[aria-expanded="true"] { opacity: 1; border-color: var(--color-fg-muted); }
+.bx-boef:focus-visible { outline: 2px solid var(--color-fg); outline-offset: 2px; }
+.bx-boef svg { width: 28px; height: 28px; display: block; }
+.bx-boef-face { fill: var(--color-panel); stroke: var(--color-fg); stroke-width: 1.5; }
+.bx-boef-ink { fill: var(--color-fg); }
+.bx-boef-eye { fill: var(--color-panel); }
+.bx .bx-lead-sm { font-size: var(--cds-font-size-body); }
+#slimme-collega { scroll-margin-top: 150px; }
+.bx-plan-wrap { max-height: 60vh; overflow: auto; -webkit-overflow-scrolling: touch; }
+.bx-plan th { position: sticky; top: 0; background: var(--color-panel); }
+.bx-plan td.bx-wat { text-align: left; color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); }
+.bx-plan th.bx-wat { text-align: left; }
+.bx-plan tr.is-wissel td:nth-child(2) { font-weight: 600; }
 [data-dash-source-state=refreshing] { opacity: .5; transition: opacity var(--cds-dur-slow); }
 [data-dash-source-state=empty] { color: transparent; }
 </style>
@@ -258,6 +273,37 @@ body { margin: 0; background: var(--color-bg); color: var(--color-fg); font-fami
     <div class="bx-matrix dash-skeleton" data-draw="matrix" data-source="diensten"></div>
     <p class="bx-note">Aanname: de 5-weekse cyclus uit het rooster van 2027 loopt elk jaar ongewijzigd door, zonder ruilen of verlof.</p>
   </section>
+
+  <section class="bx-card" id="slimme-collega" hidden>
+    <h2>Het plan van de slimme collega</h2>
+    <p class="bx-lead bx-lead-sm">Wie elk jaar naar de beste ploeg wisselt, draait tot en met kerst <b data-draw="bf-eind" data-source="boef" data-field="jaar">—</b> maar <b data-draw="bf-tot" data-source="boef" data-field="totaal">—</b> feestdagdiensten. Met een vaste ploeg zijn dat er <b data-draw="bf-min" data-source="spreiding" data-field="min">—</b> tot <b data-draw="bf-max" data-source="spreiding" data-field="max">—</b>. Daarvoor wisselt hij <b data-draw="bf-wissels" data-source="boef" data-field="wissels">—</b> keer van ploeg, en in <b data-draw="bf-nul" data-source="boef" data-field="jaren_nul">—</b> jaar heeft hij helemaal geen dienst.</p>
+    <p class="bx-note">Hij wisselt tussen 2 januari en kerst, dus kerst en de jaarwisseling daarna draait hij bij dezelfde ploeg. Reserve telt niet als dienst. Bij een gelijke stand kiest hij de ploeg met de minste reserve, en anders blijft hij zitten. Een vetgedrukte ploeg is een wissel.</p>
+    <div class="bx-table-wrap bx-plan-wrap">
+      <table class="bx-table bx-plan" data-source="boef" data-row-key="jaar">
+        <thead><tr>
+          <th data-field="jaar">Jaar</th>
+          <th data-field="ploeg">Ploeg</th>
+          <th data-field="diensten">Diensten</th>
+          <th data-field="wat" class="bx-wat">Wat hij wel heeft</th>
+        </tr></thead>
+        <tbody data-draw="bf-tabel"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <div class="bx-boef-wrap">
+    <button type="button" class="bx-boef" aria-expanded="false" aria-controls="slimme-collega" aria-label="Het plan van de slimme collega" title="Psst…">
+      <svg viewBox="0 0 32 32" aria-hidden="true">
+        <path class="bx-boef-ink" d="M7 13 C7 6 25 6 25 13 Z"/>
+        <rect class="bx-boef-ink" x="6" y="12" width="20" height="2.4" rx="1.2"/>
+        <circle class="bx-boef-face" cx="16" cy="19.5" r="9"/>
+        <path class="bx-boef-ink" d="M6.5 17.2 Q16 14 25.5 17.2 L25.5 20.6 Q16 18.4 6.5 20.6 Z"/>
+        <ellipse class="bx-boef-eye" cx="12.2" cy="18.4" rx="1.9" ry="1.2"/>
+        <ellipse class="bx-boef-eye" cx="19.8" cy="18.4" rx="1.9" ry="1.2"/>
+        <path d="M12.5 24 Q16 26.2 19.5 24" fill="none" stroke="var(--color-fg)" stroke-width="1.4" stroke-linecap="round"/>
+      </svg>
+    </button>
+  </div>
 </div>
 
 <script>
@@ -306,6 +352,38 @@ dash.calc('spreiding', {
     return Array.from(g, ([tot_jaar, t]) => ({ tot_jaar, min: Math.min(...t), max: Math.max(...t), gemiddeld: t.reduce((a, b) => a + b, 0) / t.length }));
   }
 });
+dash.calc('boef', {
+  title: 'Plan slimme collega',
+  description: 'Kiest per jaar de ploeg met de minste dag- en nachtdiensten op de vijf feestdagen (dan de minste reserve, dan blijven zitten) en telt het totaal en het aantal wissels op tot en met dat jaar.',
+  inputs: ['diensten'],
+  fn: (diensten) => {
+    const per = new Map();
+    diensten.forEach((d) => {
+      const k = Number(d.jaar) + '|' + Number(d.ploeg);
+      (per.get(k) || per.set(k, []).get(k)).push(d);
+    });
+    const jaren = Array.from(new Set(diensten.map((d) => Number(d.jaar)))).sort((a, b) => a - b);
+    let vorige = null, totaal = 0, wissels = 0, nul = 0;
+    return jaren.map((jaar) => {
+      const score = (p) => {
+        const r = per.get(jaar + '|' + p) || [];
+        return [r.filter((d) => d.dienst === 'Dag' || d.dienst === 'Nacht').length, r.filter((d) => d.dienst === 'Reserve').length, p === vorige ? 0 : 1];
+      };
+      const kies = [1, 2, 3, 4, 5].reduce((a, b) => {
+        const sa = score(a), sb = score(b);
+        for (let i = 0; i < 3; i++) if (sa[i] !== sb[i]) return sa[i] < sb[i] ? a : b;
+        return a;
+      });
+      const [n] = score(kies);
+      const wissel = vorige !== null && kies !== vorige;
+      if (wissel) wissels++;
+      if (n === 0) nul++;
+      totaal += n; vorige = kies;
+      const wat = (per.get(jaar + '|' + kies) || []).filter((d) => d.dienst !== 'Vrij').map((d) => d.dienst.toLowerCase() + ' ' + d.dag).join(', ') || 'helemaal vrij';
+      return { jaar, ploeg: kies, diensten: n, wat, wissel, totaal, wissels, jaren_nul: nul };
+    });
+  }
+});
 </script>
 
 <script>
@@ -323,7 +401,8 @@ dash.calc('spreiding', {
   let eind = 2046;
   let gekozen = '';
   const ALLES = ['eind1', 'eind2', 'min', 'max', 'gem', 't1', 't2', 't3', 't4', 't5', 'v1', 'v2', 'v3', 'v4', 'v5', 'h1', 'h2', 'h3', 'h4', 'h5', 'tabel', 'staaf', 'matrix'];
-  const herteken = () => ALLES.forEach((n) => dash.draw(n));
+  const BOEF = ['bf-eind', 'bf-tot', 'bf-min', 'bf-max', 'bf-wissels', 'bf-nul', 'bf-tabel'];
+  const herteken = () => ALLES.concat(BOEF).forEach((n) => dash.draw(n));
 
   // kleuren van de legenda
   dash.onData(() => {
@@ -388,6 +467,48 @@ dash.calc('spreiding', {
       el.textContent = fmt(r[f]); setSkel(el, false);
     }));
   });
+
+  // slimme collega
+  const rijBoef = () => {
+    const b = dash.data('boef');
+    return b.status === 'ok' ? b.data.find((r) => r.jaar === eind) : null;
+  };
+  [['bf-eind', 'jaar', null], ['bf-tot', 'totaal', null], ['bf-wissels', 'wissels', null], ['bf-nul', 'jaren_nul', null]].forEach(([name, f]) => dash.draw(name, (el) => {
+    const r = rijBoef();
+    if (!r) { el.textContent = '—'; return; }
+    el.setAttribute('data-where', 'jaar=' + eind);
+    el.textContent = String(r[f]);
+  }));
+  [['bf-min', 'min'], ['bf-max', 'max']].forEach(([name, f]) => dash.draw(name, (el) => {
+    const r = rijSpr();
+    if (!r) { el.textContent = '—'; return; }
+    el.setAttribute('data-where', 'tot_jaar=' + eind);
+    el.textContent = fmt(r[f]);
+  }));
+  dash.draw('bf-tabel', (tb) => {
+    tb.replaceChildren();
+    const b = dash.data('boef');
+    if (b.status !== 'ok') return;
+    b.data.filter((r) => r.jaar <= eind).forEach((r) => {
+      const tr = document.createElement('tr');
+      if (r.wissel) tr.className = 'is-wissel';
+      [['jaar', ''], ['ploeg', ''], ['diensten', ''], ['wat', 'bx-wat']].forEach(([k, c]) => {
+        const td = document.createElement('td');
+        td.textContent = String(r[k]);
+        if (c) td.className = c;
+        tr.appendChild(td);
+      });
+      tb.appendChild(tr);
+    });
+  });
+  document.querySelectorAll('.bx-boef').forEach((btn) => btn.addEventListener('click', () => {
+    const open = btn.getAttribute('aria-expanded') !== 'true';
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    document.querySelectorAll('#slimme-collega').forEach((sec) => {
+      sec.hidden = !open;
+      if (open) { BOEF.forEach((n) => dash.draw(n)); sec.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+    });
+  }));
 
   // tabel
   dash.draw('tabel', (tb) => {
