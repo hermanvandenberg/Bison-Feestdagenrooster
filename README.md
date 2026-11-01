@@ -2,7 +2,7 @@
 
 Wie van de Bison werkt er met kerst (24, 25 en 26 december) en oud en nieuw (31 december en 1 januari), en is dat over de jaren eerlijk verdeeld tussen de 5 ploegen?
 
-**Dashboard:** https://claude.ai/artifact/Xx9QHPhQ7P8cuLaKvsFxZy (kies zelf hoe ver vooruit, tot 2126; werkt op mobiel)
+**Dashboard:** https://hermanvandenberg.github.io/Bison-Feestdagenrooster/ (kies zelf hoe ver vooruit, tot 2126; werkt op mobiel)
 
 ## Uitkomst
 
@@ -52,4 +52,5 @@ python scripts/analyse.py "rooster/bisonrooster 2027.xls" --van 2026 --tot 2126
 - `scripts/analyse.py`: rekent de diensten uit en maakt de CSV en de Excel.
 - `data/bison_diensten_2026-2126.csv`: per jaar, datum en ploeg de dienst. Dit is de bron van het dashboard.
 - `output/bison_kerst_oudnieuw_2026-2126.xlsx`: overzicht per datum, per ploeg en de totalen.
-- `dashboard/index.html`: de pagina van het dashboard (draait in Claude en leest de CSV).
+- `index.html`: het dashboard voor GitHub Pages. Wordt gemaakt met `python scripts/bouw_pagina.py` uit `dashboard/index.html`; pas die aan en bouw opnieuw.
+- `dashboard/index.html`: de inhoud van het dashboard (ook gebruikt in het Claude-dashboard).
