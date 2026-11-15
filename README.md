@@ -39,7 +39,7 @@ Aanname: de cyclus loopt elk jaar ongewijzigd door, zonder ruilen of verlof.
 
 ## Oud rooster
 
-Het dashboard zet het oude rooster (van voor 2027) naast het nieuwe, voor alle 5 ploegen: bij de totalen, de jaren zonder feestdagdienst, de grafiek, de tabel en in "Wie werkt wanneer" (vakje met stippelrand). De cyclus van het oude rooster is `NNVVVNNVVDDDVVVVNNNVVDDVVVDDRRRRRRR` (D dag, N nacht, V vrij, R reserve). Ploeg 4 had op 4, 5 en 6 februari 2026 DDD, dus woensdag 4 februari 2026 is voor ploeg 4 dag 10. Elke volgende ploeg loopt een week achter: na de reserveweek van ploeg 1 heeft ploeg 2 reserve, dan ploeg 3, enzovoort. Zo heeft elke dag precies één dagploeg, één nachtploeg en één reserveploeg, en begint elke reserveweek op maandag. Cyclus en startdatum zijn aan te passen onder "Rooster en startdatum aanpassen" en worden in je eigen browser onthouden.
+Het dashboard zet het oude rooster (van voor 2027) naast het nieuwe, voor alle 5 ploegen: bij de totalen, de jaren zonder feestdagdienst, de grafiek, de tabel en in "Wie werkt wanneer" (elk vakje half om half: links nieuw, rechts oud). De cyclus van het oude rooster is `NNVVVNNVVDDDVVVVNNNVVDDVVVDDRRRRRRR` (D dag, N nacht, V vrij, R reserve). Ploeg 4 had op 4, 5 en 6 februari 2026 DDD, dus woensdag 4 februari 2026 is voor ploeg 4 dag 10. Elke volgende ploeg loopt een week achter: na de reserveweek van ploeg 1 heeft ploeg 2 reserve, dan ploeg 3, enzovoort. Zo heeft elke dag precies één dagploeg, één nachtploeg en één reserveploeg, en begint elke reserveweek op maandag. Cyclus en startdatum zijn aan te passen onder "Rooster en startdatum aanpassen" en worden in je eigen browser onthouden.
 
 ## Weergave
 

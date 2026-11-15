@@ -92,11 +92,17 @@
 .bx-strip { display: flex; flex-wrap: wrap; gap: 2px; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 11px; }
 .bx-strip span { width: 18px; text-align: center; border-radius: 3px; padding: 2px 0; }
 .bx-strip span.is-anker { box-shadow: inset 0 0 0 2px var(--color-fg); }
-.bx-chip.bx-ik { border: 1px dashed var(--color-fg-muted); padding-block: 2px; background: transparent; }
-.bx-chip.bx-ik.is-werk { border: 2px solid var(--color-fg); }
-.bx-chip.bx-ik.is-vrij, .bx-chip.bx-ik.is-res { background: transparent; }
-.bx-chip.bx-ik.is-res { background: color-mix(in srgb, var(--color-fg-muted) 22%, transparent); }
-.bx-sw.bx-sw-ik { border: 1px dashed var(--color-fg); box-sizing: border-box; background: transparent; }
+.bx-chip.is-split { padding: 0; gap: 0; align-items: stretch; overflow: hidden; }
+.bx-half { flex: 1 1 50%; display: flex; align-items: center; justify-content: center; padding: 3px 0; min-width: 0; border-radius: 4px; }
+.bx-half.is-oud { border-left: 1px dashed color-mix(in srgb, var(--color-fg) 45%, transparent); border-radius: 0 4px 4px 0; }
+.bx-half.is-nieuw { border-radius: 4px 0 0 4px; }
+.bx .bx-half b { font-weight: 600; }
+.bx .bx-half.is-oud b { font-weight: 400; }
+.bx-half.is-dim { opacity: .15; }
+.bx-half.is-hit { box-shadow: inset 0 0 0 2px var(--color-fg); }
+@media (min-width: 640px) { .bx-cell.is-split { flex-direction: column; gap: 3px; } }
+.bx-hsub { display: flex; justify-content: space-around; font-weight: 400; font-size: 10px; opacity: .7; }
+.bx-sw.bx-sw-ik { width: 20px; background: linear-gradient(90deg, var(--color-fg-muted) 0 50%, transparent 50%); border: 1px solid var(--color-fg-muted); box-sizing: border-box; }
 [data-dash-source-state=refreshing] { opacity: .5; transition: opacity var(--cds-dur-slow); }
 [data-dash-source-state=empty] { color: transparent; }
 </style>
@@ -199,7 +205,7 @@
 
   <section class="bx-card" id="per-jaar">
     <h2>Wie werkt wanneer</h2>
-    <p class="bx-note">Per jaar en per datum de ploeg met dagdienst (D) en nachtdienst (N). Tik op een ploeg om te zien wanneer die werkt. Het vakje met de stippelrand is het oude rooster.</p>
+    <p class="bx-note">Per jaar en per datum de ploeg met dagdienst (D) en nachtdienst (N). Tik op een ploeg om te zien wanneer die werkt. Zet je het oude rooster erover, dan wordt elk vakje gedeeld: links het nieuwe rooster, rechts het oude.</p>
     <div class="bx-filter" role="group" aria-label="Kies ploeg">
       <span>Ploeg</span>
       <button type="button" class="bx-btn is-on" data-ploeg="" aria-pressed="true">Alle</button>
@@ -216,7 +222,7 @@
     <ul class="bx-legend">
       <li><span class="bx-sw" data-sw="dag"></span>Dagdienst</li>
       <li><span class="bx-sw" data-sw="nacht"></span>Nachtdienst</li>
-      <li data-ik-legenda><span class="bx-sw bx-sw-ik"></span>Stippelrand: oud rooster, met de dagploeg in blauw en de nachtploeg in paars. Kies je een ploeg, dan zie je wat die ploeg in het oude rooster had: D, N, V of R (dikke rand = werken).</li>
+      <li data-ik-legenda><span class="bx-sw bx-sw-ik"></span>Links nieuw rooster, rechts oud rooster</li>
     </ul>
     <div class="bx-matrix dash-skeleton" data-draw="matrix" data-source="diensten"></div>
     <p class="bx-note">Aanname: de 5-weekse cyclus uit het rooster van 2027 loopt elk jaar ongewijzigd door, zonder ruilen of verlof.</p>
@@ -657,7 +663,12 @@ dash.calc('boef', {
     const hr = tbl.createTHead().insertRow();
     const add = (row, tag, txt, cls) => { const c = document.createElement(tag); if (cls) c.className = cls; c.textContent = txt; row.appendChild(c); return c; };
     add(hr, 'th', 'Jaar', 'bx-yr');
-    DATES.forEach((dt, i) => { if (i === 3) add(hr, 'th', ''); add(hr, 'th', dt); });
+    const split = ikAan && geldig();
+    DATES.forEach((dt, i) => {
+      if (i === 3) add(hr, 'th', '');
+      const th = add(hr, 'th', dt);
+      if (split) { const sub = document.createElement('span'); sub.className = 'bx-hsub'; sub.innerHTML = '<span>nieuw</span><span>oud</span>'; th.appendChild(sub); }
+    });
     const body = tbl.createTBody();
     const tint = (c) => `color-mix(in srgb, ${c} 30%, transparent)`;
     Array.from(by.keys()).sort().forEach((jaar) => {
@@ -667,44 +678,38 @@ dash.calc('boef', {
         if (i === 3) add(tr, 'td', '');
         const rs = (by.get(jaar) && by.get(jaar).get(dt)) || [];
         const td = document.createElement('td');
-        const cell = document.createElement('div'); cell.className = 'bx-cell';
+        const cell = document.createElement('div'); cell.className = split ? 'bx-cell is-split' : 'bx-cell';
         const wd = rs[0] ? WD[new Date(rs[0].datum + 'T12:00:00').getDay()] : '';
+        const datum = dt === '1 jan' ? Number(jaar) + 1 : jaar;
+        const oud = split && rs[0] ? [1, 2, 3, 4, 5].map((p) => [String(p), mijnCode(rs[0].datum, p)]) : null;
         [['Dag', 'D', DAG()], ['Nacht', 'N', NACHT()]].forEach(([dienst, code, col]) => {
           const ps = rs.filter((r) => r.dienst === dienst).map((r) => String(r.ploeg));
           const chip = document.createElement('div'); chip.className = 'bx-chip';
-          chip.style.background = tint(col);
-          const i1 = document.createElement('i'); i1.textContent = code;
           const b = document.createElement('b'); b.textContent = ps.join(',') || '–';
-          chip.append(i1, b);
-          chip.title = `${dt} ${dt === '1 jan' ? Number(jaar) + 1 : jaar} (${wd}): ${dienst.toLowerCase()}dienst ploeg ${ps.join(', ')}`;
-          if (gekozen) chip.classList.add(ps.includes(gekozen) ? 'is-hit' : 'is-dim');
+          if (!oud) {
+            chip.style.background = tint(col);
+            const i1 = document.createElement('i'); i1.textContent = code;
+            chip.append(i1, b);
+            chip.title = `${dt} ${datum} (${wd}): ${dienst.toLowerCase()}dienst ploeg ${ps.join(', ')}`;
+            if (gekozen) chip.classList.add(ps.includes(gekozen) ? 'is-hit' : 'is-dim');
+          } else {
+            const po = oud.filter(([, c]) => c === code).map(([p]) => p);
+            chip.classList.add('is-split');
+            const hn = document.createElement('span'); hn.className = 'bx-half is-nieuw'; hn.style.background = tint(col);
+            const i1 = document.createElement('i'); i1.textContent = code; i1.style.marginRight = '3px';
+            hn.append(i1, b);
+            const ho = document.createElement('span'); ho.className = 'bx-half is-oud'; ho.style.background = `color-mix(in srgb, ${col} 14%, transparent)`;
+            const bo = document.createElement('b'); bo.textContent = po.join(',') || '–';
+            ho.appendChild(bo);
+            if (gekozen) {
+              hn.classList.add(ps.includes(gekozen) ? 'is-hit' : 'is-dim');
+              ho.classList.add(po.includes(gekozen) ? 'is-hit' : 'is-dim');
+            }
+            chip.append(hn, ho);
+            chip.title = `${dt} ${datum} (${wd}), ${dienst.toLowerCase()}dienst: nieuw rooster ploeg ${ps.join(', ')}, oud rooster ploeg ${po.join(', ')}`;
+          }
           cell.appendChild(chip);
         });
-        if (ikAan && rs[0] && geldig() && !gekozen) {
-          const ps = [1, 2, 3, 4, 5].map((p) => [p, mijnCode(rs[0].datum, p)]);
-          const pd = ps.filter(([, c]) => c === 'D').map(([p]) => p).join(','), pn = ps.filter(([, c]) => c === 'N').map(([p]) => p).join(',');
-          const chip = document.createElement('div'); chip.className = 'bx-chip bx-ik';
-          const bd = document.createElement('b'); bd.textContent = pd || '–'; bd.style.color = DAG();
-          const bn = document.createElement('b'); bn.textContent = pn || '–'; bn.style.color = NACHT();
-          const i1 = document.createElement('i'); i1.textContent = 'oud';
-          chip.append(i1, bd, bn);
-          chip.title = `${dt} ${dt === '1 jan' ? Number(jaar) + 1 : jaar} (${wd}), oud rooster: dag ploeg ${pd}, nacht ploeg ${pn}`;
-          cell.appendChild(chip);
-        }
-        if (ikAan && rs[0] && gekozen) {
-          const c = mijnCode(rs[0].datum, Number(gekozen));
-          if (c) {
-            const chip = document.createElement('div');
-            const werk = c === 'D' || c === 'N';
-            chip.className = 'bx-chip bx-ik ' + (werk ? 'is-werk' : c === 'R' ? 'is-res' : 'is-vrij');
-            if (werk) chip.style.background = KLEUR_IK(c);
-            const i1 = document.createElement('i'); i1.textContent = 'oud';
-            const b = document.createElement('b'); b.textContent = c;
-            chip.append(i1, b);
-            chip.title = `${dt} ${dt === '1 jan' ? Number(jaar) + 1 : jaar} (${wd}), oud rooster ploeg ${gekozen}: ${{ D: 'dagdienst', N: 'nachtdienst', V: 'vrij', R: 'reserve' }[c]}`;
-            cell.appendChild(chip);
-          }
-        }
         td.appendChild(cell); tr.appendChild(td);
       });
     });
