@@ -12,7 +12,7 @@
 .bx .bx-range b { font-variant-numeric: tabular-nums; font-weight: 600; color: var(--color-fg); }
 .bx-slider { flex: 1 1 12rem; min-width: 0; accent-color: var(--color-fg); height: 28px; }
 .bx-presets { display: flex; gap: var(--cds-gap-xs); flex-wrap: wrap; }
-.bx-tiles { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: var(--cds-gap-sm); }
+.bx-tiles { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--cds-gap-sm); }
 .bx-tile { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-sm); display: flex; flex-direction: column; align-items: center; gap: 2px; min-width: 0; }
 .bx-tile-label { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); white-space: nowrap; }
 .bx-tile-sub { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); text-align: center; line-height: 1.25; }
@@ -54,6 +54,7 @@
 .bx-chip.is-hit { box-shadow: inset 0 0 0 2px var(--color-fg); }
 .bx-wd { display: block; font-weight: 400; font-size: 10px; opacity: .7; }
 @media (min-width: 640px) {
+  .bx-tiles { grid-template-columns: repeat(6, minmax(0, 1fr)); }
   #dash-root { --dash-gutter: 24px; }
   .bx-cell { flex-direction: row; gap: 3px; }
   .bx-chip { flex: 1; padding: 4px 2px; }
@@ -84,7 +85,9 @@
 .bx-mijn-form .bx-cyc { grid-column: 1 / -1; }
 .bx-mijn-form .bx-cyc input { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; letter-spacing: .08em; text-transform: uppercase; }
 .bx-mijn-fout { color: var(--color-bad); }
-.bx-tiles.bx-tiles-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.bx-tile.is-ik { border: 2px solid var(--color-fg); }
+.bx .bx-tile.is-ik .bx-tile-label { color: var(--color-fg); font-weight: 600; }
+.bx-table tr.is-ik td { font-weight: 600; border-top: 2px solid var(--color-fg); }
 .bx-strip { display: flex; flex-wrap: wrap; gap: 2px; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 11px; }
 .bx-strip span { width: 18px; text-align: center; border-radius: 3px; padding: 2px 0; }
 .bx-strip span.is-anker { box-shadow: inset 0 0 0 2px var(--color-fg); }
@@ -125,24 +128,26 @@
     <div class="bx-tile"><span class="bx-tile-label">Ploeg 3</span><span class="bx-tile-num dash-skeleton" data-draw="t3" data-source="cumulatief" data-field="totaal">—</span></div>
     <div class="bx-tile"><span class="bx-tile-label">Ploeg 4</span><span class="bx-tile-num dash-skeleton" data-draw="t4" data-source="cumulatief" data-field="totaal">—</span></div>
     <div class="bx-tile"><span class="bx-tile-label">Ploeg 5</span><span class="bx-tile-num dash-skeleton" data-draw="t5" data-source="cumulatief" data-field="totaal">—</span></div>
+    <div class="bx-tile is-ik"><span class="bx-tile-label">Mijn rooster</span><span class="bx-tile-num" data-draw="t-ik">—</span></div>
   </section>
 
   <section class="bx-card" id="vrije-jaren">
     <h2>Jaren zonder feestdagdienst</h2>
-    <p class="bx-note">Hoe vaak een ploeg in de gekozen periode op geen van de vijf dagen (24, 25, 26, 31 december en 1 januari) een dag- of nachtdienst heeft. Het kleine getal telt de jaren waarin de ploeg ook geen reserve heeft, dus helemaal vrij is.</p>
+    <p class="bx-note">Hoe vaak een ploeg (of jij met je eigen rooster) in de gekozen periode op geen van de vijf dagen (24, 25, 26, 31 december en 1 januari) een dag- of nachtdienst heeft. Het kleine getal telt de jaren waarin de ploeg ook geen reserve heeft, dus helemaal vrij is.</p>
     <div class="bx-tiles">
       <div class="bx-tile"><span class="bx-tile-label">Ploeg 1</span><span class="bx-tile-num dash-skeleton" data-draw="v1" data-source="cumulatief" data-field="jaren_vrij">—</span><span class="bx-tile-sub">helemaal vrij <b data-draw="h1" data-source="cumulatief" data-field="jaren_helemaal_vrij">—</b></span></div>
       <div class="bx-tile"><span class="bx-tile-label">Ploeg 2</span><span class="bx-tile-num dash-skeleton" data-draw="v2" data-source="cumulatief" data-field="jaren_vrij">—</span><span class="bx-tile-sub">helemaal vrij <b data-draw="h2" data-source="cumulatief" data-field="jaren_helemaal_vrij">—</b></span></div>
       <div class="bx-tile"><span class="bx-tile-label">Ploeg 3</span><span class="bx-tile-num dash-skeleton" data-draw="v3" data-source="cumulatief" data-field="jaren_vrij">—</span><span class="bx-tile-sub">helemaal vrij <b data-draw="h3" data-source="cumulatief" data-field="jaren_helemaal_vrij">—</b></span></div>
       <div class="bx-tile"><span class="bx-tile-label">Ploeg 4</span><span class="bx-tile-num dash-skeleton" data-draw="v4" data-source="cumulatief" data-field="jaren_vrij">—</span><span class="bx-tile-sub">helemaal vrij <b data-draw="h4" data-source="cumulatief" data-field="jaren_helemaal_vrij">—</b></span></div>
       <div class="bx-tile"><span class="bx-tile-label">Ploeg 5</span><span class="bx-tile-num dash-skeleton" data-draw="v5" data-source="cumulatief" data-field="jaren_vrij">—</span><span class="bx-tile-sub">helemaal vrij <b data-draw="h5" data-source="cumulatief" data-field="jaren_helemaal_vrij">—</b></span></div>
+      <div class="bx-tile is-ik"><span class="bx-tile-label">Mijn rooster</span><span class="bx-tile-num" data-draw="v-ik">—</span><span class="bx-tile-sub">helemaal vrij <b data-draw="h-ik">—</b></span></div>
     </div>
   </section>
 
   <div class="bx-grid">
     <section class="bx-card" id="verdeling">
       <h2>Verdeling per ploeg</h2>
-      <p class="bx-note">Aantal feestdagdiensten in de gekozen periode. De stippellijn is een gelijke verdeling.</p>
+      <p class="bx-note">Aantal feestdagdiensten in de gekozen periode. De stippellijn is een gelijke verdeling over de 5 ploegen. Onderaan staat je eigen rooster.</p>
       <ul class="bx-legend">
         <li><span class="bx-sw" data-sw="0"></span>Kerst dag</li>
         <li><span class="bx-sw" data-sw="1"></span>Kerst nacht</li>
@@ -176,12 +181,6 @@
   <section class="bx-card" id="mijn-rooster">
     <h2>Mijn rooster</h2>
     <p class="bx-lead bx-lead-sm" data-draw="mijn-zin">—</p>
-    <div class="bx-tiles bx-tiles-4">
-      <div class="bx-tile"><span class="bx-tile-label">Diensten</span><span class="bx-tile-num" data-draw="mijn-tot">—</span></div>
-      <div class="bx-tile"><span class="bx-tile-label">Kerst</span><span class="bx-tile-num" data-draw="mijn-kerst">—</span></div>
-      <div class="bx-tile"><span class="bx-tile-label">Oud en nieuw</span><span class="bx-tile-num" data-draw="mijn-on">—</span></div>
-      <div class="bx-tile"><span class="bx-tile-label">Jaren vrij</span><span class="bx-tile-num" data-draw="mijn-vrij">—</span></div>
-    </div>
     <details>
       <summary class="bx-note">Rooster en startdatum aanpassen</summary>
       <div class="bx-mijn-form" style="margin-top: 8px">
@@ -350,6 +349,46 @@ dash.calc('boef', {
   let gekozen = '';
   const ALLES = ['eind1', 'eind2', 'min', 'max', 'gem', 't1', 't2', 't3', 't4', 't5', 'v1', 'v2', 'v3', 'v4', 'v5', 'h1', 'h2', 'h3', 'h4', 'h5', 'tabel', 'staaf', 'matrix'];
   const BOEF = ['bf-eind', 'bf-tot', 'bf-min', 'bf-max', 'bf-wissels', 'bf-nul', 'bf-tabel'];
+  // mijn rooster: eigen cyclus over het huidige rooster
+  const MIJN_STD = { cyclus: 'NNVVVNNVVDDDVVVVNNNVVDDVVVDDRRRRRRR', anker: '2026-02-04', pos: 10, ploeg: '4' };
+  const MIJN_KEY = 'bx-mijn-rooster';
+  let mijn = { ...MIJN_STD };
+  try { const o = JSON.parse(localStorage.getItem(MIJN_KEY) || 'null'); if (o && typeof o === 'object') mijn = { ...MIJN_STD, ...o }; } catch (e) { /* geen opslag */ }
+  let ikAan = true;
+  const bewaar = () => { try { localStorage.setItem(MIJN_KEY, JSON.stringify(mijn)); } catch (e) { /* geen opslag */ } };
+  const dagNr = (iso) => { const [y, m, d] = iso.split('-').map(Number); return Math.round(Date.UTC(y, m - 1, d) / 864e5); };
+  const geldig = () => /^[DNVR]+$/.test(mijn.cyclus) && /^\d{4}-\d{2}-\d{2}$/.test(mijn.anker) && mijn.pos >= 1 && mijn.pos <= mijn.cyclus.length;
+  const mijnCode = (iso) => {
+    if (!geldig()) return null;
+    const L = mijn.cyclus.length;
+    const i = (((dagNr(iso) - dagNr(mijn.anker) + mijn.pos - 1) % L) + L) % L;
+    return mijn.cyclus[i];
+  };
+  const pad = (n) => String(n).padStart(2, '0');
+  const FEEST = (j) => [[j, 12, 24, 'k'], [j, 12, 25, 'k'], [j, 12, 26, 'k'], [j, 12, 31, 'o'], [j + 1, 1, 1, 'o']].map(([y, m, d, p]) => ({ iso: `${y}-${pad(m)}-${pad(d)}`, p }));
+  // telling van mijn rooster, in dezelfde vorm als een rij van 'cumulatief'
+  const mijnCum = () => {
+    if (!geldig()) return null;
+    const t = { ploeg: 'Ik', tot_jaar: eind, kerst_dag: 0, kerst_nacht: 0, on_dag: 0, on_nacht: 0, oudejaarsnacht: 0, totaal: 0, jaren_vrij: 0, jaren_helemaal_vrij: 0, jaren: 0, dag: 0, nacht: 0 };
+    for (let j = 2026; j <= eind; j++) {
+      let n = 0, res = false;
+      FEEST(j).forEach(({ iso, p }, i) => {
+        const c = mijnCode(iso);
+        if (c === 'R') res = true;
+        if (c !== 'D' && c !== 'N') return;
+        n++;
+        t[(p === 'k' ? 'kerst_' : 'on_') + (c === 'D' ? 'dag' : 'nacht')]++;
+        t[c === 'D' ? 'dag' : 'nacht']++;
+        if (i === 3 && c === 'N') t.oudejaarsnacht++;
+      });
+      t.totaal += n; t.jaren++;
+      if (n === 0) t.jaren_vrij++;
+      if (n === 0 && !res) t.jaren_helemaal_vrij++;
+    }
+    t.kerst = t.kerst_dag + t.kerst_nacht; t.on = t.on_dag + t.on_nacht;
+    return t;
+  };
+  const mijnTelling = () => { const t = mijnCum(); return t && { ...t, tot: t.totaal, vrij: t.jaren_vrij }; };
   const herteken = () => ALLES.concat(BOEF, MIJN).forEach((n) => dash.draw(n));
 
   // kleuren van de legenda
@@ -462,12 +501,13 @@ dash.calc('boef', {
   dash.draw('tabel', (tb) => {
     tb.replaceChildren();
     const rows = [1, 2, 3, 4, 5].map(rijCum).filter(Boolean);
-    rows.forEach((r) => {
+    const ik = rows.length ? mijnCum() : null;
+    rows.concat(ik ? [ik] : []).forEach((r) => {
       const tr = document.createElement('tr');
-      tr.setAttribute('data-key', r.tot_jaar + ',' + r.ploeg);
+      if (r.ploeg === 'Ik') tr.className = 'is-ik'; else tr.setAttribute('data-key', r.tot_jaar + ',' + r.ploeg);
       ['ploeg', 'kerst_dag', 'kerst_nacht', 'on_dag', 'on_nacht', 'oudejaarsnacht', 'totaal', 'jaren_vrij'].forEach((k) => {
         const td = document.createElement('td');
-        td.textContent = k === 'ploeg' ? String(r[k]) : fmt(r[k]);
+        td.textContent = k === 'ploeg' ? (r.ploeg === 'Ik' ? 'Mijn rooster' : String(r[k])) : fmt(r[k]);
         if (k === 'totaal') td.className = 'bx-strong';
         tr.appendChild(td);
       });
@@ -480,11 +520,14 @@ dash.calc('boef', {
     el.replaceChildren();
     const rows = [1, 2, 3, 4, 5].map(rijCum).filter(Boolean), s = rijSpr();
     if (rows.length < 5 || !s) { setSkel(el, busy('cumulatief') || busy('spreiding')); return; }
+    const ik = mijnCum();
+    if (ik) rows.push(ik);
+    const naam = (p) => p === 'Ik' ? 'Mijn rooster' : 'Ploeg ' + p;
     setSkel(el, false);
     const gem = s.gemiddeld;
     const W = Math.max(260, el.clientWidth), rowH = 32;
     const svg = d3.select(el).append('svg').attr('width', '100%').attr('role', 'img').attr('aria-label', 'Diensten per ploeg');
-    const probe = svg.append('text').style('font-size', 'var(--cds-font-size-caption)').text('Ploeg 5');
+    const probe = svg.append('text').style('font-size', 'var(--cds-font-size-caption)').text(ik ? 'Mijn rooster' : 'Ploeg 5');
     const lw = probe.node().getComputedTextLength(); probe.remove();
     const maxT = d3.max(rows, (r) => r.totaal);
     const probe2 = svg.append('text').style('font-size', 'var(--cds-font-size-caption)').style('font-weight', 600).text(fmt(maxT));
@@ -504,13 +547,15 @@ dash.calc('boef', {
     ax.selectAll('text').attr('fill', 'var(--color-fg-muted)').style('font-size', 'var(--cds-font-size-caption)');
     svg.append('g').selectAll('text').data(rows).join('text')
       .attr('x', m.l - 8).attr('y', (r) => y(r.ploeg) + y.bandwidth() / 2).attr('dy', '0.35em').attr('text-anchor', 'end')
-      .attr('fill', 'var(--color-fg)').style('font-size', 'var(--cds-font-size-caption)').text((r) => 'Ploeg ' + r.ploeg);
+      .attr('fill', 'var(--color-fg)').style('font-size', 'var(--cds-font-size-caption)').style('font-weight', (r) => r.ploeg === 'Ik' ? 600 : null).text((r) => naam(r.ploeg));
+    if (ik) svg.append('line').attr('x1', 0).attr('x2', W).attr('y1', y('Ik') - y.step() * y.padding() / 2).attr('y2', y('Ik') - y.step() * y.padding() / 2)
+      .attr('stroke', 'var(--cds-chart-axis)').attr('stroke-dasharray', '2 3');
     const stack = d3.stack().keys(SER.map((q) => q.key))(rows);
     const tip = d3.select(el).append('div').attr('class', 'bx-tip').style('display', 'none');
     const toon = (ev, d, i) => {
       const [px, py] = d3.pointer(ev, el);
       tip.style('display', null).selectAll('*').remove();
-      tip.append('div').attr('class', 'bx-tip-h').text('Ploeg ' + d.data.ploeg + ' · t/m ' + d.data.tot_jaar);
+      tip.append('div').attr('class', 'bx-tip-h').text(naam(d.data.ploeg) + ' · t/m ' + d.data.tot_jaar);
       tip.append('div').text(SER[i].label + ': ' + fmt(d.data[SER[i].key]));
       tip.append('div').text('Totaal: ' + fmt(d.data.totaal));
       const tw = tip.node().offsetWidth;
@@ -532,39 +577,9 @@ dash.calc('boef', {
       .attr('stroke', 'var(--cds-chart-reference)').attr('stroke-width', 1.5).attr('stroke-dasharray', '4 3');
   });
 
-  // mijn rooster: eigen cyclus over het huidige rooster
-  const MIJN_STD = { cyclus: 'NNVVVNNVVDDDVVVVNNNVVDDVVVDDRRRRRRR', anker: '2026-02-04', pos: 10, ploeg: '4' };
-  const MIJN_KEY = 'bx-mijn-rooster';
-  let mijn = { ...MIJN_STD };
-  try { const o = JSON.parse(localStorage.getItem(MIJN_KEY) || 'null'); if (o && typeof o === 'object') mijn = { ...MIJN_STD, ...o }; } catch (e) { /* geen opslag */ }
-  let ikAan = true;
-  const bewaar = () => { try { localStorage.setItem(MIJN_KEY, JSON.stringify(mijn)); } catch (e) { /* geen opslag */ } };
-  const dagNr = (iso) => { const [y, m, d] = iso.split('-').map(Number); return Math.round(Date.UTC(y, m - 1, d) / 864e5); };
-  const geldig = () => /^[DNVR]+$/.test(mijn.cyclus) && /^\d{4}-\d{2}-\d{2}$/.test(mijn.anker) && mijn.pos >= 1 && mijn.pos <= mijn.cyclus.length;
-  const mijnCode = (iso) => {
-    if (!geldig()) return null;
-    const L = mijn.cyclus.length;
-    const i = (((dagNr(iso) - dagNr(mijn.anker) + mijn.pos - 1) % L) + L) % L;
-    return mijn.cyclus[i];
-  };
-  const pad = (n) => String(n).padStart(2, '0');
-  const FEEST = (j) => [[j, 12, 24, 'k'], [j, 12, 25, 'k'], [j, 12, 26, 'k'], [j, 12, 31, 'o'], [j + 1, 1, 1, 'o']].map(([y, m, d, p]) => ({ iso: `${y}-${pad(m)}-${pad(d)}`, p }));
-  const mijnTelling = () => {
-    const t = { tot: 0, kerst: 0, on: 0, dag: 0, nacht: 0, vrij: 0, jaren: 0 };
-    if (!geldig()) return null;
-    for (let j = 2026; j <= eind; j++) {
-      let n = 0;
-      FEEST(j).forEach(({ iso, p }) => {
-        const c = mijnCode(iso);
-        if (c === 'D' || c === 'N') { n++; t[p === 'k' ? 'kerst' : 'on']++; t[c === 'D' ? 'dag' : 'nacht']++; }
-      });
-      t.tot += n; t.jaren++; if (n === 0) t.vrij++;
-    }
-    return t;
-  };
-  const MIJN = ['mijn-zin', 'mijn-tot', 'mijn-kerst', 'mijn-on', 'mijn-vrij', 'mijn-strip'];
-  [['mijn-tot', 'tot'], ['mijn-kerst', 'kerst'], ['mijn-on', 'on'], ['mijn-vrij', 'vrij']].forEach(([name, f]) => dash.draw(name, (el) => {
-    const t = mijnTelling();
+  const MIJN = ['mijn-zin', 'mijn-strip', 't-ik', 'v-ik', 'h-ik', 'tabel', 'staaf'];
+  [['t-ik', 'totaal'], ['v-ik', 'jaren_vrij'], ['h-ik', 'jaren_helemaal_vrij']].forEach(([name, f]) => dash.draw(name, (el) => {
+    const t = mijnCum();
     el.textContent = t ? fmt(t[f]) : '—';
   }));
   dash.draw('mijn-zin', (el) => {
