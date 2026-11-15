@@ -37,9 +37,13 @@ Het rooster is een cyclus van 35 dagen (5 weken). Elke ploeg heeft per cyclus ee
 
 Aanname: de cyclus loopt elk jaar ongewijzigd door, zonder ruilen of verlof.
 
-## Mijn rooster
+## Oud rooster
 
-In het dashboard kun je een eigen 5-weekse cyclus over het huidige rooster leggen. Bij elke feestdag staat dan een extra vakje "ik" met wat je eigen rooster zegt (D dag, N nacht, V vrij, R reserve); een dikke rand betekent werken. Standaard staat de cyclus `NNVVVNNVVDDDVVVVNNNVVDDVVVDDRRRRRRR`, met 4 februari 2026 als dag 10 (de enige DDD in de cyclus valt dan op 4, 5 en 6 februari 2026 en dag 1 op maandag 26 januari 2026). Cyclus en startdatum zijn aan te passen onder "Rooster en startdatum aanpassen" en worden in je eigen browser onthouden.
+Het dashboard zet het oude rooster (van voor 2027) naast het nieuwe, voor alle 5 ploegen: bij de totalen, de jaren zonder feestdagdienst, de grafiek, de tabel en in "Wie werkt wanneer" (vakje met stippelrand). De cyclus van het oude rooster is `NNVVVNNVVDDDVVVVNNNVVDDVVVDDRRRRRRR` (D dag, N nacht, V vrij, R reserve). Ploeg 4 had op 4, 5 en 6 februari 2026 DDD, dus woensdag 4 februari 2026 is voor ploeg 4 dag 10. Elke volgende ploeg loopt een week achter: na de reserveweek van ploeg 1 heeft ploeg 2 reserve, dan ploeg 3, enzovoort. Zo heeft elke dag precies één dagploeg, één nachtploeg en één reserveploeg, en begint elke reserveweek op maandag. Cyclus en startdatum zijn aan te passen onder "Rooster en startdatum aanpassen" en worden in je eigen browser onthouden.
+
+## Weergave
+
+Bovenaan de pagina kies je Automatisch (volgt de instelling van je computer of telefoon), Licht of Donker. De keuze wordt in je eigen browser onthouden.
 
 ## Zelf draaien
 
