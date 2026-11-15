@@ -22,7 +22,7 @@
   color-scheme: light;
 }
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not([data-theme="light"]) {
     --color-bg: #12151b; --color-panel: #1b1f27; --color-fg: #e8eaee; --color-fg-muted: #9aa3b2;
     --color-border-line: #2c323d; --cds-surface-popover: #232833; --cds-border: #353c48; --cds-text-secondary: #9aa3b2;
     --cds-shadow-popover: 0 4px 16px rgba(0, 0, 0, .5);
@@ -30,6 +30,19 @@
     color-scheme: dark;
   }
 }
+:root[data-theme="dark"] {
+    --color-bg: #12151b; --color-panel: #1b1f27; --color-fg: #e8eaee; --color-fg-muted: #9aa3b2;
+    --color-border-line: #2c323d; --cds-surface-popover: #232833; --cds-border: #353c48; --cds-text-secondary: #9aa3b2;
+    --cds-shadow-popover: 0 4px 16px rgba(0, 0, 0, .5);
+    --cds-chart-grid: #262b35; --cds-chart-axis: #3a414d; --cds-chart-reference: #e8eaee; --cds-chart-muted: #3a414d;
+    color-scheme: dark;
+}
+:root[data-theme="light"] { color-scheme: light; }
+.bx-thema { display: flex; justify-content: flex-end; max-width: 64rem; margin: 0 auto 8px; }
+.bx-thema-grp { display: inline-flex; border: 1px solid var(--color-border-line); border-radius: 999px; padding: 2px; background: var(--color-panel); }
+.bx-thema button { font: inherit; font-size: 12px; min-height: 32px; padding: 4px 12px; border: 0; border-radius: 999px; background: transparent; color: var(--color-fg-muted); cursor: pointer; touch-action: manipulation; }
+.bx-thema button[aria-pressed="true"] { background: var(--color-fg); color: var(--color-bg); }
+.bx-thema button:focus-visible { outline: 2px solid var(--color-fg); outline-offset: 2px; }
 html { -webkit-text-size-adjust: 100%; }
 body { margin: 0; background: var(--color-bg); color: var(--color-fg); font-family: var(--font-anthropic-sans); font-size: 14px;
   padding-top: env(safe-area-inset-top, 0px); padding-bottom: max(24px, env(safe-area-inset-bottom, 0px)); }
@@ -42,6 +55,14 @@ body { margin: 0; background: var(--color-bg); color: var(--color-fg); font-fami
 .bx-bron { font-size: 12px; color: var(--color-fg-muted); text-align: center; margin: 24px 0 0; }
 .bx-bron a { color: inherit; }
 </style>
+<script>
+// thema: auto (volgt de computer), licht of donker; onthouden in deze browser
+(() => {
+  let t = 'auto';
+  try { t = localStorage.getItem('bx-thema') || 'auto'; } catch (e) { /* geen opslag */ }
+  if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+})();
+</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
 <script>
 // Kleine vervanger van de dash-functies van het Claude-dashboard.
@@ -95,6 +116,24 @@ body { margin: 0; background: var(--color-bg); color: var(--color-fg); font-fami
 </head>
 <body>
 <div id="dash-root">
+<div class="bx-thema"><div class="bx-thema-grp" role="group" aria-label="Weergave">
+  <button type="button" data-thema="auto">Automatisch</button>
+  <button type="button" data-thema="light">Licht</button>
+  <button type="button" data-thema="dark">Donker</button>
+</div></div>
+<script>
+(() => {
+  const root = document.documentElement;
+  const huidig = () => root.getAttribute('data-theme') || 'auto';
+  const zet = (t) => {
+    if (t === 'auto') root.removeAttribute('data-theme'); else root.setAttribute('data-theme', t);
+    try { localStorage.setItem('bx-thema', t); } catch (e) { /* geen opslag */ }
+    document.querySelectorAll('[data-thema]').forEach((b) => b.setAttribute('aria-pressed', b.getAttribute('data-thema') === t ? 'true' : 'false'));
+  };
+  document.querySelectorAll('[data-thema]').forEach((b) => b.addEventListener('click', () => zet(b.getAttribute('data-thema'))));
+  document.querySelectorAll('[data-thema]').forEach((b) => b.setAttribute('aria-pressed', b.getAttribute('data-thema') === huidig() ? 'true' : 'false'));
+})();
+</script>
 <meta name="dash-one-writer">
 <style>
 #dash-root { --dash-gutter: 12px; }
