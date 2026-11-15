@@ -206,7 +206,7 @@
 
   <section class="bx-card" id="per-jaar">
     <h2>Wie werkt wanneer</h2>
-    <p class="bx-note">Per jaar en per datum de ploeg met dagdienst (D) en nachtdienst (N). Tik op een ploeg om te zien wanneer die werkt. Zet je het oude rooster erover, dan staat het oude rooster in het omgevouwen hoekje rechtsonder van elke tegel.</p>
+    <p class="bx-note">Per jaar en per datum de ploeg met dagdienst (D) en nachtdienst (N). Tik op een ploeg om te zien wanneer die werkt. Kies Nieuw of Oud om één rooster te zien. Bij Beide staat het oude rooster in het omgevouwen hoekje rechtsonder van elke tegel. Bij een gekozen ploeg zie je D (dag), N (nacht), V (vrij) of R (reserve).</p>
     <div class="bx-filter" role="group" aria-label="Kies ploeg">
       <span>Ploeg</span>
       <button type="button" class="bx-btn is-on" data-ploeg="" aria-pressed="true">Alle</button>
@@ -216,14 +216,16 @@
       <button type="button" class="bx-btn" data-ploeg="4" aria-pressed="false">4</button>
       <button type="button" class="bx-btn" data-ploeg="5" aria-pressed="false">5</button>
     </div>
-    <div class="bx-filter" role="group" aria-label="Oud rooster">
-      <span>Oud rooster</span>
-      <button type="button" class="bx-btn is-on" id="bx-ik-toggle" aria-pressed="true">Erover leggen</button>
+    <div class="bx-filter" role="group" aria-label="Welk rooster">
+      <span>Rooster</span>
+      <button type="button" class="bx-btn" data-modus="nieuw" aria-pressed="false">Nieuw</button>
+      <button type="button" class="bx-btn" data-modus="oud" aria-pressed="false">Oud</button>
+      <button type="button" class="bx-btn is-on" data-modus="beide" aria-pressed="true">Beide</button>
     </div>
     <ul class="bx-legend">
       <li><span class="bx-sw" data-sw="dag"></span>Dagdienst</li>
       <li><span class="bx-sw" data-sw="nacht"></span>Nachtdienst</li>
-      <li data-ik-legenda><span class="bx-sw bx-sw-ik"></span>Tegel: nieuw rooster. Hoekje rechtsonder: oud rooster (dagploeg·nachtploeg, of D/N/V/R bij een gekozen ploeg)</li>
+      <li data-ik-legenda><span class="bx-sw bx-sw-ik"></span>Bij Beide: de tegel is het nieuwe rooster, het hoekje rechtsonder het oude</li>
     </ul>
     <div class="bx-matrix dash-skeleton" data-draw="matrix" data-source="diensten"></div>
     <p class="bx-note">Aanname: de 5-weekse cyclus uit het rooster van 2027 loopt elk jaar ongewijzigd door, zonder ruilen of verlof.</p>
@@ -362,7 +364,7 @@ dash.calc('boef', {
   const MIJN_KEY = 'bx-oud-rooster';
   let mijn = { ...MIJN_STD };
   try { const o = JSON.parse(localStorage.getItem(MIJN_KEY) || 'null'); if (o && typeof o === 'object') mijn = { ...MIJN_STD, ...o }; } catch (e) { /* geen opslag */ }
-  let ikAan = true;
+  let modus = 'beide';
   const bewaar = () => { try { localStorage.setItem(MIJN_KEY, JSON.stringify(mijn)); } catch (e) { /* geen opslag */ } };
   const dagNr = (iso) => { const [y, m, d] = iso.split('-').map(Number); return Math.round(Date.UTC(y, m - 1, d) / 864e5); };
   const geldig = () => /^[DNVR]+$/.test(mijn.cyclus) && /^\d{4}-\d{2}-\d{2}$/.test(mijn.anker) && mijn.pos >= 1 && mijn.pos <= mijn.cyclus.length;
@@ -639,12 +641,14 @@ dash.calc('boef', {
     ['bx-cyclus', 'bx-anker', 'bx-pos', 'bx-mijn-ploeg'].forEach((id) => { const e = document.getElementById(id); if (e) e.addEventListener('change', leesForm); });
     const r = document.getElementById('bx-mijn-reset');
     if (r) r.addEventListener('click', () => { mijn = { ...MIJN_STD }; bewaar(); vulForm(); leesForm(); });
-    const tg = document.getElementById('bx-ik-toggle');
-    if (tg) tg.addEventListener('click', () => {
-      ikAan = !ikAan; tg.classList.toggle('is-on', ikAan); tg.setAttribute('aria-pressed', ikAan ? 'true' : 'false');
-      document.querySelectorAll('[data-ik-legenda]').forEach((l) => { l.hidden = !ikAan; });
+    document.querySelectorAll('.bx-btn[data-modus]').forEach((btn) => btn.addEventListener('click', () => {
+      modus = btn.getAttribute('data-modus');
+      document.querySelectorAll('.bx-btn[data-modus]').forEach((b) => {
+        const on = b === btn; b.classList.toggle('is-on', on); b.setAttribute('aria-pressed', on ? 'true' : 'false');
+      });
+      document.querySelectorAll('[data-ik-legenda]').forEach((l) => { l.hidden = modus !== 'beide'; });
       dash.draw('matrix');
-    });
+    }));
   };
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', startMijn); else startMijn();
 
@@ -658,14 +662,14 @@ dash.calc('boef', {
     setSkel(el, false);
     const by = d3.group(d.data.filter((r) => Number(r.jaar) <= eind), (r) => String(r.jaar), (r) => r.dag);
     const tbl = document.createElement('table'); tbl.className = 'bx-mx';
-    if (ikAan && geldig()) tbl.classList.add('is-ft');
+    tbl.classList.add('is-ft');
     const cg = document.createElement('colgroup');
     ['bx-yrc', '', '', '', 'bx-gapc', '', ''].forEach((c) => { const col = document.createElement('col'); if (c) col.className = c; cg.appendChild(col); });
     tbl.appendChild(cg);
     const hr = tbl.createTHead().insertRow();
     const add = (row, tag, txt, cls) => { const c = document.createElement(tag); if (cls) c.className = cls; c.textContent = txt; row.appendChild(c); return c; };
     add(hr, 'th', 'Jaar', 'bx-yr');
-    const split = ikAan && geldig();
+    const metOud = geldig() && modus !== 'nieuw';
     DATES.forEach((dt, i) => {
       if (i === 3) add(hr, 'th', '');
       const th = add(hr, 'th', dt);
@@ -682,48 +686,51 @@ dash.calc('boef', {
         const cell = document.createElement('div'); cell.className = 'bx-cell';
         const wd = rs[0] ? WD[new Date(rs[0].datum + 'T12:00:00').getDay()] : '';
         const datum = dt === '1 jan' ? Number(jaar) + 1 : jaar;
-        const oud = split && rs[0] ? [1, 2, 3, 4, 5].map((p) => [String(p), mijnCode(rs[0].datum, p)]) : null;
-        if (oud) {
-          const nieuw = (c) => rs.filter((r) => r.dienst === c).map((r) => String(r.ploeg));
-          const oudP = (c) => oud.filter(([, x]) => x === c).map(([p]) => p);
-          const KL = { D: DAG(), N: NACHT(), R: 'var(--color-fg-muted)' };
-          const NAAM = { D: 'dagdienst', N: 'nachtdienst', V: 'vrij', R: 'reserve' };
-          const ft = document.createElement('div'); ft.className = 'bx-ft';
-          const mk = (cls, txt) => { const e = document.createElement('div'); e.className = cls; if (txt != null) e.textContent = txt; return e; };
-          const lijn = '<svg viewBox="0 0 26 26" aria-hidden="true"><line x1="0" y1="26" x2="26" y2="0" stroke="currentColor" stroke-opacity=".35"/></svg>';
-          if (!gekozen) {
-            const n = mk('bx-ft-n');
-            const sd = document.createElement('span'); sd.textContent = 'D' + (nieuw('Dag').join(',') || '–'); sd.style.color = DAG();
-            const sn = document.createElement('span'); sn.textContent = 'N' + (nieuw('Nacht').join(',') || '–'); sn.style.color = NACHT();
-            n.append(sd, document.createElement('br'), sn);
-            ft.append(n, mk('bx-ft-c'));
+        const oud = metOud && rs[0] ? [1, 2, 3, 4, 5].map((p) => [String(p), mijnCode(rs[0].datum, p)]) : null;
+        const CODE = { Dag: 'D', Nacht: 'N', Reserve: 'R', Vrij: 'V' };
+        const bron = {
+          nieuw: { ploegen: (c) => rs.filter((r) => CODE[r.dienst] === c).map((r) => String(r.ploeg)), van: (p) => { const r = rs.find((x) => String(x.ploeg) === p); return r ? CODE[r.dienst] : '–'; } },
+          oud: oud && { ploegen: (c) => oud.filter(([, x]) => x === c).map(([p]) => p), van: (p) => (oud.find(([q]) => q === p) || [])[1] || '–' },
+        };
+        const hoofd = modus === 'oud' && bron.oud ? bron.oud : bron.nieuw;
+        const hoek = modus === 'beide' ? bron.oud : null;
+        const hoofdNaam = hoofd === bron.oud ? 'oud' : 'nieuw';
+        const KL = { D: DAG(), N: NACHT(), R: 'var(--color-fg-muted)' };
+        const NAAM = { D: 'dagdienst', N: 'nachtdienst', V: 'vrij', R: 'reserve' };
+        const ft = document.createElement('div'); ft.className = 'bx-ft';
+        const mk = (cls, txt) => { const e = document.createElement('div'); e.className = cls; if (txt != null) e.textContent = txt; return e; };
+        const lijn = '<svg viewBox="0 0 26 26" aria-hidden="true"><line x1="0" y1="26" x2="26" y2="0" stroke="currentColor" stroke-opacity=".35"/></svg>';
+        const lijst = (b, c) => b.ploegen(c).join(',') || '–';
+        if (!gekozen) {
+          const n = mk('bx-ft-n');
+          const sd = document.createElement('span'); sd.textContent = 'D' + lijst(hoofd, 'D'); sd.style.color = DAG();
+          const sn = document.createElement('span'); sn.textContent = 'N' + lijst(hoofd, 'N'); sn.style.color = NACHT();
+          n.append(sd, document.createElement('br'), sn);
+          ft.append(n);
+          let t = `${dt} ${datum} (${wd}). ${hoofdNaam === 'oud' ? 'Oud' : 'Nieuw'}: dag ploeg ${lijst(hoofd, 'D')}, nacht ploeg ${lijst(hoofd, 'N')}`;
+          if (hoek) {
+            ft.append(mk('bx-ft-c'));
             ft.insertAdjacentHTML('beforeend', lijn);
-            ft.append(mk('bx-ft-o', (oudP('D').join(',') || '–') + '·' + (oudP('N').join(',') || '–')));
-            ft.title = `${dt} ${datum} (${wd}). Nieuw: dag ploeg ${nieuw('Dag').join(', ')}, nacht ploeg ${nieuw('Nacht').join(', ')}. Oud: dag ploeg ${oudP('D').join(', ')}, nacht ploeg ${oudP('N').join(', ')}`;
-          } else {
-            const r = rs.find((x) => String(x.ploeg) === gekozen);
-            const cn = r ? ({ Dag: 'D', Nacht: 'N', Reserve: 'R', Vrij: 'V' })[r.dienst] : '–';
-            const co = (oud.find(([p]) => p === gekozen) || [])[1] || '–';
-            const bg = mk('bx-ft-bg'); if (KL[cn]) bg.style.background = tint(KL[cn]);
+            ft.append(mk('bx-ft-o', lijst(hoek, 'D') + '·' + lijst(hoek, 'N')));
+            t += `. Oud: dag ploeg ${lijst(hoek, 'D')}, nacht ploeg ${lijst(hoek, 'N')}`;
+          }
+          ft.title = t;
+        } else {
+          const cn = hoofd.van(gekozen);
+          const bg = mk('bx-ft-bg'); if (KL[cn]) bg.style.background = tint(KL[cn]);
+          ft.append(bg, mk('bx-ft-n is-groot', cn));
+          let t = `${dt} ${datum} (${wd}), ploeg ${gekozen}. ${hoofdNaam === 'oud' ? 'Oud' : 'Nieuw'}: ${NAAM[cn] || '-'}`;
+          if (hoek) {
+            const co = hoek.van(gekozen);
             const c = mk('bx-ft-c'); c.style.background = KL[co] ? `color-mix(in srgb, ${KL[co]} 70%, var(--color-panel))` : 'var(--color-panel)';
-            ft.append(bg, mk('bx-ft-n is-groot', cn), c);
+            ft.append(c);
             ft.insertAdjacentHTML('beforeend', lijn);
             ft.append(mk('bx-ft-o is-groot', co));
-            ft.title = `${dt} ${datum} (${wd}), ploeg ${gekozen}. Nieuw: ${NAAM[cn] || '-'}. Oud: ${NAAM[co] || '-'}`;
+            t += `. Oud: ${NAAM[co] || '-'}`;
           }
-          cell.appendChild(ft);
+          ft.title = t;
         }
-        if (!oud) [['Dag', 'D', DAG()], ['Nacht', 'N', NACHT()]].forEach(([dienst, code, col]) => {
-          const ps = rs.filter((r) => r.dienst === dienst).map((r) => String(r.ploeg));
-          const chip = document.createElement('div'); chip.className = 'bx-chip';
-          const b = document.createElement('b'); b.textContent = ps.join(',') || '–';
-          chip.style.background = tint(col);
-          const i1 = document.createElement('i'); i1.textContent = code;
-          chip.append(i1, b);
-          chip.title = `${dt} ${datum} (${wd}): ${dienst.toLowerCase()}dienst ploeg ${ps.join(', ')}`;
-          if (gekozen) chip.classList.add(ps.includes(gekozen) ? 'is-hit' : 'is-dim');
-          cell.appendChild(chip);
-        });
+        cell.appendChild(ft);
         td.appendChild(cell); tr.appendChild(td);
       });
     });
